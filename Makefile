@@ -5,8 +5,7 @@
 
 # cc tags
 
-ELGIN_LIBDIR="\"/usr/local/src/pw_elgin/pw_elgin-devel/\""
-#static#ELGIN_LIBDIR="\"./\""
+ELGIN_LIBDIR="\"./\""
 
 CFLAGS= -O -Wall -g  -DLIBDIR=$(ELGIN_LIBDIR) -DHAVE_READLINE
 
