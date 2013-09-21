@@ -883,15 +883,15 @@ int find_count_in_##var( uchar letter, int sn, \
  \
     check;\
  \
-    snr_idx = fr->prev_snr_idx.##var##subscript; \
-    tot_in_gr = fr->prev_tot_in_gr.##var##subscript; \
+    snr_idx = fr->prev_snr_idx.var subscript; \
+    tot_in_gr = fr->prev_tot_in_gr.var subscript; \
     if( snr_idx == -1 \
 	|| snr[ snr_idx ].letter != letter \
 	|| snr[ snr_idx ].sn > sn \
 	) \
     { \
 	tot_in_gr = 0; \
-	snr_idx = fr->first.##var##subscript; \
+	snr_idx = fr->first.var subscript; \
     } \
      \
     do \
@@ -901,8 +901,8 @@ int find_count_in_##var( uchar letter, int sn, \
 	    tot_in_gr += snr[ snr_idx ].cnt; \
 	else \
 	{ \
-	    fr->prev_tot_in_gr.##var##subscript = tot_in_gr; \
-	    fr->prev_snr_idx.##var##subscript = snr_idx; \
+	    fr->prev_tot_in_gr.var subscript = tot_in_gr; \
+	    fr->prev_snr_idx.var subscript = snr_idx; \
 	     \
 	    return tot_in_gr + sn - snr[ snr_idx ].sn + 1; \
 	} \
@@ -927,15 +927,15 @@ int find_count_in_##var##_in_size( uchar letter, int sn, \
  \
     check; \
  \
-    snr_idx = fr->prev_snr_idx.##var##_in_size[ g->mvt_size - MIN_SIZE ]##subscript; \
-    tot_in_gr = fr->prev_tot_in_gr.##var##_in_size[ g->mvt_size - MIN_SIZE ]##subscript; \
+    snr_idx = fr->prev_snr_idx.var##_in_size[ g->mvt_size - MIN_SIZE ]subscript; \
+    tot_in_gr = fr->prev_tot_in_gr.var##_in_size[ g->mvt_size - MIN_SIZE ]subscript; \
     if( snr_idx == -1 \
 	|| snr[ snr_idx ].letter != letter \
 	|| snr[ snr_idx ].sn > sn \
 	) \
     { \
 	tot_in_gr = 0; \
-	snr_idx = fr->first.##var##_in_size[ g->mvt_size - MIN_SIZE ]##subscript; \
+	snr_idx = fr->first.var##_in_size[ g->mvt_size - MIN_SIZE ]subscript; \
     } \
      \
     do \
@@ -945,8 +945,8 @@ int find_count_in_##var##_in_size( uchar letter, int sn, \
 	    tot_in_gr += snr[ snr_idx ].cnt; \
 	else \
 	{ \
-	    fr->prev_tot_in_gr.##var##_in_size[ g->mvt_size - MIN_SIZE ]subscript = tot_in_gr; \
-	    fr->prev_snr_idx.##var##_in_size[ g->mvt_size - MIN_SIZE ]subscript = snr_idx; \
+	    fr->prev_tot_in_gr.var##_in_size[ g->mvt_size - MIN_SIZE ]subscript = tot_in_gr; \
+	    fr->prev_snr_idx.var##_in_size[ g->mvt_size - MIN_SIZE ]subscript = snr_idx; \
 	     \
 	    return tot_in_gr + sn - snr[ snr_idx ].sn + 1; \
 	} \
@@ -962,33 +962,33 @@ int find_count_in_##var##_in_size( uchar letter, int sn, \
 }
 
 #define SET_COUNT_VAR( var, subscript, cond ) \
-	if( fr->first.##var##subscript == -1 ) \
+	if( fr->first.var subscript == -1 ) \
 	{ \
 	    if( cond ) \
             { \
                 g->first_in_##var = TRUE; \
 	        g->flag_notes = TRUE; \
             } \
-	    fr->first.##var##subscript = i; \
-	    pr.first.##var##subscript = i; \
+	    fr->first.var subscript = i; \
+	    pr.first.var subscript = i; \
 	} else { \
-	    snr[ pr.first.##var##subscript ].next_##var = i; \
-	    pr.first.##var##subscript = i; \
+	    snr[ pr.first.var subscript ].next_##var = i; \
+	    pr.first.var subscript = i; \
 	}
 
 #define SET_COUNT_VAR_IN_SIZE( var, subscript, cond ) \
-	if( fr->first.##var##_in_size[ size_idx ]##subscript == -1 ) \
+	if( fr->first.var##_in_size[ size_idx ] subscript == -1 ) \
 	{ \
 	    if( cond ) \
             { \
 	        g->first_in_##var##_in_size = TRUE; \
 	        g->flag_notes = TRUE; \
             } \
-	    fr->first.##var##_in_size[ size_idx ]##subscript = i; \
-	    pr.first.##var##_in_size[ size_idx ]##subscript = i; \
+	    fr->first.var##_in_size[ size_idx ] subscript = i; \
+	    pr.first.var##_in_size[ size_idx ] subscript = i; \
 	} else { \
-	    snr[ pr.first.##var##_in_size[ size_idx ]##subscript ].next_##var##_in_size = i; \
-	    pr.first.##var##_in_size[ size_idx ]##subscript = i; \
+	    snr[ pr.first.var##_in_size[ size_idx ] subscript ].next_##var##_in_size = i; \
+	    pr.first.var##_in_size[ size_idx ] subscript = i; \
 	}
 
 
@@ -1036,7 +1036,7 @@ DEFUN_FIND_COUNT_VAR_IN_SIZE( bridge, /* */, if( !g->bridge ) \
 )
 DEFUN_FIND_COUNT_VAR( style, [ g->style ], /* */ );
 DEFUN_FIND_COUNT_VAR_IN_SIZE( style, [ g->style ], /* */ );
-DEFUN_FIND_COUNT_VAR( finish, [ g->finish ], /* */ );
+DEFUN_FIND_COUNT_VAR( finish, [ g->finish ] , /* */ );
 DEFUN_FIND_COUNT_VAR_IN_SIZE( finish, [ g->finish ], /* */ );
 /* create a bogus function so that check_count_model_in_size works */
 int find_count_in_model( uchar letter, int sn,
