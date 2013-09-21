@@ -1,0 +1,3387 @@
+#
+# Legal stuff:
+#
+# Copyright (C) 1999, 2000 Wayne Schlitt (wayne@midwestcs.com)
+# This file is covered under the "GPL" as defined below.
+#
+# A list of "facts" can not be copyrighted, so the "facts" in this database
+# can be freely extracted and used in whatever form you wish.  That includes
+# using it in proprietary software that you sell for profit.
+#
+# However, comments and such can be copyrighted.  Further, after a private
+# dicussion with Richard Stallman, I have been convinced that this text file
+# is really the "source code" to the database that is created in memory by
+# the pw_elgin program.  As such, it can be licensed under the Free Software
+# Foundation's "General Public Licenses" (aka GPL).
+#
+# In short, what this means is you can use this database as a start
+# for what ever you want to do with it, and you can change it any way
+# you want to.  However if you redistribute it to anyone else, then
+# that other person has the right to ask for a copy of the database in the
+# "source code form" with any modifications that you have made.  Further
+# the person you redistribute this database too is then free to use the
+# modified database in anyway they want, subject to the GPL.
+#
+# If you do not want to have to distribute your modified version of
+# this database under the General Public License, you must strip out
+# any parts that may be under a copyright.  I will not help you determine
+# how to do identify the copyrighted information, nor how to strip it.
+# I will, however, try to help anyone who feels that the GPL has been 
+# violated.
+#
+# The following is a copy of the General Public License that this source
+# for the Elgin Grade Number database is distributed under
+#
+#
+# 		    GNU GENERAL PUBLIC LICENSE
+# 		       Version 2, June 1991
+# 
+#  Copyright (C) 1989, 1991 Free Software Foundation, Inc.
+#                           675 Mass Ave, Cambridge, MA 02139, USA
+#  Everyone is permitted to copy and distribute verbatim copies
+#  of this license document, but changing it is not allowed.
+# 
+# 			    Preamble
+# 
+#   The licenses for most software are designed to take away your
+# freedom to share and change it.  By contrast, the GNU General Public
+# License is intended to guarantee your freedom to share and change free
+# software--to make sure the software is free for all its users.  This
+# General Public License applies to most of the Free Software
+# Foundation's software and to any other program whose authors commit to
+# using it.  (Some other Free Software Foundation software is covered by
+# the GNU Library General Public License instead.)  You can apply it to
+# your programs, too.
+# 
+#   When we speak of free software, we are referring to freedom, not
+# price.  Our General Public Licenses are designed to make sure that you
+# have the freedom to distribute copies of free software (and charge for
+# this service if you wish), that you receive source code or can get it
+# if you want it, that you can change the software or use pieces of it
+# in new free programs; and that you know you can do these things.
+# 
+#   To protect your rights, we need to make restrictions that forbid
+# anyone to deny you these rights or to ask you to surrender the rights.
+# These restrictions translate to certain responsibilities for you if you
+# distribute copies of the software, or if you modify it.
+# 
+#   For example, if you distribute copies of such a program, whether
+# gratis or for a fee, you must give the recipients all the rights that
+# you have.  You must make sure that they, too, receive or can get the
+# source code.  And you must show them these terms so they know their
+# rights.
+# 
+#   We protect your rights with two steps: (1) copyright the software, and
+# (2) offer you this license which gives you legal permission to copy,
+# distribute and/or modify the software.
+# 
+#   Also, for each author's protection and ours, we want to make certain
+# that everyone understands that there is no warranty for this free
+# software.  If the software is modified by someone else and passed on, we
+# want its recipients to know that what they have is not the original, so
+# that any problems introduced by others will not reflect on the original
+# authors' reputations.
+# 
+#   Finally, any free program is threatened constantly by software
+# patents.  We wish to avoid the danger that redistributors of a free
+# program will individually obtain patent licenses, in effect making the
+# program proprietary.  To prevent this, we have made it clear that any
+# patent must be licensed for everyone's free use or not licensed at all.
+# 
+#   The precise terms and conditions for copying, distribution and
+# modification follow.
+# 
+# 		    GNU GENERAL PUBLIC LICENSE
+#    TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+# 
+#   0. This License applies to any program or other work which contains
+# a notice placed by the copyright holder saying it may be distributed
+# under the terms of this General Public License.  The "Program", below,
+# refers to any such program or work, and a "work based on the Program"
+# means either the Program or any derivative work under copyright law:
+# that is to say, a work containing the Program or a portion of it,
+# either verbatim or with modifications and/or translated into another
+# language.  (Hereinafter, translation is included without limitation in
+# the term "modification".)  Each licensee is addressed as "you".
+# 
+# Activities other than copying, distribution and modification are not
+# covered by this License; they are outside its scope.  The act of
+# running the Program is not restricted, and the output from the Program
+# is covered only if its contents constitute a work based on the
+# Program (independent of having been made by running the Program).
+# Whether that is true depends on what the Program does.
+# 
+#   1. You may copy and distribute verbatim copies of the Program's
+# source code as you receive it, in any medium, provided that you
+# conspicuously and appropriately publish on each copy an appropriate
+# copyright notice and disclaimer of warranty; keep intact all the
+# notices that refer to this License and to the absence of any warranty;
+# and give any other recipients of the Program a copy of this License
+# along with the Program.
+# 
+# You may charge a fee for the physical act of transferring a copy, and
+# you may at your option offer warranty protection in exchange for a fee.
+# 
+#   2. You may modify your copy or copies of the Program or any portion
+# of it, thus forming a work based on the Program, and copy and
+# distribute such modifications or work under the terms of Section 1
+# above, provided that you also meet all of these conditions:
+# 
+#     a) You must cause the modified files to carry prominent notices
+#     stating that you changed the files and the date of any change.
+# 
+#     b) You must cause any work that you distribute or publish, that in
+#     whole or in part contains or is derived from the Program or any
+#     part thereof, to be licensed as a whole at no charge to all third
+#     parties under the terms of this License.
+# 
+#     c) If the modified program normally reads commands interactively
+#     when run, you must cause it, when started running for such
+#     interactive use in the most ordinary way, to print or display an
+#     announcement including an appropriate copyright notice and a
+#     notice that there is no warranty (or else, saying that you provide
+#     a warranty) and that users may redistribute the program under
+#     these conditions, and telling the user how to view a copy of this
+#     License.  (Exception: if the Program itself is interactive but
+#     does not normally print such an announcement, your work based on
+#     the Program is not required to print an announcement.)
+# 
+# These requirements apply to the modified work as a whole.  If
+# identifiable sections of that work are not derived from the Program,
+# and can be reasonably considered independent and separate works in
+# themselves, then this License, and its terms, do not apply to those
+# sections when you distribute them as separate works.  But when you
+# distribute the same sections as part of a whole which is a work based
+# on the Program, the distribution of the whole must be on the terms of
+# this License, whose permissions for other licensees extend to the
+# entire whole, and thus to each and every part regardless of who wrote it.
+# 
+# Thus, it is not the intent of this section to claim rights or contest
+# your rights to work written entirely by you; rather, the intent is to
+# exercise the right to control the distribution of derivative or
+# collective works based on the Program.
+# 
+# In addition, mere aggregation of another work not based on the Program
+# with the Program (or with a work based on the Program) on a volume of
+# a storage or distribution medium does not bring the other work under
+# the scope of this License.
+# 
+#   3. You may copy and distribute the Program (or a work based on it,
+# under Section 2) in object code or executable form under the terms of
+# Sections 1 and 2 above provided that you also do one of the following:
+# 
+#     a) Accompany it with the complete corresponding machine-readable
+#     source code, which must be distributed under the terms of Sections
+#     1 and 2 above on a medium customarily used for software interchange; or,
+# 
+#     b) Accompany it with a written offer, valid for at least three
+#     years, to give any third party, for a charge no more than your
+#     cost of physically performing source distribution, a complete
+#     machine-readable copy of the corresponding source code, to be
+#     distributed under the terms of Sections 1 and 2 above on a medium
+#     customarily used for software interchange; or,
+# 
+#     c) Accompany it with the information you received as to the offer
+#     to distribute corresponding source code.  (This alternative is
+#     allowed only for noncommercial distribution and only if you
+#     received the program in object code or executable form with such
+#     an offer, in accord with Subsection b above.)
+# 
+# The source code for a work means the preferred form of the work for
+# making modifications to it.  For an executable work, complete source
+# code means all the source code for all modules it contains, plus any
+# associated interface definition files, plus the scripts used to
+# control compilation and installation of the executable.  However, as a
+# special exception, the source code distributed need not include
+# anything that is normally distributed (in either source or binary
+# form) with the major components (compiler, kernel, and so on) of the
+# operating system on which the executable runs, unless that component
+# itself accompanies the executable.
+# 
+# If distribution of executable or object code is made by offering
+# access to copy from a designated place, then offering equivalent
+# access to copy the source code from the same place counts as
+# distribution of the source code, even though third parties are not
+# compelled to copy the source along with the object code.
+# 
+#   4. You may not copy, modify, sublicense, or distribute the Program
+# except as expressly provided under this License.  Any attempt
+# otherwise to copy, modify, sublicense or distribute the Program is
+# void, and will automatically terminate your rights under this License.
+# However, parties who have received copies, or rights, from you under
+# this License will not have their licenses terminated so long as such
+# parties remain in full compliance.
+# 
+#   5. You are not required to accept this License, since you have not
+# signed it.  However, nothing else grants you permission to modify or
+# distribute the Program or its derivative works.  These actions are
+# prohibited by law if you do not accept this License.  Therefore, by
+# modifying or distributing the Program (or any work based on the
+# Program), you indicate your acceptance of this License to do so, and
+# all its terms and conditions for copying, distributing or modifying
+# the Program or works based on it.
+# 
+#   6. Each time you redistribute the Program (or any work based on the
+# Program), the recipient automatically receives a license from the
+# original licensor to copy, distribute or modify the Program subject to
+# these terms and conditions.  You may not impose any further
+# restrictions on the recipients' exercise of the rights granted herein.
+# You are not responsible for enforcing compliance by third parties to
+# this License.
+# 
+#   7. If, as a consequence of a court judgment or allegation of patent
+# infringement or for any other reason (not limited to patent issues),
+# conditions are imposed on you (whether by court order, agreement or
+# otherwise) that contradict the conditions of this License, they do not
+# excuse you from the conditions of this License.  If you cannot
+# distribute so as to satisfy simultaneously your obligations under this
+# License and any other pertinent obligations, then as a consequence you
+# may not distribute the Program at all.  For example, if a patent
+# license would not permit royalty-free redistribution of the Program by
+# all those who receive copies directly or indirectly through you, then
+# the only way you could satisfy both it and this License would be to
+# refrain entirely from distribution of the Program.
+# 
+# If any portion of this section is held invalid or unenforceable under
+# any particular circumstance, the balance of the section is intended to
+# apply and the section as a whole is intended to apply in other
+# circumstances.
+# 
+# It is not the purpose of this section to induce you to infringe any
+# patents or other property right claims or to contest validity of any
+# such claims; this section has the sole purpose of protecting the
+# integrity of the free software distribution system, which is
+# implemented by public license practices.  Many people have made
+# generous contributions to the wide range of software distributed
+# through that system in reliance on consistent application of that
+# system; it is up to the author/donor to decide if he or she is willing
+# to distribute software through any other system and a licensee cannot
+# impose that choice.
+# 
+# This section is intended to make thoroughly clear what is believed to
+# be a consequence of the rest of this License.
+# 
+#   8. If the distribution and/or use of the Program is restricted in
+# certain countries either by patents or by copyrighted interfaces, the
+# original copyright holder who places the Program under this License
+# may add an explicit geographical distribution limitation excluding
+# those countries, so that distribution is permitted only in or among
+# countries not thus excluded.  In such case, this License incorporates
+# the limitation as if written in the body of this License.
+# 
+#   9. The Free Software Foundation may publish revised and/or new versions
+# of the General Public License from time to time.  Such new versions will
+# be similar in spirit to the present version, but may differ in detail to
+# address new problems or concerns.
+# 
+# Each version is given a distinguishing version number.  If the Program
+# specifies a version number of this License which applies to it and "any
+# later version", you have the option of following the terms and conditions
+# either of that version or of any later version published by the Free
+# Software Foundation.  If the Program does not specify a version number of
+# this License, you may choose any version ever published by the Free Software
+# Foundation.
+# 
+#   10. If you wish to incorporate parts of the Program into other free
+# programs whose distribution conditions are different, write to the author
+# to ask for permission.  For software which is copyrighted by the Free
+# Software Foundation, write to the Free Software Foundation; we sometimes
+# make exceptions for this.  Our decision will be guided by the two goals
+# of preserving the free status of all derivatives of our free software and
+# of promoting the sharing and reuse of software generally.
+# 
+# 			    NO WARRANTY
+# 
+#   11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY
+# FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT WHEN
+# OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES
+# PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED
+# OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK AS
+# TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE
+# PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,
+# REPAIR OR CORRECTION.
+# 
+#   12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+# WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR
+# REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,
+# INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING
+# OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED
+# TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY
+# YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER
+# PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE
+# POSSIBILITY OF SUCH DAMAGES.
+# 
+# 		     END OF TERMS AND CONDITIONS
+# 
+# 	Appendix: How to Apply These Terms to Your New Programs
+# 
+#   If you develop a new program, and you want it to be of the greatest
+# possible use to the public, the best way to achieve this is to make it
+# free software which everyone can redistribute and change under these terms.
+# 
+#   To do so, attach the following notices to the program.  It is safest
+# to attach them to the start of each source file to most effectively
+# convey the exclusion of warranty; and each file should have at least
+# the "copyright" line and a pointer to where the full notice is found.
+# 
+#     <one line to give the program's name and a brief idea of what it does.>
+#     Copyright (C) 19yy  <name of author>
+# 
+#     This program is free software; you can redistribute it and/or modify
+#     it under the terms of the GNU General Public License as published by
+#     the Free Software Foundation; either version 2 of the License, or
+#     (at your option) any later version.
+# 
+#     This program is distributed in the hope that it will be useful,
+#     but WITHOUT ANY WARRANTY; without even the implied warranty of
+#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#     GNU General Public License for more details.
+# 
+#     You should have received a copy of the GNU General Public License
+#     along with this program; if not, write to the Free Software
+#     Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+# 
+# Also add information on how to contact you by electronic and paper mail.
+# 
+# If the program is interactive, make it output a short notice like this
+# when it starts in an interactive mode:
+# 
+#     Gnomovision version 69, Copyright (C) 19yy name of author
+#     Gnomovision comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+#     This is free software, and you are welcome to redistribute it
+#     under certain conditions; type `show c' for details.
+# 
+# The hypothetical commands `show w' and `show c' should show the appropriate
+# parts of the General Public License.  Of course, the commands you use may
+# be called something other than `show w' and `show c'; they could even be
+# mouse-clicks or menu items--whatever suits your program.
+# 
+# You should also get your employer (if you work as a programmer) or your
+# school, if any, to sign a "copyright disclaimer" for the program, if
+# necessary.  Here is a sample; alter the names:
+# 
+#   Yoyodyne, Inc., hereby disclaims all copyright interest in the program
+#   `Gnomovision' (which makes passes at compilers) written by James Hacker.
+# 
+#   <signature of Ty Coon>, 1 April 1989
+#   Ty Coon, President of Vice
+# 
+# This General Public License does not permit incorporating your program into
+# proprietary programs.  If your program is a subroutine library, you may
+# consider it more useful to permit linking proprietary applications with the
+# library.  If this is what you want to do, use the GNU Library General
+# Public License instead of this License.
+
+
+
+
+
+#
+# Format of this file:
+# 
+# lines beginning with a '#' are comments lines, blank lines are
+# ignored.  Comments starting in the first column are for describing the
+# contents of the file.  Comments starting after the first column (that is,
+# they have a tab or spaces before the '#') refer to the preceding grade
+# data and will be listed in the search output if the "verbose" setting is
+# high enough.
+#
+# Data lines contain the following information, separated by spaces:
+#
+#	grade		The grade number for this info
+#
+#	class		The class that this grade belongs to, or '?" if unknown
+#
+#	dial_size	The size of the dial that this grade uses, or '?' if
+#			unknown
+#
+#	mvt_size	The size of the actual movement.  If same as dial size
+#			then use '-'.
+#
+#	plate		The plate layout:
+#				fp	full plate
+#				3/4	3/4 plate
+#				?	unknown
+#
+#	style		The "style" of the movement:
+#				h	Hunter Case  (second 90 deg to pendant)
+#				hb	Hunter Case  Bridge layout
+#				o	Open Face    (second opposite pendant)
+#				ob	Open Face  Bridge layout
+#				c	Convertible  (either OF or HC)
+#				cb	Convertible  Bridge layout
+#				s	Sweep Second  (second in center)
+#				-	No second hand 
+#				?	Unknown
+#
+#                       Keywind watches are listed as "hunter case" because
+#                       that is how Elgin listed them.
+#
+#                       Keywind, convertable and sweep second watches could
+#                       be put into either hunter or open face cases.
+#
+#	finish		The type of finish applied to the movement:
+#				g	Gilded
+#				n	Nickel damaskeening
+#				t	Two-tone damaskeening
+#				f	Flat/matte nickel finish
+#				?	Unknown
+#
+#	model		Model number.  May be a range such as 2-4
+#
+#	setting		How the watch is wound and set
+#				k	Key wind/key set
+#				l	Pendant wind, lever set
+#				p	Pendant wind and set
+#				a	Automatic wind, pendant set
+#				h	Hack setting, pendant wind
+#				?	Unknown
+#
+#                       Some grades were "transitional", and had both keywind
+#                       parts, and could be wound by the pendant.
+#
+#	train		Train speed
+#				s	Slow train:  4.5 beats per second
+#				q	Quick train:  5 beats per second
+#				b	This model was made as both slow and
+#					quick train
+#                               f       fast train:  5.5 beats per second
+#                               v       very fast train:  6 beast per second
+#				j	"Jitter bug"  40 beats per second
+#				?	Unknown
+#
+#	jewels		Number of jewels.  May be a range such as 13-15
+#
+#	adjustments	Number of adjustments.  May be a range as in A1P-A3P
+#
+#			A watch can be adjusted to heat, cold, isochronism
+#			and the 6 faces (positions) of a cube.
+#
+#			The two temperature adjustments require either
+#			a "split balance wheel", or materials that
+#			don't change with temperature such as "invar".
+#			A split balance isn't enough, however, to make
+#			it fully compensated.  You also have correctly
+#			place the timing screws.  So some watches are
+#			marked as being "temperature adjusted"
+#
+#			Isochronism is the ability of the watch to
+#			keep the same time when fully wound as when it
+#			is wound down.  This is done by selecting the
+#			right materials for the hairspring, the
+#			mainspring, by shaping the hairspring, and
+#			sometimes adding things like stop works and/or
+#			fuses.  In practice, no watch is really
+#			isochronic and it is not clear to me what
+#			watch manufactures actually mean by this.
+#
+#			Adjusting a watch to positions requires
+#			correct oiling, the shaping of the ends of the
+#			pinions, and adjusting the spread of the curb
+#			pins.  (among other things.)
+#
+#			Elign frequently marks watches as having "x
+#			adjustments", where 'x' is some number greater
+#			than three.  This means that it has been
+#			adjusted to temperature (2 adjustments),
+#			isochronism (1 adjustment) and x-3 positions.
+#
+#			For this database, I always translate this
+#			into the AnP form.
+#
+#			Until around 1910 or so, Elgin just marked
+#			their movements as "adjusted", and did not
+#			list the number of positions.  How many
+#			adjustments Elgin made varied by the grade of
+#			the watch.  I think that watches marked
+#			"adjusted" were always at least A1P, but I'm
+#			not certain.
+#
+#				U	Unadjusted
+#				A	Adjusted  (number of positions unknown)
+#				AT	Adjusted to temperature
+#				AP	Adjusted to positions
+#				AnP	Adjusted to 'n' positions
+#
+#	wi_avail	Is a wind indicator available for this grade?
+#				-	no, no wind indicator option
+#				WI	yes, this grade had wind indicators
+#
+#	wind_hrs	Number of hours that the watch would run when wound.
+#			A value of '-' means the default of 32 or 40, I'm not
+#			sure which.  
+#
+#	regulator	Type of regulator:
+#				f	The regulator can be freely moved
+#				e	The standard "elgin style" micrometric
+#					regulator.  The regulator is held in
+#					place by a "spool" shaped nut that is
+#					threaded on a curved rod.  Precise 
+#					adjustments can be made by turning the
+#					nut.
+#				r	The "railroad patent regulator".  This
+#					is similar to the standard "elgin"
+#					style regulator, except that it has a
+#					spring under the balance cock that
+#					holds the regulator to one side of the
+#					regulator nut.  This makes adjusting
+#					even more accurate.
+#				o	The "old style regulator".  This is
+#					found on some early 16s watches before
+#					the standard "elgin" style came out.
+#					it has a screw on the balance cock
+#					that can force the regulator in one
+#					direction only.
+#				b	the "ball style" regulator which has
+#					a 'J' shaped spring on top of the
+#					balance cock and a screw to move the
+#					regulator back and forth.
+#
+#	barrel		The type of mainspring barrel the watch has
+#				gb	The normal "going barrel" 
+#				mb	The "motor barrel".  It can be 
+#					distinguished by the 3 screws on the
+#					top of the barrel
+#				jb	The Jewelled "motor barrel".  Like
+#					the motor barrel, but with a jewelled
+#					staff to reduce friction.
+#
+#	names		The names that this watch was called by.  Most 
+#			pocket watches would have this name engraved on the
+#			movement, while wrist watches usually just had the
+#			name on the dial instead.  The same grade was sometimes
+#			labelled several different names, with some names
+#			being much rarer than others.
+#
+#			If a grade could either be named, or nameless, then
+#			the name of '-' is used to say that it was nameless.
+#
+#	comments	There are optional comments that start with a '#'.
+#			This comments will always be listed in the "notes"
+#			listing for this grade.
+#
+# Following the data line, there can be additional grade specific 
+# comment lines.  These lines have blanks or tabs before the '#' and these
+# comments will be listed in the search output if the "verbose" setting
+# is high enough.
+#
+
+# APWB-E pg 129 
+
+# grade class dial_size mvt_size plate style finish model setting train jewels adjustments wi_avail wind_hrs regulator barrel names comments
+
+#pg 1
+
+  1  25   16   -  3/4 h  g   3 l q     7       U  -   - f gb	# single plate or train&barrel bridges?
+
+  2  25   16   -  3/4 h  g   3 l q 13-15       U  -   - o gb  # REG_FREE also
+	# SN1467176 seen as 13j on ebay 172709099
+	# SN6350758 seen as having a train and a barrel bride, 15j, *not* marked "adjusted" and *doesn't* have the steel washer on the barrel on ebay 218385584
+	# SN630241 seen as 13j and has a steel washer on the barrel, *not* marked "adjusted" on ebay 237079636
+	# SN630244 seen as 13j REG_FREE, w/ a steel washer on the barrel and *not* marked "adjusted" on eay 246188115
+	# SN4093575 seen as having a train and a barrel bride, 15j, *not* marked "adjusted" and *doesn't* have the steel washer on the barrel on ebay 230803909
+	# SN6350273 seen as having a train and a barrel bride, 15j, *not* marked "adjusted" and *doesn't* have the steel washer on the barrel, does have REG_OLD_RR_PAT on ebay 310334765
+
+  3  24   16   -  3/4 h  g   3 l q    15       A  -   - ? gb
+	# SN2924654 seen marked as "15j Adjusted REG_OLD_RR_PAT" and *doesn't* have the steel washer on the barrel on ebay 202488768
+	# SN627525 seen marked as "15j Adjusted REG_FREE" and has the steel washer on the barrel on ebay 245557274
+	# SN3917482 seen as having a train and a barrel bridge, 15j, REG_OLD_RR_PAT and marked "Adjusted" on ebay 242037751
+	# SN1596805 seen as having a train and a barrel bridge, 15j, REG_OLD_RR_PAT and marked "Adjusted" on ebay 274792701  cant tell if it has a steel washer, 'cause the barrel bridge (and barrel, and other parts) are missing
+	# SN627695 seen as having a train and a barrel bridge, 15j, REG_FREE, steel barrel washer and marked adjusted on ebay 292467388
+	# SN1591318 seen with REG_OLD_RR_PAT on ebay 305585767
+	# SN2141385 seen with REG_OLD_RR_PAT on ebay 309511424
+	# SN2142769 seen with REG_OLD_RR_PAT on ebay 317287582
+
+  4  24   16   -  3/4 h  n   3 l q    15       A  -   - ? gb	# single plate or train&barrel bridges?
+	# SN2679096 seen marked as "Adjusted" on ebay 219452692
+	# SN1171031 seen marked as "Adjusted" and has a "steel barrel washer" on ebay 242319951
+	# SN1328680 seen marked as "Adjusted" and has a "steel barrel washer", but has a REG_FREE on ebay 258119963
+	# SN4991372 seen as having a train and a barrel bridge, REG_OLD_RR_PAT on ebay 253963860
+	# SN804778 seen marked as "Adjusted", has a "steel barrel washer" and a train and a barrel bridge, but has a REG_FREE on www.pmtime.com/pockets/elgin/pm670a.htm
+	# SN5101144 seen marked as "Adjusted", does *not* have a "steel barrel washer", does have a train and a barrel bridge, and has a REG_OLD_RR_PAT on ebay 308271859
+	# SN3785020 seen with a REG_OLD_RR_PAT on ebay 311278973
+	# SN628336 seen marked as "Adjusted", has a "steel barrel washer" and a train and a barrel bridge, but has a REG_FREE on ebay 318984488
+
+  5   5   18   -   fp h  n 2-4 l b    11       U  -   - f gb
+
+  6   6   18   -   fp h  g 2-4 l s     7       U  -   - f gb
+
+  7   6   18   -   fp h  g   1 k s     7       U  -   - f gb
+
+  8   5   18   -   fp h  g 2-4 l s     7       U  -   - f gb  OGD - AGE
+	# 1915 MC "Grade of Mvt" list implies this might be marked AGE(6), CHF(6)
+	# APWB-E says some of these are marked "Age" ca1874-1878
+	# SN57862[38] seen as "AGE 7j" does *not* have an elgin hairspring stud on ebay 322715102
+
+  9   5   18   -   fp h  g 2-4 l s     7       U  -   - f gb
+	# 1915 MC "Grade of Mvt" list implies this might be marked AGE(6), CHF(6)
+
+ 10   5   18   -   fp h  g 2-4 l b    11       U  -   - f gb
+	# 1915 MC "Grade of Mvt" list implies this might be marked ADV(4), OGD(4)
+
+ 11  15   17   -   fp h  g   2 l s     7       U  -   - f gb  LED
+	# 1915 MC "Grade of Mvt" list implies this might be marked LED(4)
+	# SN507387 seen marked as "Leader" on ebay 197810385
+
+ 12   5   18   -   fp h  g   1 k s  7-11       U  -   - f gb  OGD FAR FGO - AGE CHF
+	# the cuts in the 1871 almanac seem to imply that:
+	#	OGD has 3 jewels visible on the top plate, the escape wheel is not drawn.  (so it might be 11j or 15j)   w/ compensated balance
+	#	FAR has jewels on the 3rd & 4th wheel, and a solid balance
+	#	FGO has no jewels visible and a solid balance
+	# 1915 MC "Grade of Mvt" list implies this might be marked AGE(6), CHF(6), FGO(3)
+	# APWB-E says some of these are marked "Age" ca1868-1877
+	# SN266233 seen marked "MDOgden" and either 11j or 15j (said to be 11j) on ebay 228931975
+	# 11j contradicts the 1915 doc that says only 7 jewels
+
+ 13   5   18   -   fp h  g   1 k b    11       U  -   - f gb  - ADV
+	# 1915 MC "Grade of Mvt" list implies this might be marked ADV(4), FAR(2), OGD(4)
+	# SN1246903 seen as nameless on ebay 209074309
+
+ 14  15   17   -   fp h  g   1 k s     7       U  -   - f gb
+	# 1915 MC "Grade of Mvt" list implies this might be marked AVR(3), LED(4)
+
+ 15  15   17   -   fp h  g   1 k s    11       U  -   - f gb  LED
+ 	# seen marked as "leader" in shugart's pg 179
+
+ 16   4   18   -   fp h  g   1 k s     7       U  -   - f gb  LAF RYR
+	# 1915 MC "Grade of Mvt" list implies possible marking:  LAF(1), RYR(1)
+
+ 17   4   18   -   fp h  g   1 k s    11       U  -   - f gb
+
+ 18   5   18   -   fp h  g   1 k s    11       U  -   - f gb
+	# 1915 MC "Grade of Mvt" list implies possible marking:  ADV(4), FAR(2), OGD(4)
+
+ 19   5   18   -   fp h  g 2-4 l s    11       U  -   - f gb
+	# 1915 MC "Grade of Mvt" list implies possible marking:  ADV(4), OGD(4)
+
+ 20   3   18   -   fp h  g 2-4 l s    15       A  -   - f gb  TAY -	# "transitional" Either Keywind or pendant wind.
+	# 1915 MC "Grade of Mvt" list implies possible marking:  TAY(5)
+	# SN157224 seen as "HHTaylor Adjusted", 15j and transitional on ebay 229288409
+	# SN158128 seen as "HHTaylor Adjusted", 15j and transitional in my collection
+
+ 21  48   10   -  3/4 h  g  ?  k q     7       U  -   - f gb	# cases are hard to find
+	# 1915 MC "Grade of Mvt" list implies possible marking:  DEX(3)
+	# elgin doc list this as a "model 1", but I have used the "style number" instead
+
+ 22  48   10   -  3/4 h  g   4 k q    11       U  -   - f gb  GB -	# cases are hard to find
+	# 1915 MC "Grade of Mvt" list implies possible marking:  GB(1)
+	# elgin doc list this as a "model 1", but I have used the "style number" instead
+
+ 23  46   10   -  3/4 h  g   2 k q    15       A  -   - f gb  FR -	# cases are hard to find
+	# There is a lot of confusion on this grade
+	# 1915 MC says:
+	#         the grade list says that grade 23 is class 47, but the
+        #           class list says that class 47 doesn't have a grade 23.
+	#         The "name" section of the grades says that FR is in class 46
+	#	  there are no grades listed in class 46, just the name FR
+	# 1896 MC says:
+	#         class 47 contains grade 23, not 28
+	#         the "classification of mvts" says that FR is in class 46,
+	#         but it also says that G=23 is class 47
+	#	  there are no grades listed in class 46, just the name FR
+	#	  There are only three runs of G=23.  In the SN list, the
+	#	    first and last run are marked "FR C=46", the middle is
+	#           marked "G=23 C=47".  These ranges were later all called
+	#           G=23
+	# The last G=23 was made in 1875, so even the 1896 MC is "long after
+	# the fact"
+	#
+	# I'm going to say that this was really supposed to be C=46
+	#
+	# To add to the funkiness, the 1915 MC says that the LDY C=47 was 15j
+	#   but class 47 only has grades "23 (list as 28) and 29", and G=29
+	#   is only 11j.  See G=29 desc for more info
+	#
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FR(1)
+	# elgin doc list this as a "model 1", but I have used the "style 
+	# number" instead
+	#
+	# SN50456 seen marked "Adjusted" in Tom McIntyre's collection
+
+ 24  45   12   -  3/4 h  g   1 k q     7       U  -   - f gb
+
+ 25  45   12   -  3/4 h  g   1 k q    11       U  -   - f gb
+
+ 26  44   12   -  3/4 h  g   1 k q    15       ?  -   - f gb
+
+ 27   1   18   -   fp h  n 2-4 l q 15-17       A  -   - e gb  BWR - STD	# are there really unmarked mvts?
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FT(3), BWR(5)
+	# SN2127177 seen as "adj" (maybe 15j?) on ebay 185419526
+	# SN5736394 seen marked as "BWR Adj 17j" on ebay 193013166
+	# "High_grade_info" says I saw one of these marked as "Standard" on ebay
+	# SN5633227 seen as "BWR Adj 15j" on ebay 204164251
+	# SN2702233 seen as "BWR Adj 15j" on ebay 205880988
+
+ 28  48   10   -  3/4 h  g   4 k q     7       U  -   - f gb  DEX -	# cases are hard to find
+	# 1915 MC "Grade of Mvt" list implies possible marking:  DEX(3)
+	# elgin doc list this as a "model 1", but I have used the "style number" instead
+
+ 29  47   10   -  3/4 h  g   3 k q    11       U  -   - f gb  LDY -	# cases are hard to find
+	# 1915 MC "Grade of Mvt" list implies possible marking:  LDY(1)
+	#   I'm not 100% sure about this... it is supposed to be 15j.  However
+	#   the ranges which were marked in the 1896 MC as LDY are marked as
+	#   G=29 in the 1950.
+	#
+	# elgin doc list this as a "model 1", but I have used the "style number" instead
+	# SN164159 seen marked as "LDY" on ebay 203267649
+
+ 30  45   12   -  3/4 h  g   1 k q     7       U  -   - f gb
+
+ 31  45   12   -  3/4 h  g   1 k q     7       U  -   - f gb
+
+ 32  44   12   -  3/4 h  g   1 k q    11       U  -   - f gb
+
+ 33   3   18   -   fp h  n 2-4 l q    15       A  -   - e gb  TAY
+	# SN2701821 seen as "HHTaylor Adj" on ebay 194049323
+
+ 34  43   14   -  3/4 h  g   1 k q     7       U  -   - f gb	# "OF" or "HC" style?
+	# APWB-E lists two styles, one "Open Face" and one "Hunting".
+	# The 1915 MC lists only one style of 14s M=1 movement, which is
+	# the "HC style" that is in APWB-E.  (Townsend's "Everything" book
+	# also shows these two models, and actually the OF drawing in APWB=E 
+	# appears to be from Townsend's.)
+	#
+	# The "OF style" is a mirror image of the "HC style" except that the
+	# top plate is rounded across from the balance cock instead of cut
+	# flat.  
+	#
+	# So far, I have only seen pictures of the "OF style", and I'm not
+	# convinced that the "HC style" exists.
+
+
+ 35  43   14   -  3/4 h  g   1 k q     7       U  -   - f gb	# "OF" or "HC" style?
+	# see notes on grade 34
+
+ 36  43   14   -  3/4 h  g   1 k q    11       U  -   - f gb	# "OF" or "HC" style?
+	# see notes on grade 34
+
+ 37  42   14   -  3/4 h  g   1 k q    15       U  -   - f gb	# "OF" style
+	# see notes on grade 34
+	# SN389510 seen as "open face" style and *not* marked "Adjusted" on ebay 233324296  (later, could I have missed the "Adjusted"?)
+	# In Townsend's "Everything" book, There is a drawing with SN389001 on a "open face" style and marked "Adjusted" on the bottom plate by the balance
+
+ 38   3   18   -   fp h  g   1 k s    15       ?  -   - f gb
+	# 1915 MC "Grade of Mvt" list implies possible marking:  TAY(5)
+
+ 39  43   14   -  3/4 h  g   1 k q    13       ?  -   - f gb	# "OF" or "HC" style?
+	# see notes on grade 34
+	# In Townsend's "Everything" book, There is a drawing with SN351001 on a "hunter case" style and not marked "Adjusted"
+
+ 40  43   14   -  3/4 h  g   1 k q     7       U  -   - f gb	# "OF" or "HC" style?
+	# see notes on grade 34
+
+ 41  42   14   -  3/4 h  g   1 k q    13       ?  -   - f gb	# "OF" style
+	# see notes on grade 34
+	# SN2136023 seen as "open face" style and I don't think marked "Adjusted" on ebay 314874171
+
+ 42  42   14   -  3/4 h  g   1 k q    15       ?  -   - f gb	# "OF" or "HC" style?
+	# see notes on grade 34
+
+ 43  10   18   -   fp o  n   5 p q    11       U  -   - f gb
+	# half nickel
+
+ 44   9   18   -   fp o  n   5 p q 15-17     U-A  -   - e gb  GMW -
+	# 1915 MC "Grade of Mvt" list implies possible marking:  OVR(3), GMW(6)
+	# SN5741493 is clearly marked "GMW 17j Adj" on ebay 191976229.  This contradicts the 1915 doc that says only 15 jewels, and APWB-E which says 15j U
+	# SN5740480 seen as "GMW 15j" *not* marked "adjusted" on ebay 206847928
+
+ 45  51    6   -  3/4 h  n   1 l q    13       U  -   - f gb	# single plate or train&barrel bridges?
+	# SN2349775 seen *not* marked as "adjusted" on ebay 205473442
+	# SN4363537 seen as "nameless 13j", having a single top plate and *not* marked as "adjusted" on ebay 301202257
+	# SN3965810 seen as "13j", having a single top plate but too blury to determine name/adj on ebay 331462916
+
+ 46  42   14   -  3/4 h  n   1 k q    15       U  -   - f gb	# "OF" style
+	# see notes on grade 34
+	# SN474414 seen as "open face" style and *not* marked as "adjusted" in shugart's pg 184
+
+ 47  19   16   -  3/4 c  g   1 l q     7       U  -   - f gb
+
+ 48  18   16   -  3/4 c  g   1 l q    13       U  -   - e gb
+	# SN601674 seen *not* marked as "adjusted" and also it has a free regulator, not an elgin regulator!  ebay 200087555
+
+ 49  17   16   -  3/4 c  g   1 l q    15       A  -   - e gb
+	# SN606705 seen marked as "adjusted" (on bottom plate by balance) on ebay 226043751
+
+ 50  17   16   -  3/4 c  n   1 l q    15       A  -   - e gb
+	# SN4998591 seen marked as "adjusted" (on bottom plate by balance) on ebay 202398728
+
+ 51  15   17   -   fp h  g   1 k s     7       U  -   - f gb
+	# 1915 MC "Grade of Mvt" list implies possible marking:  AVR(3), LED(4)
+
+ 52  15   17   -   fp h  g   1 k s    11       U  -   - f gb
+
+ 53  48   10   -  3/4 h  g   1 k q     7       U  -   - f gb	# cases are hard to find
+	# 1915 MC "Grade of Mvt" list implies possible marking:  DEX(3)
+	# elgin doc list this as a "model 1", but I have used the "style number" instead
+	# 
+	# There is a cut in APWB-E that shows this as a "style number"
+	# of "5", but I think this is actually a "style 1".  The
+	# difference between the "style 1" and "style 5" is that the
+	# top plate is rounded across from the balance cock instead of
+	# cut flat.
+
+ 54  48   10   -  3/4 h  g  ?  k q    13       ?  -   - f gb	# cases are hard to find
+	# elgin doc list this as a "model 1", but I have used the "style number" instead
+
+ 55   5   18   -   fp h  g   1 k s     7       U  -   - f gb  RYR LAF FRY -
+	# the cuts in the 1871 almanac seem to imply that:
+	#	RYR has no jewels visible and a solid balance
+	#	LAF has no jewels visible and a compensated balance
+	#	FER has 4 jewels visible and a solid balance
+	# 1915 MC "Grade of Mvt" list implies possible marking:  AGE(6), CHF(6), FGO(3)
+	# SN254306 seen as "HMAvery"  cut out balance cock  The movement is marked "Manf: Elgin Ill.s", "Spuilo-Hurion Michigan" (I think, it is in script and hard to read)
+
+ 56   4   18   -   fp h  g   1 k s    11       U  -   - f gb
+
+ 57   4   18   -   fp h  g   1 k s 11-13       U  -   - f gb  GMW ADV -
+	# 11j contradicts the 1915 MC that says 13j. Just about everyone else disagrees
+	# APWB-E says some of these are marked "Advance"  ca1869-1874
+	# APWB-E says unadj
+	# APWB-E says 11j
+	# SN49293 seen in 1871 almanac as a cut (drawing) marked GMW, but *not* marked "Adjusted"   (and 1873)  desciption says "jewelled upper plate" -> 11j
+	# SN169168 seen as GMW 11j and *not* marked "adjusted" in my collection
+	# SN74850 seen as "GMW 11j" (too blury to tell if marked "adjusted") on ebay 278046374
+	# SN17705 seen as "GMW 11j" and *not* marked "adjusted" on ebay 299456131
+	# SN48572 seen as "GMW 11j" and *not* marked "adjusted" on ebay 310648571
+
+ 58   3   18   -   fp h  g   1 k s    15     U-A  -   - f gb  TAY -
+	# 1915 MC "Grade of Mvt" list implies possible marking:  TAY(5)
+	# 1873 almanac shows mvt marked "adjusted" and unmarked
+	# APWB-E says some of these are marked "H.A. Bedel" "Jackson, Ohio" Adjusted Ca 1874
+	# SN36970 seen as "HHTaylor" and *not* marked "adjusted" on ebay  206544491
+
+ 59  15   17   -   fp h  g   1 k s     7       U  -   - f gb  AVR - INT
+	# 1915 MC "Grade of Mvt" list implies possible marking:  AVR(3), LED(4)
+	# APWB-E says that some of these are marked "INT" (Inter-Ocean)
+
+ 60   5   18   -   fp h  g   1 k s     7       U  -   - f gb  - CHF
+	# 1915 MC "Grade of Mvt" list implies possible marking:  AGE(6), CHF(6), FGO(3)
+	# APWB-E says that some of these are marked "CHF"
+
+ 61   2   18   -   fp h  g   2 l q    15       A  -   - f gb  HZC -	# "transitional" Either Keywind or pendant wind.
+	# 1915 MC "Grade of Mvt" list implies possible marking:  HZC(2)
+	# SN235363 seen as "HZC 15 Adjusted" in Lex's collection
+
+ 62   2   18   -   fp h  g   1 k q    15     U-A  -   - f gb  HZC -
+	# 1915 MC "Grade of Mvt" list implies possible marking:  HZC(2)
+	# 1873 almanac shows mvt marked "adjusted" and unmarked
+	# SN43943 seen marked "HZC", but *not* marked "Adjusted" (according to email) on ebay 205310868
+	# SN170926 seen marked "HZC", but *not* marked "Adjusted" on ebay 211904939
+
+ 63   4   18   -   fp h  g 2-4 l s 11-13       U  -   - f gb  GMW -	# "transitional" Either Keywind or pendant wind.  are any really 13j?
+	# SN321054 seen as transitional, said to be "at least 11j", no mention of "Adjusted" on ebay 245415961
+	# SN346867 seen as transitional on ebay 268614211
+	# SN320781 seen as transitional and at least 11j, can't see any "Adjusted" markings on ebay 280610339
+	# SN321678 verified to be "11j" in Greg Fraunenhoff's collection
+	# SN376200 seen as transitional and at least 11j, and *not* marked "Adjusted" on ebay 301410021
+	# SN320781 seen as transitional and at least 11j, and *not* marked "Adjusted" on ebay 280610339
+
+ 64  51    6   -  3/4 h  g   1 l q     7       U  -   - f gb	# single plate or train&barrel bridges?
+
+ 65  51    6   -  3/4 h  g   1 l q    13       U  -   - f gb
+	# SN1798230 seen *not* marked as "adjusted" on ebay 221850778
+	# SN1798311 seen as having a single top plate on ebay 294549603
+	# SN2440321 seen as having a single top plate on ebay 306432844
+
+ 66  50    6   -  3/4 h  g   1 l q    15       U  -   - f gb	# single plate or train&barrel bridges?
+	# SN1373251 seen as having a single top plate on ebay 273233695
+	# SN1750989 seen as having a single top plate on ebay 330586369
+	# SN1468072 seen as having a single top plate on ebay 330180110
+
+ 67  50    6   -  3/4 h  n   1 l q    15       U  -   - f gb
+	# SN1793398 seen *not* marked as "adjusted" on ebay 202475363
+	# SN3545737 seen as having a single top plate on ebay 233626269
+	# SN2414973 seen as having a single top plate on ebay 302020949
+
+ 68   5   18   -   fp h  g 2-4 l s     7       U  -   - f gb  LAF -
+	# 1915 MC "Grade of Mvt" list implies possible marking:  AGE(6), CHF(6)
+
+ 69   1   18   -   fp h  g   1 k q    15     U-A  -   - ? gb  BWR -	# some are free regulators, some are elgin style 	# are there really unmarked mvts?
+	# 1915 MC "Grade of Mvt" list implies possible marking:  BWR(5)
+	# 1873 almanac shows mvt marked "adjusted" and *not* marked "adjusted"
+	# shugart's says that there are nameless 69's
+
+ 70   1   18   -   fp h  g 2-4 l q 15-17       A  -   - e gb  BWR NWC -	# are there really unmarked mvts?
+	# 1915 MC "Grade of Mvt" list implies possible marking:  BWR(5)
+	# SN3747841 seen as "BWR 15j Adj" on ebay 194646481
+	# SN1389629 seen as "BWR 15j Adj" on ebay 197859575
+	# SN571018 seen as "BWR Adj 15j" on ebay 199739608
+	# SN5637521 seen as "BWR 17j Adj" on ebay 200915779
+	# SN887523 seen as "BWR Adjusted 15j" on ebay 205142675
+	# SN1629707 seen as "BWR Adj 15j" on ebay 210091031
+	# SN1787160 seen as "BWR Adj 15j" on ebay 210646540
+	# SN4318873 seen as "BWR adjusted 15j" on ebay 211238467
+
+ 71  49    6   -  3/4 h  n   1 l q    17       A  -   - f gb	# single plate or train&barrel bridges?
+	# SN3006109 seen as having a single top plate and marked "Adjusted" (on balance cock) on ebay 276241091
+	# SN1458477 seen as having a single top plate (pic too blury to see anything else) on ebay 316923163
+
+ 72  16   16   -  3/4 c  n   1 l q    21       A  -   - e gb
+	# SN607113 seen marked "Adjusted" (on bottom plate near balance) on ebay 182844877
+
+ 73  11   18   -   fp o  g   5 p q     7       U  -   - f gb
+
+ 74  10   18   -   fp o  g   5 p q    11       U  -   - f gb
+
+ 75   9   18   -   fp o  g   5 p q 15-17     U-A  -   - e gb  GMW -
+	# 1915 MC "Grade of Mvt" list implies possible marking:  GMW(6)
+	# SN3051750 seen *not* marked as "adjusted" on ebay 197250924
+	# SN5934589 seen marked "GMW Adjusted 17 jewels" on ebay 202889749  you can see the screw for the center jewel setting
+	# SN3804207 seen *not* marked as "adjusted" and marked GMW, looks like 15j too.   ebay 200996185
+	# SN2365148 seen *not* marked as "adjusted" and marked GMW, looks like 15j too.   ebay 207653872
+	# SN5755028 seen *not* marked as "adjusted" nor "GMW", looks like 15j too.  ebay 207956152
+	# SN3515254 seen *not* marked "adjusted" nor "GMW", looks like 15j too.  ebay 231012789
+
+ 76   8   18   -   fp o  g   5 p q    15       A  -   - e gb  TAY -
+	# 1915 MC "Grade of Mvt" list implies possible marking:  TAY(1)
+	# SN5814587 seen marked "adjusted" on ebay 194269814
+	# SN2298397 seen marked "adjusted", not marked TAY on ebay 202626137
+
+ 77   7   18   -   fp o  g   5 p q 15-17       A  -   - e gb  BWR
+	# 1915 MC "Grade of Mvt" list implies possible marking:  BWR(4)
+	# 1896 MC says there are unmarked mvt, but I don't think so
+	# Shugart's says that the first FT was SN2300001 which is a G=77
+	# SN2300760 said to be 15j seen as BWR Adjusted on ebay 196327022
+
+ 78   5   18   -   fp h  n   1 k b    11       U  -   - f gb
+
+ 79   3   18   -   fp h  g   1 k q    15       A  -   - e gb  TAY
+	# 1915 MC "Grade of Mvt" list implies possible marking:  TAY(5)
+	# SN1151774 said to be "HHTaylor 15j Adjusted" on ebay 220362320
+	# SN867??? seen as "TAY 15j" and I think "adjusted" (blury pic, but there is scribbling in the right spot) on ebay 221533665
+	# SN1151375 seen as "TAY adjusted", but I can't see how many jewels on ebay 279083074
+
+#pg 2
+
+ 80   3   18   -   fp h  g 2-4 l q    15       A  -   - e gb  - TAY
+	# 1915 MC "Grade of Mvt" list implies possible marking:  TAY(5)
+	# SN2621942 seen marked as Adjusted but *not* marked HHTaylor on ebay 195454135
+
+ 81   4   18   -   fp h  g   1 k q 13-15       U  -   - ? gb  - GMW FRY	# not sure which naming is more common
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FRY(1), GMW(4)
+	# SN977920 seen as 13j, but can't tell if it is adjusted   ebay 205253578
+	# SN1209595 seen as "GMW 13j" and *not* marked 'adjusted" on ebay 216670489
+	# SN1394381 seen as "GMW 13j" and *not* marked "Adjusted" and is *not* REG_ELGIN on ebay 243644214
+	# SN854544 seen as "GMW 13j REG_FREE" on ebay 304973493
+
+
+ 82   4   18   -   fp h  g 2-4 l q 13-15       U  -   - e gb  GMW -	# not sure which naming is more common   # REG_FREE also
+	# 1915 MC "Grade of Mvt" list implies possible marking:  GMW(4)
+	# APWB-E says some of these are marked "R.W. Sears" (very rare)
+	# APWB-E says some of these are marked "W.G. Beasley" "Rich Hill, Mo."
+	#
+	# SN2573127 seen *not* marked as "adjusted" on ebay 191324385
+	# SN2574432 seen marked as GMW, 15j and *not* marked "adjusted" on ebay 191315347 (aka 202208624)
+	# SN4282815 said to be marked "GMW" on ebay 208339327
+	# SN870779 seen as "GMW 13j" and *not* marked "adjusted" on ebay 208480179
+	# SN4328078 seen as "GMW 15j" and *not* marked "adjusted" on ebay 208830737
+	# SN3391645 seen as "GMW 15j" and *not* marked "adjusted" on ebay 210272512
+	# SN994736 seen as "GMW 13j" and *not* marked "adjusted" on ebay 210455347
+
+ 83  27   16   -  3/4 s  g   4 l q    15       A  -   - f gb	# after Grades 83, 84, 89, sweep sec weren't made for 37 years
+	# SN943371 appears to be marked "Adjusted", but the pic is very blury on on ebay 272230581
+
+ 84  27   16   -  3/4 s  n   4 l q    15       A  -   - f gb	# after Grades 83, 84, 89, sweep sec weren't made for 37 years
+	# SN926111 seen marked "Adjusted" in my collection
+
+ 85  22   16   -  3/4 cb g   2 l q    15       A  -   - e gb
+
+ 86  22   16   -  3/4 cb n   2 l q    15       A  -   - e gb
+
+ 87   5   18   -   fp h  n   1 k q    11       U  -   - f gb
+	# half nickel
+
+ 88   5   18   -   fp h  n 2-4 l q    11       U  -   - f gb
+	# half nickel
+
+ 89  28   16   -  3/4 s  g   4 l q    13       U  -   - f gb	# after Grades 83, 84, 89, sweep sec weren't made for 37 years
+	# SN940374 looks to not be marked "adjusted" on ebay 268095389
+
+ 90  23   16   -  3/4 cb g   2 l q    13       U  -   - f gb
+	# SN941290 see *not* marked as "adjusted" in my collection
+
+ 91  21   16   -  3/4 cb n   2 l q    21       A  -   - e gb
+	# SN942035 seen marked "Adjusted" (on bottom plate near balance) in NAWCC v39/3 num 308 
+
+ 92  26   16   -  3/4 h  g   3 l q    11       U  -   - f gb
+	# SN2406490 seen as having a train and a barrel bridge on ebay 233459278
+	# SN11341497 seen as having a train and a barrel bridge on ebay 236042712
+	# SN3472324 seen as having a train and a barrel bridge on ebay 271810377
+
+ 93  20   16   -  3/4 c  g   1 l q    11       U  -   - f gb
+
+ 94  52    6   -  3/4 h  g   1 l q    11       U  -   - f gb
+	# SN2822901 seen as having a single top plate on ebay 229019012
+	# SN2170214 seen as having a single top plate on ebay 299904116
+
+ 95  52    6   -  3/4 h  g   1 l q     7       U  -   - f gb
+	# APWB-E says some of these are marked "Atlas"
+	# SN4379878 seen as having a single top plate on ebay 209872009
+	# SN2716133 seen as having a single top plate on ebay 218756983
+	# SN2189300 seen as having a single top plate on ebay 220465579
+	# SN2585334 seen as having a single top plate on ebay 224154402
+
+
+ 96   6   18   -   fp h  g 2-4 l q     7       U  -   - f gb
+
+ 97   6   18   -   fp h  g   1 k q     7       U  -   - f gb
+
+ 98  14   18   -  3/4 c  g   6 p q     7       U  -   - f gb
+
+ 99  13   18   -  3/4 c  g   6 p q    11       U  -   - f gb
+
+100  12   18   -  3/4 c  g   6 p q    15       U  -   - e gb
+	# SN1862397 seen as *not* marked "adjusted" on ebay 302141517
+
+101  52    6   -  3/4 h  n   1 l q    11       U  -   - f gb
+	# SN3733082 seen as a single bridge on ebay 227618440
+	# SN2506611 seen as a single bridge on ebay 212274573
+
+102   5   18   -   fp h  n 2-4 l q    11       U  -   - f gb
+	# half nickel
+
+103   4   18   -   fp h  n 2-4 l q    15       U  -   - e gb  GMW -
+	# SN5437520 seen *not* marked as "adjusted" and not marked GMW
+	# SN5707876 seen *not* marked as "adjusted" but marked GMW on ebay 191857645
+	# SN4668103 seen as marked GMW, could not see if it was marked Adjusted, but everything else was listed in the desc    ebay 205262208
+
+104  31   16   -  3/4 o  g   5 p q     7       U  -   - f gb
+	# SN2763661 seen as having a single top plate on ebay 228775299
+	# SN5332177 seen as having a single top plate on ebay 244699992
+	# SN4353497 seen as having a single top plate on ebay 307566521
+
+105  31   16   -  3/4 o  g   5 p q    11       U  -   - f gb
+	# SN3292232 seen as having a train and a barrel bridge
+
+106  30   16   -  3/4 o  g   5 p q 13-15       A  -   - o gb
+	# SN5387726 seen as having a train and a barrel bridge, 15j and *not* marked "Adjusted" on ebay 231266738
+	# SN2886712 seen as having a train and a barrel bridge, 13j and *not* marked "Adjusted" on ebay 230413357
+	# SN4627775 seen as having a train and a barrel bridge, 15j and I don't think it is marked "Adjusted" on ebay 309065971
+
+107  29   16   -  3/4 o  g   5 p q    15       A  -   - o gb	# single plate or train&barrel bridges?
+	# SN5302064 seen as having a train and a barrel bridge, and "nameless 15j Adjusted REG_OLD_RR_PAT" on ebay 278844434
+	# SN4628829 seen as having a train and a barrel bridge, and "nameless 15j Adjusted REG_OLD_RR_PAT" on ebay 317576933
+
+108  29   16   -  3/4 o  n   5 p q    15       A  -   - o gb
+	# SN2888707 seen as having a train and a barrel bridge on ebay 229638918
+	# SN4629287 seen as having REG_OLD_RR_PAT and marked "Adjusted" on ebay 275320766
+	# SN2961493 seen as having a train and a barrel bridge, REG_OLD_RR_PAT and marked "Adjusted" on ebay 330270376
+
+
+109  60    0   -  3/4 h  g   1 p q     7       U  -   - f gb
+	# seen *without* a screw on the balance bridge
+
+110  60    0   -  3/4 h  n   1 p q    11       U  -   - f gb
+
+111  58    0   -  3/4 h  n   1 p q    15       ?  -   - f gb
+	# seen *without* a screw on the balance bridge
+	# SN3072847 appears to not be marked Adjusted on ebay 220253447
+
+112  57    0   -  3/4 h  n   1 p q    17       ?  -   - f gb
+
+113  60    0   -  3/4 h  g   1 p q    11       U  -   - f gb
+	# seen *without* a screw on the balance bridge
+
+114  26   16   -  3/4 h  g   3 l q     7       U  -   - f gb
+	# Elgin's 1915 MC "grade of mvt" list says this is pend set, but model 3 is lever set.
+	# SN5777619 is lever set according to the seller on ebay 20811178
+	# SN6759732 seen as having a train and a barrel bridge on ebay 244983694
+	# SN5983462 seen as having a train and a barrel bridge on ebay 253801446
+	# SN3294657 seen as having a train and a barrel bridge on ebay 277537923
+
+115  59    0   -  3/4 h  n   1 p q    13       U  -   - f gb
+	# SN4050025 seen as 13j and *not* marked Adjusted on ebay 237283748
+
+116   7   18   -   fp o  n   5 p q 15-17       A  -   - e gb  BWR
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FT(3), BWR(4)
+	# 1896 MC says there are unmarked mvt, but I don't think so
+	# SN5719003 seen marked "BWR Adjusted" and is 17j in my collection
+	# SN4539830 is 15j  SN6676269, SN6676861 are 17j
+	# SN6676269 seen marked "17j adjusted" on ebay 185832294
+	# SN6676861 seen marked "adjusted" on ebay 193697859
+	# SN4051522 said to be "15j adjusted" on ebay 215436244
+
+117  56    6   -  3/4 h  g   2 p q     7       U  -   - f gb
+	# APWB-E says some of these are marked "Atlas"
+	# seen *without* a screw on the balance bridge
+
+118  56    6   -  3/4 h  g   2 p q    11       U  -   - f gb
+	# seen *without* a screw on the balance bridge
+
+119  56    6   -  3/4 h  n   2 p q    11       U  -   - f gb
+	# seen *without* a screw on the balance bridge
+
+120  55    6   -  3/4 h  n   2 p q    13       U  -   - f gb
+	# SN4681720 seen as 13j and *not* marked "Adjusted" on ebay 248937251
+
+121  54    6   -  3/4 h  n   2 p q    15       U  -   - f gb
+	# SN4500897 seen as *not* marked "Adjusted" on ebay 243594010  (pic blury, there is a chance I missed it, but...)
+
+122  53    6   -  3/4 h  n   2 p q    17       ?  -   - f gb
+
+123   9   18   -   fp o  g   5 p q 15-17       A  -   - e gb
+	# 1915 MC "Grade of Mvt" list implies possible marking:  GMW(6)
+	# 1915 MC says this is 15j
+	# SN4782365 clearly seen marked "nameless 17j Adjusted" on ebay 270380302  this contradicts the 1915 MC that says only 15j
+
+124   9   18   -   fp o  n   5 p q 15-17       A  -   - e gb
+	# 1915 MC "Grade of Mvt" list implies possible marking:  GMW(6)
+	# SN4686343 seen marked as "Adjusted" on ebay 213999066
+	# SN4988390 said to be "nameless 17j", but only train pl left in Greg Frauenhoff's collection  "5j showing -> 17j"
+
+125   4   18   -   fp h  g 2-4 l q    15       A  -   - e gb
+	# 1915 MC "Grade of Mvt" list implies possible marking:  GMW(4)
+	# SN4736178 seen marked as "Adjusted" on ebay 203747745
+
+126   4   18   -   fp h  n 2-4 l q    15       A  -   - e gb
+	# SN4739399 seen as "15j" and marked "Adjusted" on ebay 230395568
+
+127  26   16   -  3/4 h  n   3 l q    11       U  -   - f gb	# single plate or train&barrel bridges?
+	# SN5513501 seen as having a train and a barrel bridge on ebay 246388494
+
+128  31   16   -  3/4 o  n   5 p q    11       U  -   - f gb	# single plate or train&barrel bridges?
+	# SN5297626 seen as having a train and a barrel bridge on ebay 275679877
+	# SN5297867 seen as having a train and a barrel bridge on ebay 327288499
+
+129  60    0   -  3/4 h  g   1 p q    15       U  -   - f gb
+	# seen *without* a screw on the balance bridge
+	# SN7670668 seen *not* marked as "adjusted" on ebay 201950750
+
+130  60    0   -  3/4 h  n   1 p q    15       U  -   - f gb
+	# seen *without* a screw on the balance bridge
+	# SN7716001 seen *not* marked as "adjusted" on ebay 224006264
+
+131  58    0   -  3/4 h  n   1 p q    15       ?  -   - f gb
+
+132  56    6   -  3/4 h  g   2 p q    15       U  -   - f gb
+	# SN7675722 seen *not* marked as "adjusted" on ebay 194923444
+
+133  56    6   -  3/4 h  n   2 p q    15       U  -   - f gb
+	# SN7719755 seen *not* marked as "adjusted" on ebay 288523865
+
+134  54    6   -  3/4 h  n   2 p q    15       ?  -   - f gb
+
+135  26   16   -  3/4 h  g   3 l q    15       ?  -   - f gb	# single plate or train&barrel bridges?
+
+136  26   16   -  3/4 h  n   3 l q    15       U  -   - f gb	# single plate or train&barrel bridges?
+	# SN5734078 seen as having a train and a barrel bridge, "nameless 15j", and *not* marked "Adjusted" on ebay 272924008
+
+137  25   16   -  3/4 h  g   3 l q 13-15       ?  -   - o gb	# single plate or train&barrel bridges?
+
+138  31   16   -  3/4 o  g   5 p q    15       U  -   - f gb	# single plate or train&barrel bridges?
+	# SN5891421 seen as having a train and a barrel bridge, "nameless 15j", and *not* marked "Adjusted" on ebay 318927105
+
+139  31   16   -  3/4 o  n   5 p q    15       ?  -   - f gb	# single plate or train&barrel bridges?
+
+140  30   16   -  3/4 o  g   5 p q 13-15       ?  -   - o gb	# single plate or train&barrel bridges?
+
+141   5   18   -   fp h  g 2-4 l q    15       U  -   - f gb
+	# SN6984807 seen *not* marked as "adjusted" on ebay 192517563
+
+142   5   18   -   fp h  n 2-4 l q    15       U  -   - e gb
+	# half nickel
+	# SN6078165 seen *not* marked as "adjusted" on ebay 188995644
+
+143   4   18   -   fp h  g 2-4 l q 15-17     U-A  -   - e gb  GMW -
+	# 1915 MC "Grade of Mvt" list implies possible marking:  GMW(4)
+
+144   4   18   -   fp h  n 2-4 l q 15-17       A  -   - e gb  GMW -	# not sure which naming is more common
+	# 1915 MC "Grade of Mvt" list implies possible marking:  OVR(2)
+	# APWB-E says some of these are marked "The Atlantic" "N. Gamse NY" Adj 17j ca 1895
+	# SN6810300 seen as "17j adj" on ebay 193188860
+	# SN7617961 seen as "17j adj" *not* marked GMW on ebay 196952672
+
+145  10   18   -   fp o  g   5 p q    15       U  -   - f gb
+	# SN6197459 seen marked "15j", but *not* marked "adjusted" on ebay 232794880
+
+146  10   18   -   fp o  n   5 p q    15       ?  -   - e gb
+	# half nickel
+
+147   9   18   -   fp o  g   5 p q 15-17       A  -   - e gb  GMW
+	# 1915 MC "Grade of Mvt" list implies possible marking:  GMW(6)
+	# SN6100115 seen as "GMW 17j Adjusted" on ebay 283892704
+	# SN6200086 seen as "GMW 17j Adjusted" on ebay 300948886
+
+148   9   18   -   fp o  n   5 p q 15-17       A  -   - e gb  GMW -	# not sure which naming is more common
+	# 1915 MC "Grade of Mvt" list implies possible marking:  OVR(3) GMW(6)
+	# SN10248443.seen marked "GMW Adjusted" on ebay 195349929
+	# SN6144498 said to be "GMW 17j" on ebay 199585422
+
+149   1   18   -   fp h  n 2-4 l q 20-21       A  -   - e gb - 149 FT	# double roller starts at 10422401
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FT(2)
+	# 1904 MC "Grade of Mvt" list implies possible marking:  FT(1)
+	#        (note: 1904 MC does not yet have a G=348 and still has the
+	#         G=183 runs that were converted to G=348 later on)
+	# SN6433919 seen marked as "21j Adjusted" on ebay 197980380
+	# SN6677865 seen marked as "21j Adjusted" on ebay 211753140
+	# SN6361959 seen marked as "21j Adjusted" on ebay 218970317
+
+150   7   18   -   fp o  n   5 p q 20-21   A-A5P  -   - e gb  - FT 150
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FT(1)
+	# APWB-E does not mention G=150 as being a FT
+	# APWB-E says some of these are marked "H.E. Adams"
+	# SN6434477 said to be marked "21j Adjusted", but *not* Father Time on ebay 179781375  (from old data, pic had expired, but my notes don't mention FT either...)
+	# SN6457263 seen as "21j Adjusted nameless" on ebay 247950887
+	# SN6434035 seen as "21j 150 A5P" on ebay 268188193
+
+151  35   16   -  3/4 h  g   6 p q     7       U  -   - f gb
+
+152  35   16   -  3/4 h  n   6 p q    15       U  -   - e gb
+	# SN6597290 seen *not* marked as "adjusted" on ebay 192319185
+
+153  34   16   -  3/4 h  n   6 p q    17       A  -   - e gb
+	# SN8043142 seen marked "17j Adjusted" on ebay 217514950
+
+154  33   16   -  3/4 h  n   6 p q    17       A  -   - e gb
+	# SN6697901 seen marked "17j Adjusted" on ebay 237484668
+
+155  32   16   -  3/4 h  n   6 p q    17       A  -   - e gb
+	# SN6601812 seen marked "17j Adjusted" on ebay 332018003
+
+156  36   16   -  3/4 hb n   6 p q    21       A  -   - e gb  - LE	# very few are marked Lord Elgin  Shugart says first 16s double roller starts at 10249901, but what about G=162 8497301?
+	# 1915 MC "Grade of Mvt" list implies possible marking:  LE(1)
+	# SN6463287 seen marked "adjusted" and nameless in my collection
+
+157  40   16   -  3/4 o  g   7 p q     7       U  -   - f gb
+
+158  40   16   -  3/4 o  n   7 p q    15       ?  -   - e gb
+	# SN7029537 appears to be not marked "adjusted", (no mention in text, can't see it in the blury pic) on ebay 278137965
+
+159  39   16   -  3/4 o  n   7 p q    17       A  -   - e gb
+	# SN7778648 said to be marked "adjusted" on ebay 187158368
+
+160  38   16   -  3/4 o  n   7 p q    17       A  -   - e gb
+	# SN6607884 seen marked "17j Adjusted" on ebay 255980102
+
+161  37   16   -  3/4 o  n   7 p q    17       A  -   - e gb
+	# SN6468613 seen marked "17j Adjusted" on ebay 234044459
+
+162  41   16   -  3/4 ob n   7 p q    21       A  -   - e gb  - LE
+	# 1915 MC "Grade of Mvt" list implies possible marking:  LE(1)
+	# seen advertised as LE in "Bogle Brothers" JC in EWC pg 86
+	# shugart says that there is a "FT j=21 PS OF", and this is the only grade that matches (well, except the name)
+	# SN6469421 seen as "21j Adjusted" and nameless on ebay 240425835
+
+163   3   18   -   fp h  n 2-4 l q    17       A  -   - e gb  - OVR
+	# 1915 MC "Grade of Mvt" list implies possible marking:  OVR(1)
+	# SN6478258 is probably not marked "OVR", but I can't find an ebay number
+
+164   1   18   -   fp h  n 2-4 l q 17-21       A  -   - e gb  - FT
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FT(3), BWR(5)
+
+165   8   18   -   fp o  n   5 p q    17       ?  -   - e gb  - OVR
+	# 1915 MC "Grade of Mvt" list implies possible marking:  OVR(1)
+	# SN6498155 is probably not marked "OVR", but I can't find an ebay number
+
+166   7   18   -   fp o  n   5 p q    17       A  -   - e gb
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FT(3), BWR(4)
+	# SN6565050 seen as "nameless 17j Adjusted" in my collection
+	# SN6480713 seen as "nameless 17j Adjusted" on ebay 272898959
+
+167  58    0   -  3/4 h  n   1 p q    16       ?  -   - e gb
+
+168  54    6   -  3/4 h  n   2 p q    16       A  -   - e gb
+	# half nickel
+	# SN6798069 seen marked "16j Adjusted" on ebay 230547999
+#pg 3
+
+169   5   18   -   fp h  n 2-4 l q    15       U  -   - e gb
+	# half nickel
+	# SN6191984 seen *not* marked as "adjusted" on ebay 199753271
+
+170  10   18   -   fp o  n   5 p q    15       U  -   - e gb
+	# half nickel
+	# SN7258963 seen *not* marked as "adjusted" on ebay 187561253
+
+171   6   18   -   fp h  n 2-4 l q     7       U  -   - f gb
+	# half nickel
+
+172  11   18   -   fp o  n   5 p q     7       U  -   - f gb
+	# half nickel
+
+173  60    0   -  3/4 h  n   1 p q     7       U  -   - f gb
+	# half nickel
+	# seen *without* a screw on the balance bridge
+
+174  57    0   -  3/4 h  n   1 p q    17       ?  -   - e gb
+
+175  56    6   -  3/4 h  n   2 p q     7       U  -   - f gb
+	# half nickel
+	# seen *without* a screw on the balance bridge
+
+176  53    6   -  3/4 h  n   2 p q    17       ?  -   - e gb
+	# last grade mentioned in the 1896 MC
+
+177  ?     6   -  3/4 h  n   2 p q     7       U  -   - f gb  SUN ATL	# class and finish marked as ".." in 1915 MC grade of mvt list
+	# SN7388125 seen marked as "Sun Dial" nickel damaskeening on ebay 187278114
+	# SN7804490 seen as "Atlas" on dial & mvt, nickel damaskeening on ebay 297350197
+	# SN7395764 seen as "Sun Dial" on dial & mvt, nickel damaskeening on ebay 299981849
+	# SN7108476 dial and mvt said to be marked "Atlas Watch Co." on ebay 304082976  
+
+
+178  ?    18   -   fp h  n 2-4 l q     7       U  -   - f gb  SUN ATL -	# class and finish marked as ".." in 1915 MC grade of mvt list
+	# APWB-E says some of these are marked "Sun Dial"
+	# Note:  the inclusion of "-" (Nameless) is just to force unknown runs to not be marked as Atlas.  Although, SN7123453 may have been Nameless, I'm not 100% sure.
+	# SN7123453 seen marked as "Elgin", but *not* "Elgin National Watch Co.", and nickel damaskeening on ebay 234306946
+	# SN7085419 seen marked "Atlas Watch Co" on mvt and dial on ebay 256727889
+
+179  ?    18   -   fp o  n   5 p q     7       U  -   - f gb  ATL ACM SOL SUN	# class and finish marked as ".." in 1915 MC grade of mvt list
+	# APWB-E says some are marked "America" "Philadelphia, USA" on mvt and dial
+	# ebay 197172527 says "SN7156962 marked Atlas Watch Co (dial and maybe mvt)"  nickel damaskeening  seller: gfrauen@aol.com
+	# SN7538030 seen as "Acme Watch Co" on ebay 201073667
+	# SN7451734 said to be marked "Solar Watch Company, Chicago" on www.pmtime.com/pockets/elgin/pm423.htm
+	# SN7359883 seen as "Sun Dial" on mvt and dial on ebay 310577036
+
+180  65   18   -   fp o  n   7 l q    17       A  -   - e gb  BWR
+	# 1915 MC "Grade of Mvt" list implies possible marking:  BWR(3)
+	# SN8325079 seen as marked "BWR 17j Adjusted" on ebay 193793366
+
+181  65   18   -   fp o  n   7 l q    21       A  -   - e gb
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FT(4)
+	# SN8326121 seen marked "21j Adjusted" and nameless on ebay 251352081
+
+182  31   16   -  3/4 o  g   5 p q     7       U  -   - f gb	# single plate or train&barrel bridges?
+	# SN8888511 seen as having a single top plate on ebay 300299445
+
+183   1   18   -   fp h  n 2-4 l q    17       A  -   - e gb  BWR
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FT(3), BWR(5)
+	# SN7298741 seen as BWR Adjusted on ebay 184597173
+
+184   7   18   -   fp o  n   5 p q    17       A  -   - e gb  BWR	# many runs converted to G=273
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FT(3), BWR(4)
+	# SN7859034 seen as "BWR 17j Adjusted" on ebay 195403028
+
+185  35   16   -  3/4 h  g   6 p q    15       U  -   - e gb
+	# SN8274??? seen as *not* marked "Adjusted" on ebay 238772300
+
+186  40   16   -  3/4 o  g   7 p q    15       ?  -   - e gb
+	# SN8275414 seen *not* marked as "adjusted" on ebay 203959586
+
+187  70   12   -  3/4 h  n   2 p q    15       ?  -   - e mb
+
+188  69   12   -  3/4 h  n   2 p q    17       ?  -   - e mb
+
+189  68   12   -  3/4 h  n   2 p q    19     A5P  -   - e jb  BWR
+	# 1915 MC "Grade of Mvt" list implies possible marking:  BWR(1)
+	# 03/01/00 where did the "A5P" info come from?
+
+190  67   12   -  3/4 h  n   2 p q    23       A  -   - e jb  - LE	# is this really a LE?
+	# 1915 MC "Grade of Mvt" list implies possible marking:  LE(1)
+	# APWID-PG pg 20 shows a Hampden "Special Railway" as the "first American 21j movement in 1898.  However, the Elgin G=190 is supposed to be ca 1897.
+	# SN741209? seen as "23j Adjusted", but *not* marked LE in my collection
+
+191  74   12   -  3/4 o  n   3 p q    15       U  -   - e mb
+	# center wheel has a brass cup w/o a jewel!
+	# SN8188811 seen *not* marked as "adjusted" on ebay 219261115
+
+192  73   12   -  3/4 o  n   3 p q    17       A  -   - e mb
+	# SN7603363 seen as "17j Adjusted REG_ELGIN mb" on ebay 312503672
+
+193  72   12   -  3/4 o  n   3 p q    19       A  -   - e jb  - BWR
+	# 1915 MC "Grade of Mvt" list implies possible marking:  BWR(1)
+	# seen advertised as BWR in "Bogle Brothers" JC in EWC pg 90
+
+194  71   12   -  3/4 o  n   3 p q    23       A  -   - e jb  - LE	# is this really a LE?
+	# 1915 MC "Grade of Mvt" list implies possible marking:  LE(1)
+        # SN7499413 Shugart's pg 186 shows a mvt with this marked LE, but I think it was doctored by Elgin...
+	# seen advertised as LE in "Bogle Brothers" JC in EWC pg 90, but I think the pic was doctored by Elgin  (same as in shugart's)
+	# SN7425606 seen as "23j Adjusted", but *not* marked LE in my collection
+	# SN12147016 seen advertised as LE in "1913 Baird-North" JC pg F-30, and I don't think the pic was doctored
+
+195  31   16   -  3/4 o  g   5 p q    15       ?  -   - f gb	# single plate or train&barrel bridges?
+
+196  70   12   -  3/4 h  n   2 p q     7       U  -   - f mb
+	# half nickel
+
+197  74   12   -  3/4 o  n   3 p q     7       U  -   - f mb
+
+198  79    0   -  3/4 h  n   2 p q     7       U  -   - f mb
+
+199  78    0   -  3/4 h  n   2 p q    15       U  -   - f mb
+	# SN8146747 seen as "15j REG_FREE mb" and *not* marked "Adjusted" on ebay 246462851
+
+200  77    0   -  3/4 h  n   2 p q    17       ?  -   - e mb
+
+201  76    0   -  3/4 h  n   2 p q    19       A  -   - e jb  FR
+	# seen implied advertising as Adjusted in "Bogle Brothers" JC in EWC pg 92
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FR(1)
+
+202  83    0   -  3/4 o  n   3 p q     7       U  -   - f mb
+	# half nickel
+
+203  82    0   -  3/4 o  n   3 p q    15       ?  -   - f mb
+
+204  81    0   -  3/4 o  n   3 p q    17       ?  -   - e mb
+
+205  80    0   -  3/4 o  n   3 p q    19       A  -   - e jb  FR	# adj is a guess based on having seen a G=201
+	# seen implied advertising as Adjusted in "Bogle Brothers" JC in EWC pg 92
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FR(1)
+
+206  75    6   -  3/4 h  n   2 p q     7       U  -   - f gb
+	# half nickel
+	# seen with a screw on the balance bridge
+
+207  61   18   -   fp h  n 2-4 l q     7       U  -   - f gb
+	# half nickel
+
+208  63   18   -   fp o  n   5 p q     7       U  -   - f gb
+	# half nickel
+
+209  75    6   -  3/4 h  g   2 p q     7       U  -   - f gb
+
+210  92   16   -  3/4 h  n   6 p q     7       U  -   - f gb
+	# half nickel
+
+211  94   16   -  3/4 o  n   7 p q     7       U  -   - f gb
+	# half nickel
+
+212  92   16   -  3/4 h  g   6 p q     7       U  -   - f gb
+
+213  94   16   -  3/4 o  g   7 p q     7       U  -   - f gb
+
+214  89   18   -  3/4 o  n   8 l q    23   A-A5P  -   - r jb  VER
+	# 1915 MC "Grade of Mvt" list implies possible marking:  VER(1)
+	# 1950 MC says "REG_RR" started in 13425501
+	# seen advertised as VER in "Bogle Brothers" JC in EWC pg 82
+	# SN13121612 seen marked "A5P" on ebay 193091541
+	# SN9542625 seen marked "Adjusted" on ebay 210984044
+	# SN16022964 seen marked "A5P" on ebay 213161326
+
+215  63   18   -   fp o  g   5 p q     7       U  -   - f gb
+
+216  75    6   -  3/4 h  n   2 p q    15       U  -   - f gb
+	# half nickel
+	# seen with a screw on the balance bridge
+	# SN9123039 seen *not* marked "adjusted" on ebay 199823039
+
+217  61   18   -   fp h  n 2-4 l q    15       U  -   - f gb
+	# half nickel
+	# SN9713255 seen *not* marked "adjusted" on ebay 196275315
+	# SN9768941 seen *not* marked "adjusted" on ebay 196443761
+
+218  63   18   -   fp o  n   5 p q    15       U  -   - f gb
+	# half nickel
+
+219  84    0   -  3/4 h  g   1 p q     7       U  -   - f gb
+
+220  92   16   -  3/4 h  n   6 p q    15       U  -   - f gb
+	# half nickel
+	# SN9894066 seen *not* marked "adjusted" on ebay 210694596
+
+221  94   16   -  3/4 o  n   7 p q    15       U  -   - f gb
+	# half nickel
+	# SN10439878 seen *not* marked as "adjusted" on ebay 193749396
+
+222  84    0   -  3/4 h  n   1 p q     7       U  -   - f gb
+	# half nickel
+	# seen with a screw on the balance bridge
+
+223  84    0   -  3/4 h  n   1 p q    15       U  -   - f gb
+	# half nickel
+	# seen with a screw on the balance bridge
+	# SN9076924 seen *not* marked as "adjusted" on ebay 198669855
+
+224  85    0   -  3/4 h  n   2 p q    11       U  -   - f mb	# is this right: motor barrel w/ free regulator?
+	# half nickel
+
+225  86    0   -  3/4 o  n   3 p q    11       U  -   - f mb	# is this right: motor barrel w/ free regulator?
+	# half nickel
+
+226   5   18   -   fp h  g 2-4 l q    17       U  -   - f gb
+	# SN8039409 seen marked "17j", namless and *not* marked "Adjusted" on ebay 247758980
+
+227  10   18   -   fp o  g   5 p q    17       ?  -   - f gb
+
+228   5   18   -   fp h  n 2-4 l q    17       ?  -   - e gb
+	# half nickel
+
+229  10   18   -   fp o  n   5 p q    17       U  -   - e gb
+	# half nickel
+	# SN8227833 seen *not* marked as "adjusted" on ebay 197440365
+
+230  56    6   -  3/4 h  g   2 p q    16       U  -   - f gb
+	# SN8174790 seen *not* marked as "adjusted" on ebay 221841476
+
+231  56    6   -  3/4 h  n   2 p q    16       U  -   - f gb
+	# SN8002051 seen *not* marked as "adjusted" on ebay 241963149
+
+232  87   12   -  3/4 h  n   2 p q     7       U  -   - f gb
+	# half nickel
+
+233  87   12   -  3/4 h  n   2 p q    15       U  -   - f gb
+	# half nickel
+	# SN9440244 seen *not* marked as "adjusted" on ebay 263727046
+
+234  88   12   -  3/4 o  n   3 p q     7       U  -   - f gb
+	# half nickel
+
+235  88   12   -  3/4 o  n   3 p q    15       U  -   - f gb
+	# half nickel
+	# SN9190986 seen *not* marked as "adjusted" on ebay 278012143
+
+236  68   12   -  3/4 h  n   2 p q    21       A  -   - e mb
+	# SN8539450 seen as "nameless 21j Adjusted" on ebay 313674415
+
+237  72   12   -  3/4 o  n   3 p q    21       ?  -   - e mb
+
+238  61   18   -   fp h  g   1 k q     7       U  -   - f gb
+
+239  90   18   -  3/4 o  n   8 l q    21   A-A5P  -   - r mb  VER 349	# is this really A5P?  # being marked "349" is very rare
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FT(2), VER(2)
+	# seen advertised as VER in "Bogle Brothers" JC in EWC pg 82
+	# SN10441800 seen marked as "VER Adjusted" on ebay 187458208
+	# SN15574513 seen marked as "No 349 A5P" in Bob Cantor's collection.  He says that he has heard of at least one more marked like this
+
+240  91   18   -  3/4 o  n   8 l q    19   A-A5P WI   - r mb  BWR
+	# are mvt before SN11451001 not marked as BWR?  (this is implied by the 1915 MC)  (from what I can tell, they are all marked BWR...  Hmmm..
+	# 1915 MC "Grade of Mvt" list implies possible marking:  BWR(1)
+	# seen advertised as BWR in "Bogle Brothers" JC in EWC pg 84
+	# the page of WI parts and diagrams in EWC lists 240 as the basis for the diagrams
+	# SN9776689 seen marked as "BWR adjusted" in my collection
+	# SN13745156 seen marked as "BWR A5P" on ebay 197920293
+	# SN11586231 seen marked as "BWR Adjusted" on ebay 211211704
+	# SN9776613 seen marked as "BWR Adjusted" on ebay 210352971
+
+241  33   16   -  3/4 hb n   6 p q    17       A  -   - e gb
+	# 1915 MC "Grade of Mvt" list implies possible marking:  GMW(4)
+
+242  33   16   -  3/4 hb n   6 p q    17       A  -   - e gb
+	# 1915 MC "Grade of Mvt" list implies possible marking:  GMW(4)
+	# SN10375344 seen marked as "adjusted" on ebay 191088270
+
+243  32   16   -  3/4 hb n   6 p q    17       ?  -   - e gb
+
+244  38   16   -  3/4 ob n   7 p q    17       A  -   - e gb
+	# 1915 MC "Grade of Mvt" list implies possible marking:  GMW(3)
+
+#245  38   16   -  3/4 ob n   7 p q    17       ?  -   - e gb    # listed in 1950 MC, but not used
+
+246  37   16   -  3/4 ob n   7 p q    17       ?  -   - e gb
+
+247  93   16   -  3/4 hb n   6 p q    15       U  -   - e gb
+	# half nickel
+	# SN10008184 seen *not* marked "adjusted" on ebay 200937812
+
+248  95   16   -  3/4 ob n   7 p q    15       U  -   - e gb
+	# half nickel
+	# SN10629780 seen *not* marked "adjusted" on ebay 212745425
+
+249  62   18   -   fp h  g 2-4 l q    17       A  -   - e gb
+	# SN10176540 seen as "17j Adjusted" on ebay 212783477
+
+250  64   18   -   fp o  g   5 p q    17       A  -   - e gb
+	# SN10444515 seen marked "Adj" on ebay 192121433
+
+251  61   18   -   fp h  g 2-4 l q     7       U  -   - f gb
+
+252  65   18   -   fp o  n   7 l q    21       A  -   - e gb  FT
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FT(4)
+	# SN10813180 seen marked "Adj" on ebay 194991454
+
+253  87   12   -  3/4 h  g   2 p q     7       U  -   - f gb
+
+254  88   12   -  3/4 o  g   3 p q     7       U  -   - f gb
+
+255  97 10/0   -  3/4 o  n   1 p q    15       U  -   - f gb  LDY
+	# 1915 MC "Grade of Mvt" list implies possible marking:  LDY(2)
+	# seen implied advertising as Unadjusted in "Bogle Brothers" JC in EWC pg 92
+	# SN10446472 seen as "Lady elgin" *not* marked "adjusted on ebay 204463797
+
+256  96 10/0   -  3/4 o  n   1 p q    17       ?  -   - f gb
+	# 1915 MC "Grade of Mvt" list implies possible marking:  LDY(2)
+	# seen implied advertising as Unadjusted in "Bogle Brothers" JC in EWC pg 92
+
+257  92   16   -  3/4 h  n   6 p q    15       ?  -   - e gb
+	# half nickel
+#pg 4
+
+258  94   16   -  3/4 o  n   7 p q    15       U  -   - e gb
+	# half nickel
+
+259  87   12   -  3/4 h  n   2 p q    15       ?  -   - e gb
+	# half nickel
+
+260  88   12   -  3/4 o  n   3 p q    15       U  -   - e gb
+	# half nickel
+	# SN8986419 seen as *not* marked "Adjusted" on ebay 247915507
+
+261  61   18   -   fp h  n 2-4 l q    15       ?  -   - e gb
+	# half nickel
+
+262  63   18   -   fp o  n   5 p q    15       ?  -   - e gb
+	# half nickel
+
+263  77    0   -  3/4 h  n   2 p q    17       A  -   - e gb
+	# seen implied advertising as Adjusted in "Bogle Brothers" JC in EWC pg 92
+	# SN16411482 seen as "17j Adjusted" on ebay 322913860
+
+264  81    0   -  3/4 o  n   3 p q    17       A  -   - e gb
+	# seen implied advertising as Adjusted in "Bogle Brothers" JC in EWC pg 92
+	# SN16482582 seen as "17j Adjusted" on ebay 295990437
+
+265  66   18   -   fp o  n   7 l q    17       ?  -   - e gb
+	# 1915 MC "Grade of Mvt" list implies possible marking:  OVR(2)
+
+266  65   18   -   fp o  n   7 l q 17-21       A  -   - e gb - FT
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FT(4), BWR(3)
+	# APWB-E says this can be nameless or FT, but no mention of BWR
+	# SN6655197 seen as "FT 21j Adjusted" on www.pmtime.com/pockets/elgin/ke103.htm
+
+267  85    0   -  3/4 h  n   2 p q    15       U  -   - f gb
+	# half nickel
+	# SN10449489 seen *not* marked as "adjusted" on ebay 197561873
+
+268  86    0   -  3/4 o  n   3 p q    15       ?  -   - f gb
+	# half nickel
+
+269  85    0   -  3/4 h  n   2 p q     7       U  -   - f gb
+	# half nickel
+
+270  98   16   -  3/4 ob n   9 l q    21       A  -   - e gb  270 VER	# Veritas is less common
+	# 1915 MC "Grade of Mvt" list implies possible marking:  VER(1)
+	# SN11824744 seen marked as "Veritas" on ebay 160346868
+	# SN11635236 said to be marked "270" on ebay 155936393
+	# SN12784371 seen marked as "Veritas Adjusted" in my collection
+	# SN9305266 seen marked as "270 Adjusted" in my collection
+	# SN12784038 said to be marked "Veritas" on ebay 203917550
+	# SN12784xxx seen marked as "Veritas Adjusted" on ebay 207223474
+
+271  60    0   -  3/4 h  n   1 p q    16       ?  -   - e gb
+
+272  56    6   -  3/4 h  n   2 p q    16       ?  -   - e gb
+
+273  65   18   -   fp o  n   7 l q    17       ?  -   - e gb
+	# 1915 MC "Grade of Mvt" list implies possible marking:  BWR(3)
+
+274  99   18   -  3/4 h  n   9 l q    21     A5P  -   - e mb  274 VER FT BWR -	# BWR is rarest, 274 the most common
+	# The NAWCC bulletin v39/5 num 310 has a good article on the G=274
+	# The quick summary is that there were at most 87 BWRs, 321 FTs, 
+	# 1373 VERs, and 2219 274s.
+	#
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FT(1), BWR(1), VER(1)
+	# the 1950 MC says that this should be REG_RR_PAT, but Bob Cantor says that he has never seen one so equiped.
+	# SN10513868 seen marked "274 A5P REG_ELGIN" on ebay 211753214
+	# SN10854944 said to be namless (not marked 274, just Elgin) by Greg Frauenhoff
+
+275 100   12   -  3/4 h  n   2 p q    17       A  -   - e gb
+	# half nickel
+	# SN10388856 seen as "nameless 17j Adjusted" (adjusted on balance cock, but real blury) on ebay 299468681
+
+276 101   12   -  3/4 o  n   3 p q    17       ?  -   - e gb
+	# half nickel
+
+277  65   18   -   fp o  n   7 l q    21       A  -   - e gb    # listed in 1915 MC, but not used
+	# SN8490094 seen as "nameless 21j Adjusted" on ebay 300970239
+
+278   4   18   -   fp h  n 2-4 l q    17       ?  -   - e gb  OVR
+	# 1915 MC "Grade of Mvt" list implies possible marking:  OVR(2)
+	# SN10123828 seen as "OVR 17j", pic too blury to tell if it is adjusted or not  on ebay 288340171
+
+279   9   18   -   fp o  n   5 p q    17       A  -   - e gb  OVR
+	# 1915 MC "Grade of Mvt" list implies possible marking:  OVR(3)
+	# SN10125018 seen marked "Overland Adjusted" (missing barrel bridge, so can't tell if it is marked 17j) in my collection
+	# SN11507134 seen marked "Overland 17j Adjusted" in my collection
+
+280 102   16   -  3/4 ob n   9 l q    17       A  -   - e gb  - BWR 280
+	# 1915 MC "Grade of Mvt" list implies possible marking:  BWR(1)
+	# according to Shugart's the BWR marking is 2-star (<1000 made), while the ones marked "280" are "common" (>2500) and unmarked ones are even more common.
+	# SN10855550 seen marked "BWR Adjusted" on ebay 198092073
+	# SN10128573 seen marked "280 Adjusted" on ebay 236970582
+
+281  85    0   -  3/4 h  n   2 p q    11       U  -   - f gb
+	# half nickel
+
+282  86    0   -  3/4 o  n   3 p q     7       U  -   - f gb
+	# half nickel
+
+283  66   18   -   fp o  n   7 l q    17       ?  -   - e gb
+	# 1915 MC "Grade of Mvt" list implies possible marking:  OVR(2)
+
+284  75    6   -  3/4 h  g   2 p q    15       ?  -   - f gb
+
+285  63   18   -   fp o  g   5 p q    15       ?  -   - f gb
+
+286 115    6   -  3/4 h  n   2 p q     7       U  -   - f gb
+	# half nickel
+	# seen with a screw on the balance bridge
+
+287 105   18   -   fp h  n 2-4 l q     7       U  -   - f gb
+	# half nickel
+
+288 106   18   -   fp o  n   5 p q     7       U  -   - f gb
+	# half nickel
+
+289 115    6   -  3/4 h  g   2 p q     7       U  -   - f gb
+	# seen with a screw on the balance bridge
+
+290 109   16   -  3/4 h  n   6 p q     7       U  -   - f gb
+	# half nickel
+
+291 110   16   -  3/4 o  n   7 p q     7       U  -   - f gb
+	# half nickel
+
+292 109   16   -  3/4 h  g   6 p q     7       U  -   - f gb
+
+293 110   16   -  3/4 o  g   7 p q     7       U  -   - f gb
+
+294 106   18   -   fp o  g   5 p q     7       U  -   - f gb
+
+295 115    6   -  3/4 h  n   2 p q    15       U  -   - f gb
+	# half nickel
+	# seen with a screw on the balance bridge
+	# seen implied advertising as Unadjusted in "Bogle Brothers" JC in EWC pg 91
+	# SN10781515 seen as *not* marked as "adjusted" on ebay 191090348
+
+296 105   18   -   fp h  n 2-4 l q    15       U  -   - f gb
+	# half nickel
+	# SN12243714 seen as *not* marked as "adjusted" on ebay 199842123
+	# SN10736470 seen as *not* marked as 'adjusted" on ebay 202111174
+
+297 106   18   -   fp o  n   5 p q    15       U  -   - f gb
+	# half nickel
+	# SN11222541 seen as *not* marked as "adjusted" on ebay 191951118
+
+298 116    0   -  3/4 h  g   2 p q     7       U  -   - f gb
+
+299 109   16   -  3/4 h  n   6 p q    15       U  -   - f gb
+	# half nickel
+	# SN11324192 seen as *not* marked as "adjusted" on ebay 210529312
+
+300 110   16   -  3/4 o  n   7 p q    15       U  -   - f gb
+	# half nickel
+	# SN11481902 seen as *not* marked as "adjusted" on ebay 203188336
+
+301 113   12   -  3/4 h  n   2 p q     7       U  -   - f gb
+	# half nickel
+
+302 113   12   -  3/4 h  n   2 p q    15       U  -   - f gb
+	# half nickel
+	# SN11484698 seen as *not* marked as "adjusted" on ebay 254450375
+
+303 114   12   -  3/4 o  n   3 p q     7       U  -   - f gb
+	# half nickel
+
+304 114   12   -  3/4 o  n   3 p q    15       ?  -   - f gb
+	# half nickel
+
+305 107   16   -  3/4 hb n   6 p q    15       U  -   - e gb
+	# half nickel
+	# SN10956608 seen as *not* marked as "adjusted" on ebay 206317997
+
+306 108   16   -  3/4 ob n   7 p q    15       U  -   - e gb
+	# half nickel
+	# ebay 218922828 has a watch that is almost certainly a 306 and is pretty clearly not marked as Adjusted  11???2?6 s=16 n of b j=15
+	# SN11654777 seen as *not* marked "Adjusted" on ebay 253226692
+
+307 103   18   -   fp h  g 2-4 l q    17       A  -   - e gb
+	# SN10760704 seen marked as "adjusted" on ebay 185397776
+
+308 104   18   -   fp o  g   5 p q    17       A  -   - e gb
+	# SN11494353 seen marked "adjusted" in my collection
+
+309 105   18   -   fp h  g 2-4 l q     7       U  -   - f gb
+
+310 113   12   -  3/4 h  g   2 p q     7       U  -   - f gb
+
+311 114   12   -  3/4 o  g   3 p q     7       U  -   - f gb
+
+312 109   16   -  3/4 h  n   6 p q    15       U  -   - e gb
+	# half nickel
+	# seen implied advertising as Unadjusted in "Bogle Brothers" JC in EWC pg 88
+	# SN24836159 seen *not* marked as "adjusted" on ebay 188081693
+	# SN12479894 seen with gold screws on ebay 306784825
+
+313 110   16   -  3/4 o  n   7 p q    15       U  -   - e gb
+	# half nickel
+	# seen implied advertising as Unadjusted in "Bogle Brothers" JC in EWC pg 88
+	# SN13233641 seen with gold screws on ebay 217117143
+	# SN18909902 said to be "two-tone" in Jon Hanson's collection
+
+314 113   12   -  3/4 h  n   2 p q    15       U  -   - e gb
+	# half nickel
+	# seen implied advertising as Unadjusted in "Bogle Brothers" JC in EWC pg 91
+	# SN24023432 seen *not* marked as "adjusted" on ebay 199820441
+
+315 114   12   -  3/4 o  n   3 p q    15       U  -   - e gb
+	# half nickel
+	# seen implied advertising as Unadjusted in "Bogle Brothers" JC in EWC pg 91
+
+316 105   18   -   fp h  n 2-4 l q    15       U  -   - e gb
+	# half nickel
+	# seen implied advertising as Unadjusted in "Bogle Brothers" JC in EWC pg 85
+	# SN13264322 seen *not* marked as "adjusted" on ebay 219261572
+
+317 106   18   -   fp o  n   5 p q    15       U  -   - e gb
+	# half nickel
+	# seen implied advertising as Unadjusted in "Bogle Brothers" JC in EWC pg 85
+	# shugart says that some of these are marked "adjusted"
+	# SN22447396 seen *not* marked as "adjusted" on ebay 189588920
+	# SN24434840 seen *not* marked as "adjusted" on ebay 189676808
+
+318 116    0   -  3/4 h  n   2 p q    15       U  -   - f gb
+	# half nickel
+	# SN11015695 seen *not* marked as 'adjusted" on ebay 219532912
+
+319 117    0   -  3/4 o  n   3 p q    15       U  -   - f gb
+	# half nickel
+	# SN12582884 seen as "nameless 15j" and *not* marked "adjusted" on www.pocketwatcher.org/elgin.html
+
+320 116    0   -  3/4 h  n   2 p q     7       U  -   - f gb
+	# half nickel
+	# SN13874247 seen as having gold screws on ebay 213237820
+
+321 111   12   -  3/4 h  n   2 p q    17       A  -   - e gb
+	# half nickel
+	# 1915 MC "Grade of Mvt" list implies possible marking:  GMW(2)
+	# sn11503629 seen as Adjusted on ebay 186885909
+
+322 112   12   -  3/4 o  n   3 p q    17       ?  -   - e gb
+	# half nickel
+	# 1915 MC "Grade of Mvt" list implies possible marking:  GMW(2)
+
+323 116    0   -  3/4 h  n   2 p q    11       U  -   - f gb
+	# half nickel
+
+324 117    0   -  3/4 o  n   3 p q     7       U  -   - f gb
+	# half nickel
+
+325 115    6   -  3/4 h  g   2 p q    15       U  -   - f gb
+	# SN14567375 seen *not* marked as "adjusted" on ebay 209938786
+
+326 106   18   -   fp o  g   5 p q    15       U  -   - f gb
+	# last grade mentioned in the 1904 MC
+	# no adjust mark seen on ebay 183997882
+
+327 118   18   -   fp h  n  10 l q    16       ?  -   - b gb  333	# Made for Ball Watch Co   marked "333" on mvt(?)
+	# Dan Andersion says:  "Commercial Standard"
+
+328 118   18   -   fp h  n  10 l q    17       ?  -   - b gb  333	# Made for Ball Watch Co   marked "333" on mvt(?)
+	# Dan Andersion says:  "Commercial Standard"
+
+329 119   18   -   fp h  n  10 l q    17       ?  -   - b gb  333	# Made for Ball Watch Co
+	# Dan Andersion says:  "Railroad Standard"
+	# SN11958187 is seen marked "333" on mvt on ebay 176126772
+
+330 119   18   -   fp h  n  10 l q    21       ?  -   - b gb  333	# Made for Ball Watch Co   marked "333" on mvt(?)
+	# Dan Andersion says:  "Railroad Standard"
+
+331 120   18   -   fp o  n  11 p q    16       ?  -   - b gb  333	# Made for Ball Watch Co   marked "333" on mvt(?)
+	# Dan Andersion says:  "Commercial Standard"
+	# SN11853068 seen as being marked "  (later: too old to finish this line)
+
+332 120   18   -   fp o  n  11 p q    17       A  -   - b gb  333	# Made for Ball Watch Co
+	# Dan Andersion says:  "Commercial Standard"
+	# SN11855455 seen as "17j Adjusted 'Commercial Standard' 'Ball Wach co Cleveland O'" (not marked "333" on mvt) on ebay 285862313
+
+333 121   18   -   fp o  n  11 l q    17       A  -   - b gb  333	# Made for Ball Watch Co   marked "333" on mvt
+	# APWB-E says:  "Railroad Standard"
+	# SN11857131 seen as "333 17j Adjusted 'official RR standard'" on ebay 310529738
+
+334 121   18   -   fp o  n  11 l q    21       ?  -   - b gb  333	# Made for Ball Watch Co   marked "333" on mvt(?)
+	# according to TOWRR, this is marked "333" on mvt
+	# Dan Andersion says:  "Railroad Standard"
+
+335 105   18   -   fp h  n 2-4 l q    17       U  -   - e gb
+	# 1915 MC lists this as begin just "model 4", but this is the only grade that isn't marked as 2-4
+	# seen implied advertising as Unadjusted in "Bogle Brothers" JC in EWC pg 85
+	# SN12002092 seen *not* marked as "adjusted" on ebay 194844375
+
+336 106   18   -   fp o  n   5 p q    17       U  -   - e gb
+	# seen implied advertising as Unadjusted in "Bogle Brothers" JC in EWC pg 85
+	# SN22375561 seen *not* marked as "adjusted" on ebay 188086590
+	# SN19018971 seen *not* marked as "adjusted" on ebay 193684570
+	# SN12102880 seen with gold colored screws on ebay 217876409
+
+337  33   16   -  3/4 hb n   6 p q    17       A  -   - e gb  GMW -  # nameless appears to be much less common
+	# 1915 MC "Grade of Mvt" list implies possible marking:  GMW(4)
+	# SN11900124 seen marked "GMW adjusted" in my collection
+
+338  38   16   -  3/4 ob n   7 p q    17       A  -   - e gb  GMW
+	# 1915 MC "Grade of Mvt" list implies possible marking:  GMW(3)
+	# seen advertised as GMW in "Bogle Brothers" JC in EWC pg 87
+	# SN13710578 seen marked "GMW Adjusted" on ebay 211850677
+
+339 107   16   -  3/4 hb n   6 p q    17       U  -   - e gb
+	# SN12713160 seen *not* marked as "adjusted" on ebay 189960559
+	# SN14520471 seen *not* marked as "adjusted" on ebay 197246952
+	# SN12118692 seen with gold screws on ebay 309250115
+
+340 108   16   -  3/4 ob n   7 p q    17       U  -   - e gb
+
+341 125   16   -  3/4 hb n   8 l q    17       A  -   - e gb  BWR
+	# 1915 MC "Grade of Mvt" list implies possible marking:  BWR(1)
+	# SN12283541 seen marked "17j BWR Adjusted" on ebay 262828437
+
+342 127   16   -  3/4 ob n   9 l q    17     A4P  -   - e gb  - GMW
+	# 1915 MC "Grade of Mvt" list implies possible marking:  GMW(1)
+	# I have ebay 151182397 recording this as being A4P, but no mention of GMW
+	# SN12284588 said to be "(4) adjustment", no mention of GMW on ebay 269005628  WOAH!  this was not a bridge model!  can't read SN to verify...
+
+343 122   18   -   fp o  n   7 l q    17       ?  -   - e gb  GMW
+	# 1915 MC "Grade of Mvt" list implies possible marking:  GMW(1)
+
+344 113   12   -  3/4 h  n   2 p q    17       U  -   - e gb
+	# seen implied advertising as Unadjusted in "Bogle Brothers" JC in EWC pg 91
+	# SN13182262 seen *not* marked as "adjusted" on ebay 207381747
+
+345 114   12   -  3/4 o  n   3 p q    17       U  -   - e gb
+	# seen implied advertising as Unadjusted in "Bogle Brothers" JC in EWC pg 91
+	# SN19779746 seen marked as "Strand adj4P" unusual damaskeening on ebay 189596324
+
+346 111   12   -  3/4 h  n   2 p q    17       A  -   - e gb  GMW
+	# 1915 MC "Grade of Mvt" list implies possible marking:  GMW(2)
+	# SN16529957 said to be marked "GMW 17j Adjusted" on ebay 245161692
+
+
+#pg 5
+
+347 112   12   -  3/4 o  n   3 p q    17   A-A3P  -   - e gb  GMW
+	# 1915 MC "Grade of Mvt" list implies possible marking:  GMW(2)
+	# seen advertised as GMW in "Bogle Brothers" JC in EWC pg 90
+	# SN19458304 seen marked "A3P" on ebay 190304056
+	# SN14521369 seen marked "Adjusted" on ebay 213138585
+	# SN19093075 seen marked "A3P" on ebay 214834722
+	# SN19458984 seen marked "A3P" on ebay 216358663
+
+348   1   18   -   fp h  n 2-4 l q    21       A  -   - e gb  348
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FT(2)
+	# some of these were originally from runs of grade 183
+	# seen implied advertising as 348 in "Bogle Brothers" JC in EWC pg 84
+	# SN11612904 seen marked "348 21j Adjusted" on ebay 231591478
+
+349  65   18   -   fp o  n   7 l q    21   A-A5P  -   - r gb  349 FT	# Father Time is rarer
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FT(4)
+	# seen advertised as 349 in "Bogle Brothers" JC in EWC pg 84
+	# the first two runs of 349 were marked as 180 in the 1915 MC, the third was marked as 252
+	# SN13714106 seen marked "Adjusted FT" in my collection
+	# seen as FT: (SN12739712 146873609) (SN13714106 141625329)
+	# seen as 349: (SN11416490 171363620) (SN13329305 167325392) (SN13633769 156338115) (SN14058502 149050534) (SN13183085 141496386,123001526) (SN11819696 139000969, 133738025) (SN12980379 131935682) (SN15227826 127484213) (SN10470926 209951849)
+	# SN13885667 seen marked "349 21j A5P" on ebay 229364366
+
+350  98   16   -  3/4 o  n  13 l q    23       ?  -   - e jb  VER
+	# 1915 MC "Grade of Mvt" list implies possible marking:  VER(1)
+	# SN12717908 said to be marked "Veritas" on ebay 151429010
+	# SN12717783 said to be marked "Veritas" on ebay 180714130
+
+351  41   16   -  3/4 o  n   7 p q    23     A5P  -   - e jb  LE	# first run is pend set, second run is lever set.
+	# 1915 MC "Grade of Mvt" list implies possible marking:  LE(1)
+	# seen advertised as LE in "Bogle Brothers" JC in EWC pg 86
+	# SN15159042 seen as "A5P" on ebay 192239632
+	# SN12718001 seen on tulsa-time.com
+	# SN15159018 seen on tulsa-time.com
+	# SN12718462 seen on ebay 181875111
+
+352 123   18   -   fp h  n 2-4 l q    17       ?  -   - e gb  OVR GMW
+	# 1915 MC "Grade of Mvt" list implies possible marking:  OVR(1), GMW(1)
+
+353 124   18   -   fp o  n   7 l q    17       A  -   - e gb  GMW OVR -
+	# 1915 MC "Grade of Mvt" list implies possible marking:  OVR(1), GMW(1)
+	# SN13067424 seen as Overland Adj
+	# SN12912545 seen marked as "GMW Adj" on ebay 196533848
+
+354 116    0   -  3/4 h  n   2 p q    15       U  -   - e gb
+	# seen implied advertising as Unadjusted in "Bogle Brothers" JC in EWC pg 92
+	# SN16405580 seen *not* marked as "adjusted" on ebay 191737025
+
+355 117    0   -  3/4 o  n   3 p q    15       U  -   - e gb
+	# seen implied advertising as Unadjusted in "Bogle Brothers" JC in EWC pg 92
+	# SN16779992 seen *not* marked as "adjusted" on ebay 202509106
+
+356 128   16   14 3/4 o  n   2 p q     7       U  -   - f gb  LES	# requires a unique case
+	# I'm not sure about the sizes of these lord elgin series (LES)
+	# watches.  The movements look to be regular size 12 model 3's,
+	# but the dials are size 14.  This makes them similar to the
+	# streamline watches introduced right as the LES were being phased
+	# out.  However, Elgin lists streamlines as "size 12" instead of
+	# "size 14".  Checking the 1950 MC, it appears that these LES
+	# watches share a lot of parts with the 12s m=3 watches.
+	#
+	# APWB-E pg 145 says "Complete watches gives the appearance of
+	# a thing Model 16 Size.", and that's what I've marked it as, but
+	# I think it really should be "14s/12s", rather than "16s/14s".
+	# However, if I changed it to "14s/12s", it would show up as a 12s
+	# watch on all the lists/searches and contradict Elgin's description.
+
+357 128   16   14 3/4 o  n   2 p q    15       U  -   - e gb  LES	# requires a unique case
+	# seen implied advertising as Unadjusted in "Bogle Brothers" JC in EWC pg 89
+	# see notes on grade 356
+
+358 128   16   14 3/4 o  n   2 p q    17       U  -   - e gb  LES	# requires a unique case
+	# seen implied advertising as Unadjusted in "Bogle Brothers" JC in EWC pg 89
+	# see notes on grade 356
+
+359 129   16   14 3/4 o  n   2 p q    17       A  -   - e gb  LES	# requires a unique case
+	# seen implied advertising as adjusted in "Bogle Brothers" JC in EWC pg 89
+	# see notes on grade 356
+
+360  98   16   -  3/4 o  n  13 l q    21       A  -   - e gb  VER
+	# 1915 MC "Grade of Mvt" list implies possible marking:  VER(1)
+	# SN13482586 seen marked "VER 21j Adjusted" on ebay 246124830
+
+361 102   16   -  3/4 o  n  13 l q    17     A5P  -   - e gb  BWR
+	# 1915 MC "Grade of Mvt" list implies possible marking:  BWR(1)
+	# SN13506854 said to be marked "BWR A5P" on ebay 234057101.  pics too blury to verify everything, but it looks reasonable
+
+# 362 is not listed in the Elgin 1915 "Grades of Movements" table   no info in 1950 MC
+
+363 113   12   -  3/4 h  g   2 p q    15       U  -   - f gb
+	# SN14572429 seen *not* marked as "adjusted" on ebay 217875116
+
+364 114   12   -  3/4 o  g   3 p q    15       U  -   - f gb
+	# SN18657466 seen *not* marked as "adjusted" on ebay 269315934<
+
+365 109   16   -  3/4 h  g   6 p q    15       U  -   - f gb
+	# SN14289043 seen *not* marked as "adjusted" on ebay 237710505
+
+366 110   16   -  3/4 o  g   7 p q    15       ?  -   - f gb
+
+367  90   18   -  3/4 o  n   8 l q    21     A5P WI   - r mb  FT
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FT(2), VER(2)
+	# seen advertised as FT in "Bogle Brothers" JC in EWC pg 82
+	# SN14578035 seen marked as "FT A5P also marked Adjusted on balance cock" in my collection
+
+368 130   18   -  3/4 h  n   9 l q    17       A  -   - e gb  GMW
+	# 1915 MC "Grade of Mvt" list implies possible marking:  GMW(1)
+	# SN15463279 seen marked as "GMW Adjusted" in my collection
+
+369 131   18   -  3/4 o  n   8 l q    17       A  -   - e gb  GMW
+	# 1915 MC "Grade of Mvt" list implies possible marking:  GMW(2)
+	# seen advertised as GMW in "Bogle Brothers" JC in EWC pg 84
+	# SN14788968 seen marked as "GMW Adjusted" on ebay 216534005
+
+370 102   16   -  3/4 o  n  15 l q    17     A5P  -   - r mb  BWR
+	# 1915 MC "Grade of Mvt" list implies possible marking:  BWR(1)
+	# seen advertised as BWR in "Bogle Brothers" JC in EWC pg 87
+	# SN14845441 said to be marked "A5P" on ebay 155333070
+	# SN15502317 said to be marked "BWR A5P 17j" on ebay 154322978
+	# SN14525005 said to be marked "A5P" on ebay 181035297
+	# SN14845??? said to be marked "BWR 17j A5P" on ebay 198999242
+
+371 126   16   -  3/4 h  n  14 l q    19       ?  -   - r jb  BWR
+	# 1915 MC "Grade of Mvt" list implies possible marking:  BWR(1)
+
+372  98   16   -  3/4 o  n  15 l q    19     A5P WI   - r jb  BWR
+	# 1915 MC "Grade of Mvt" list implies possible marking:  BWR(1)
+	# seen advertised as BWR in "Bogle Brothers" JC in EWC pg 87
+	# SN17539468 seen as "BWR 19j A5P" on ebay 198290905
+
+373 126   16   -  3/4 h  n  14 l q    21     A5P  -   - r mb  FT
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FT(1)
+	# SN16677676 seen marked as "A5P" on ebay 193636850
+
+374  98   16   -  3/4 o  n  15 l q    21     A5P WI   - r mb  FT	# I once had this marked as having unamed mvts, why?
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FT(4), BWR(4), VER(4)
+	# seen advertised as FT in "Bogle Brothers" JC in EWC pg 87
+	# SN14229442 seen marked as "FT A5P" on ebay 196086398
+
+375  98   16   -  3/4 o  n  15 l q    21     A5P  -   - r mb  VER FT	# not sure which naming is more common
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FT(4), BWR(4), VER(4)
+	# seen advertised as VER in "Bogle Brothers" JC in EWC pg 86
+	# ebay 133954889 said to be "veritas 375", too old to verify
+	# SN16971292 clearly seen as "FT A5P 21j r mb"
+
+376 132   16   -  3/4 o  n  15 l q    23     A5P WI   - r jb  VER
+	# 1915 MC "Grade of Mvt" list implies possible marking:  VER(1)
+	# seen advertised as VER in "Bogle Brothers" JC in EWC pg 86
+	# shugart says that this can be marked BWR
+
+377 116    0   -  3/4 h  g   2 p q    15       U  -   - e gb
+	# SN14526869 seen as *not* marked "Adjusted" on ebay 293750755
+
+378 105   18   -   fp h  n 2-4 l q    17       A  -   - e gb
+	# seen implied advertising as Adjusted in "Bogle Brothers" JC in EWC pg 85
+	# shugart's says that this is 17-19j
+	# SN15874517 seen as "nameless 17j Adjusted" on ebay 267010512
+
+379 106   18   -   fp o  n   5 p q    17       ?  -   - e gb
+	# seen implied advertising as Adjusted in "Bogle Brothers" JC in EWC pg 85
+	# shugart's says that this is 17-19j
+
+380 133  5/0   -  3/4 h  n   1 p q    15       ?  -   - f gb
+	# 1915 MC "Grade of Mvt" list implies possible marking:  LDY(2), LDR(2)
+	# seen implied advertising as Unadjusted in "Bogle Brothers" JC in EWC pg 92
+
+381 107   16   -  3/4 hb n   6 p q    17       A  -   - e gb
+	# seen implied advertising as Adjusted in "Bogle Brothers" JC in EWC pg 88
+
+382 108   16   -  3/4 ob n   7 p q    17       A  -   - e gb  - OVR STR
+	# seen implied advertising as Adjusted in "Bogle Brothers" JC in EWC pg 88
+	# SN19952516 seen marked as "Strand A4P" on ebay 161178979
+	# SN19343216 seen marked as Overlands on ebay 190295492  unusual damaskeening
+	# SN18582443 see as marked None in my collection
+
+383 113   12   -  3/4 h  n   2 p q    17       A  -   - e gb
+	# seen implied advertising as Adjusted in "Bogle Brothers" JC in EWC pg 90
+	# SN15811120 seen marked as "17j Adjusted" on ebay 196189780
+
+384 114   12   -  3/4 o  n   3 p q    17       A  -   - e gb
+	# seen implied advertising as Adjusted in "Bogle Brothers" JC in EWC pg 90
+
+385 134   18   -  3/4 o  n   8 l q    17     A5P  -   - r mb  BWR
+	# 1915 MC "Grade of Mvt" list implies possible marking:  BWR(1)
+	# seen advertised as BWR in "Bogle Brothers" JC in EWC pg 84
+	# SN16481673 marked "BWR 17j A5P" on ebay 236711056
+
+386 109   16   -  3/4 h  n   6 p q    17       U  -   - e gb
+	# seen implied advertising as Unadjusted in "Bogle Brothers" JC in EWC pg 88
+	# SN20373010 seen as *not* marked "adj" on ebay 197489865
+
+387 110   16   -  3/4 o  n   7 p q    17       U  -   - e gb
+	# seen implied advertising as Unadjusted in "Bogle Brothers" JC in EWC pg 88
+	# SN33867140 seen as *not* marked "adj" on ebay 192020233
+	# SN42353003 seen in a BM case marked "ORD. DEPT., USA, OB-21059", luminous(?) hr markers monty dial on ebay 211714525  (only one I've seen in a military case...)
+
+388  98   16   -  3/4 o  n  15 l q    21     A5P  -   - r gb  FT
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FT(4), BWR(4), VER(4)
+	# SN20151?35 seen marked as "FT A5P" on ebay 199446202
+
+389 134   18   -  3/4 o  n   8 l q    21     A5P  -   - r gb  FT  # some said to be two-tone
+	# note:  I used to have this marked BWR, probably from High_grade_info, but I have no idea why I marked it BWR there...
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FT(1)
+	# Shugart's says that there are G=389 BWR's
+	# SN16135069 said to be "FT 21j LS A5P gold trimmed" in Jon Hanson's collection  (gold trimed == all steel items are gold colored.  i.e. screws, gears, regulator, etc., but not the nickel plates)
+
+390  91   18   -  3/4 o  n   8 l q    21     A5P WI   - r mb  BWR
+	# 1915 MC "Grade of Mvt" list implies possible marking:  BWR(2)
+	# seen advertised as BWR in "Bogle Brothers" JC in EWC pg 82
+	# SN15900448 seen as "WI", said to be "BWR A5P 21j" on ebay 219773444
+
+391  98   16   -  3/4 o  n  15 l q    21     A5P WI   - r mb  BWR FT
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FT(4), BWR(4), VER(4)
+	# seen advertised as BWR in "Bogle Brothers" JC in EWC pg 86
+	# SN16136122 seen as "BWR 21j A5P" on ebay 244660507
+	# SN17269009 seen as "FT 21j A5P WI" on ebay 266896068
+	# SN17269881 seen as "BWR 21j A5P WI" on ebay 289111911
+
+392 135   14   12 3/4 o  n   4 p q    17       ?  -   - e gb  LE	# is this really a LE?   1950 MC says "12s spec" dial
+	# 1915 MC "Grade of Mvt" list implies possible marking:  LE(1)
+	# SN16311007 seen advertised as "LE" in 1917 Oskamp-Nolting
+
+393 113   16   12 3/4 h  g   2 p q     7       U  -   - f gb	# 1950 MC says "12x16s" dial/hands
+
+394 114   16   12 3/4 o  g   3 p q     7       U  -   - f gb	# 1950 MC says "12x16s" dial/hands
+
+395 113   16   12 3/4 h  g   2 p q    15       ?  -   - f gb	# 1950 MC says "12x16s" dial/hands
+
+396 114   16   12 3/4 o  g   3 p q    15       U  -   - f gb	# 1950 MC says "12x16s" dial/hands
+	# SN17339495 seen as *not* marked "Adjusted", but *does* have a 16s dial plate! on ebay 271205057
+
+397  33   16   -  3/4 hb n   6 p q    17       ?  -   - e gb
+	# 1915 MC "Grade of Mvt" list implies possible marking:  GMW(4)
+
+398  38   16   -  3/4 ob n   7 p q    17       ?  -   - e gb
+	# 1915 MC "Grade of Mvt" list implies possible marking:  GMW(3)
+
+399 136  5/0   -  3/4 o  n   2 p q    15       ?  -   - f gb  LDR
+	# 1915 MC "Grade of Mvt" list implies possible marking:  LDR(1)
+
+400 131   18   -  3/4 o  n   8 l q    17       ?  -   - e gb
+	# 1915 MC "Grade of Mvt" list implies possible marking:  GMW(2)
+
+401 126   16   -  3/4 h  n  17 l q    19       ?  -   - r jb  BWR
+	# note:  I used to have this marked VER, probably from High_grade_info, but I have no idea why I marked it VER there...
+	# 1915 MC "Grade of Mvt" list implies possible marking:  BWR(1)
+	# shugart's says this can be
+	# shugart's says this can be "19j VER" and also "21j VER"  maybe the later is supposed to be G=402?
+
+402 126   16   -  3/4 h  n  17 l q    21       ?  -   - r mb  FT
+	# note:  I used to have this marked VER, probably from High_grade_info, but I have no idea why I marked it VER there...
+	# 1915 MC "Grade of Mvt" list implies possible marking:  FT(1)
+
+403 133  5/0   -  3/4 h  n   1 p q     7       U  -   - f gb
+
+404  97 10/0   -  3/4 o  n   1 p q    15       U  -   - f gb LDY
+	# 1915 MC "Grade of Mvt" list implies possible marking:  LDY(2)
+	# SN18377920 seen as "LDY", but pic to blury to see if it is marked "Adjusted" (it looks like it isn't) on ebay 280237656
+	# SN18876787 seen as "LDY 15j" and *not* marked "Adjusted" on ebay 296548709
+
+405  96 10/0   -  3/4 o  n   1 p q    17       ?  -   - f gb
+	# 1915 MC "Grade of Mvt" list implies possible marking:  LDY(2)
+
+406 116    0   -  3/4 h  g   2 p q    13       ?  -   - f gb
+
+407 135   14   12 3/4 o  n   4 p q    21       ?  -   - e gb  LE	# is this really a LE?   # 1950 MC says "special" dial
+	# 1915 MC "Grade of Mvt" list implies possible marking:  LE(1)
+
+408 133  5/0   -  3/4 h  n   1 p q    15       ?  -   - f gb  - LDR
+	# 1915 MC "Grade of Mvt" list implies possible marking:  LDY(2), LDR(2)
+
+409 117    0   -  3/4 o  g   3 p q     7       U  -   - f gb
+
+410 117    0   -  3/4 o  g   3 p q    15       ?  -   - e gb
+	# SN1744288? appears (pic is real blury) to be "15j" and *not* marked "Adjusted" on ebay 318490984
+
+411 106   18   -   fp o  t   5 p q    21       U  -   - e gb
+	# SN17288843 seen as two-tone and *not* marked "Adjusted" in my collection
+	# SN17288484 said to be two-tone in Jon Hanson's collection
+
+412  91   18   -  3/4 o  n   8 l q    21     A3P  -   - r mb
+	# 1915 MC "Grade of Mvt" list implies possible marking:  BWR(2)
+	# SN16373313 is WI, said to be "21j A3P" on ebay 213820495
+
+413 116  3/0   -  3/4 h  n   2 p q     7       U  -   - f gb
+
+414 117  3/0   -  3/4 o  n   3 p q     7       U  -   - f gb
+
+415 116  3/0   -  3/4 h  n   2 p q    15       ?  -   - e gb
+
+416 117  3/0   -  3/4 o  n   3 p q    15       ?  -   - e gb
+	# last grade mentioned in the 1915 MC
+#end# of the Elgin "Grades of Movements" table
+
+#grade class size plate style finish model sett train jewels
+
+417  ?   3/0   -  3/4 h  n  ?  p q     7       U  -   - f gb
+	# SN19808207 seen as "3/4 h n ? p q ? ? - - f gb" in a *very* blury pic on ebay 300820908
+
+418  ?   3/0   -  3/4 o  n   3 p q     7       U  -   - f gb
+	# SN20155139 seen as "3/4 o n ? ? q 7j U - - f gb" on ebay 226438964
+	# m=3 PS determined by Swigart's and ebay 226438964
+
+419  ?   3/0   -  3/4 h  n   2 p q    15       U  -   - e gb
+	# SN18812833 seen as "3/4 o n ? ? q 15j U - - e gb" on Timezone article 11474
+	# m=2 PS determined by Swigart's and timezone article 11474
+
+420  ?   3/0   -  3/4 o  n   3 p q    15       U  -   - e gb
+	# SN19258196 seen as "3/4 o n ? ? q 15j U - - e gb" on ebay 246387027
+	# m=3 PS determined by Swigart's and ebay 246387027
+
+421  ?     ?   -    ? ?  ?  ?  ? q     ?       ?  -   - ?  ?
+	# no info in 1950 MC
+
+422  ?     ?   -    ? ?  ?  ?  ? q     ?       ?  -   - ?  ?
+	# no info in 1950 MC
+
+423  ?   3/0   -  3/4 h  n  3  p q    17       A  -   - e gb
+	# SN18628298 seen as "3/4 h n ? p q 17j Adjusted - - e gb" on ebay 293930279
+	# m=3 determined by swigarts and ebay 293930279
+
+424  ?   3/0   -    ? ?  ?  ?  p q    17       ?  -   - e gb
+
+425  ?  10/0   -    ? ?  ?  ?  ? q    17       ?  -   - f gb
+
+426  ?  10/0   -  3/4 o  ?   4 p q    15       ?  -   - f gb
+	# m=4 is according to Swigart's
+
+427  ?  10/0   -    ? ?  ?  ?  ? q    17       ?  -   - f gb
+
+428  ?   6/0   -  3/4 h  n   1 p q    15       U  -   - f gb
+	# m=1 is based on Swigart's and it being HC
+	# SN32011253 seen as "3/4 h n ? p q 15j U - - f gb" on ebay 212148777
+
+429  ?   6/0   -  3/4 o  n   2 p q    15       U  -   - f gb
+	# m=2 is according to Swigart's
+	# SN21351454 seen as "3/4 o n ? p q 15 U - - f gb" on ebay 267004387
+
+430  ?   6/0   -  3/4 h  n   1 p q     7       U  -   - f gb
+	# m=1 is according to Swigart's
+	# SN29338171 seen as FINISH_NICKEL on ebay 223833179
+
+431  ?   6/0   -  3/4 o  n   2 p q     7       U  -   - f gb
+	# m=2 is based off of Swigart's and it being OF
+	# SN20842059 seen as "3/4 o n ? p q 7j U - - f gb" on ebay 210676883
+	# SN24208271 seen as "3/4 o n ? p q 7j U - - f gb" on ebay 215661701
+
+432  ?   5/0   -  3/4 o  n   2 p q     7       U  -   - f gb
+	# SN19131713 seen as "5/0 3/4 o n ? p q 7j U - - f gb" on ebay 269130323
+	# m=2 based off of Swigart's and  ebay 269130323
+
+433  ?    14   12 3/4 o  n   4 p q    21       ?  -   - e gb
+	# 1950 MC says "streamline"
+
+434  ?    14   12 3/4 o  n   4 p q    19       ?  -   - e gb
+	# 1950 MC says "streamline"
+
+435  ?    14   12 3/4 o  n   4 p q    17       ?  -   - e gb
+	# 1950 MC says "streamline"
+
+436  ?    14   12 3/4 o  n   4 p q    17       ?  -   - e gb
+	# 1950 MC says "streamline"
+
+437  ?    14   12 3/4 o  n   4 p q    17       ?  -   - e gb
+	# 1950 MC says "streamline"
+
+438  ?    16   12 3/4 o  n   4 p q    21       ?  -   - e gb
+	# 1950 MC says "streamline" and "12x16s hands"
+
+439  ?    16   12 3/4 o  n   4 p q    19       ?  -   - e gb
+	# 1950 MC says "streamline" and "12x16s hands"
+
+440  ?    16   12 3/4 o  n   4 p q    17       ?  -   - e gb
+	# 1950 MC says "streamline" and "12x16s hands"
+
+441  ?    14   12 3/4 o  n   4 p q    17     A2P  -   - e gb  GMW
+	# 1950 MC says "streamline" and "12x16s hands"
+	# SN19310658 seen as "A2P GMW" on ebay 188450559
+
+442  ?   3/0   -    ? ?  ?  ?  p q     7       U  -   - f gb
+
+443  ?   3/0   -    ? ?  ?  ?  p q     7       U  -   - f gb
+
+444  ?  10/0   -  3/4 o  n   4 p q    15       U  -   - f gb  - LDY
+	# SN23203653 said to be marked "Lady Elgin" on ebay 206376445
+	# m=4 based off of Swigarts and the blury picture on ebay 220752804
+	# SN26508207 said to be "Lady Elgin 15j" and seen as "3/4 o n ? p q 15j ? - - f gb" on ebay 220752804
+	# SN28700394 seen as "3/4 o n ? p q 15 U - - f gb" nameless on ebay 227049910
+
+445  ?  10/0   -  3/4 o  n   4 p q    17       U  -   - f gb  LDY
+	# m=4 determined from Swigarts and ebay 215864286
+	# SN20045255 seen as "3/4 o n ? p q 17j U - - f gb" on ebay 215864286
+
+446  ?    14   12 3/4 ob n   5 p q    19     A5P  -   - h gb  HUL	# special sized movement which requires a unique case
+	# Elgin lists this as a "size 14" watch, but Shugart says this is 14s/12s.  I think the latter is true.
+	# NAWCC #191 pg 634 says this is "12s" and "has a invar balance"
+	# SN28844083 seen marked "C. H. Hulburd  19 jewels  eight adjustments" on ebay 250486209
+
+
+447  ?  10/0   -  3/4 o  n   4 p q     7       U  -   - f gb
+	# m=4 determined from Swigarts and ebay 21383443
+	# SN21522778 seen as "3/4 o n ? p q 7 U - - f gb" on ebay 213834431
+
+448  ?    12   -    ? ?  ?  ?  ? q    19       ?  -   - e gb	# 1950 MC says "D 187" dial  maybe "16s/12s ON4P"?
+
+449  ?    16   12 3/4 o  n   4 p q    17     A3P  -   - e gb	# 1950 MC says "D 195" dial
+
+450  ?    14   12 3/4 o  n   4 p q    21     A5P  -   - e gb  LE
+	# 1950 MC says "streamline" and "12x16s hands"
+	# SN28191874 seen as "A5P" on ebay 200588072
+
+451  ?    14   12 3/4 o  n   4 p q    19     A5P  -   - e gb  LE
+	# 1950 MC says "streamline" and "12x16s hands"
+	# SN25269357 seen as "A5P Lord Elgin" in my collection
+
+452  ?    14   12 3/4 o  n   4 p q    17     A3P  -   - e gb  GMW
+	# 1950 MC says "streamline" and "12x16s hands"
+	# Swigart says that this is a "model 10", with no models 6-9 listed
+
+453  ?    16   -  3/4 o  n  15 l q    23     A5P  -   - r jb  VER
+	# SN23141827 seen as marked "A5P" on ebay 193684660
+
+454  ?    16   -  3/4 o  n  15 l q    21     A5P WI   - r gb  FT
+
+455  ?    16   -  3/4 o  n  15 l q    19     A5P WI   - r gb  BWR
+
+456  ?     ?   -    ? ?  ?  ?  ? q     ?       ?  -   - ?  ?
+	# no info in 1950 MC
+
+457  ?     ?   -    ? ?  ?  ?  ? q     ?       ?  -   - ?  ?
+	# no info in 1950 MC
+
+458  ?     ?   -    ? ?  ?  ?  ? q     ?       ?  -   - ?  ?
+	# no info in 1950 MC
+
+459  ?     ?   -    ? ?  ?  ?  ? q     ?       ?  -   - ?  ?
+	# no info in 1950 MC
+
+460  ?     ?   -    ? ?  ?  ?  ? q     ?       ?  -   - ?  ?
+	# no info in 1950 MC
+
+461  ?     ?   -    ? ?  ?  ?  ? q     ?       ?  -   - ?  ?
+	# no info in 1950 MC
+
+462  ?   3/0   -  3/4 h  n   2 p q     7       U  -   - f gb
+	# m=2 based off of Shugart's and being a HC
+	# SN21870609 seen as "3/4 h n ? p q 7 U - - f gb" on ebay 208366110
+
+463  ?   3/0   -  3/4 o  n   3 p q     7       U  -   - f gb
+	# SN24631647.seen as "3/4 o n 3 p U f gb" on ebay 191450373
+
+464  ?   3/0   -  3/4 h  n  2  p q    15       U  -   - e gb
+	# SN32259268 seen as "3/4 h n ? p U f gb" on ebay 203911423
+	# SN31412925 seen as "3/4 h n 2 p U f gb" on ebay 322927847
+
+465  ?   3/0   -  3/4 o  n   3 p q    15       U  -   - e gb
+	# SN23474343 seen as "3/4 o n ? p U f gb" on ebay 289301857
+	# m=3 based off of Swigart's and 289301857
+
+466  ?    16   -  3/4 o  n  13 l q    17     A4P  -   - e gb	# these have all gold colored screws
+	# SN21950xxx said to be lever set on ebay 153303677  (confirms model/lever)
+	# SN21792053 seen as 3/4 o n 17j A4P e gb gold screws on ebay 192790736
+	# SN22962106 seen as 3/4 o n 17j A4p e gb gold screws on ebay 193626927
+	# SN23309466 seen w/ gold screws on ebay 216366608
+
+467  ?   3/0   -  3/4 h  g  2  p q     7       U  -   - f gb
+	# SN21175764 seen as "3/4 h g 2 p q 7j U - - f gb" on ebay 314538906
+
+468  ?   3/0   -    ? ?  ?  ?  p q     7       U  -   - f gb
+
+469  ?    16   -  3/4 s  f  21 p q     7       U  -   - f gb	# 60-sec timer  some of this info is guessed at
+	# no info in 1950 MC
+	# m=21 is of my own creation.  It appears to be different than the m=20
+	# SN39627770 seen as "3/4 o f q free-reg gb", guessed as "16s pend set m=21"
+	# SN41175386 seen as "3/4 o f q unadj free-req gb" on ebay 224401846
+
+# 470 no info in 1950 MC
+
+471  ?    37   -  3/4 o  f   1 p q     7       U  - 192 f gb
+	# SN27598011 seen as FINISH_FLAT on ebay 305336845
+
+472  ?    16   -  3/4 o  n  15 l q    21     A5P WI   - b gb  BWR	# has an "invar balance"  (note balance is cut away from the spoke)  otherwise identical to the 478
+	# SN27801914 seen as WI on ebay 208539628
+
+473  ?  16/0   -  3/4 h  ?   2 p q    17       ?  -   - f gb
+	# "3/4 h ? 2 p q ? ? - - f gb" determined by Swigart's
+
+474  ?    16   -    ? ?  ?  ?  p q     ?       U  -   - e gb
+	# not in John Miller's list
+
+475  ?    16   -    ? ?  ?  ?  p q     ?       U  -   - e gb
+	# not in John Miller's list
+
+476  ?    12   -  3/4 o  n   3 p q     ?       U  -   - e gb
+	# not in John Miller's list
+
+477  ?    12   -  3/4 o  n   3 p q    17     A3P  -   - e gb  - S17	# I don't know which naming is more common
+	# SN28931110 seen as "A3P Senior Seventeen"  (name on barrel wheel and dial) on ebay 195219335
+	# SN29179011 seen as "A3P"  on ebay 201365950
+	# SN27803346 said to be marked "17j Senior Seventeen A3P" on ebay 207357751
+
+478  ?    16   -  3/4 o  n  15 l q    21     A5P WI   - b gb  BWR
+	# identical to the 472, except w/o the "invar balance"
+
+479  ?    14   12 3/4 o  n   4 p q    17       A  -   - e gb
+	# 1950 MC says "streamline" and "12x16s hands"
+
+480  ?    16   -  3/4 o  f   7 p q     7       U  -   - f gb	# 1950 MC says "16s-Auto"
+	# SN28732022 seen as "3/4 o f 7 ? q 7j U - - f gb" on ebay 224944935
+
+#481  ?    14   12 3/4 o  n   4 p q    15       ?  -   - e gb    # listed in 1950 MC, but not used,  "streamline"
+
+482  ?  16/0   -  3/4 -  f   2 p q    15       U  -   - f gb
+	# m=2 determined by Swigart's and ebay 261359340
+	# SN27914482 seen as "3/4 - f ? p q 15j U - - f gb" on ebay 261359340
+
+483  ?  18/0   -  3/4 -  f   1 p q    17    U-AT  -   - f gb
+	# m=1 according to Swigart's
+	# SN34904468 seen as "3/4 - f ? p q 17j AT - - f gb" on ebay 209067914
+	# SN33132796 seen as *not* marked "Adjusted" on ebay 273230736
+	# SN32103221 seen as *not* marked "Adjusted" on ebay 2291015837
+
+484  ?  18/0   -  3/4 -  n   1 p q    15       U  -   - f gb
+	# m=1 as determined by Swigart's
+	# SN33337790 seen *not* marked as "adjusted" on ebay 192540939
+	# SN33133070 seen *not* marked as "adjusted" on ebay 216632656
+
+485  ?   4/0   -  3/4 h  f   1 p q     7       U  -   - f gb
+	# SN32618116 seen as "3/4 h f ? p q 7j U - - f gb" on ebay 206351618
+	# grade 485 said to be "model 1 of 4/0s" in Swigart book
+
+486  ?    16   -  3/4 o  n  13 l q    17     A3P  -   - e gb
+	# SN30701106 seen as A3P on ebay 174004067
+
+487  ?   4/0   -  3/4 h  n   1 p q 15-17       A  -   - f gb	# 1950 MC says 17j begins at SN32508001
+	# SN32699481 seen as "3/4 h n ? ? 17j U" on ebay 193890050   # 12/05/99 I think the U is wrong...
+	# SN33477125 seen as "model 1 17j adj" on ebay 213169221  (not absolutely certain about the adjusted part)
+
+488  ?  18/0   -  3/4 -  f   1 p q     7       U  -   - f gb
+	# M=1 was determined by Swigart's and ebay 221352868
+	# SN31970678 seen as "3/4 - f ? p 7j U" on ebay 194036226
+	# SN34560303 seen as "3/4 - f 1 p 1j U" on ebay 221352868
+
+489  ?   6/0   -    ? ?  ?  ?  ? q    17       ?  -   - f gb
+
+490  ?    22   -  3/4 o  n   1 p q     7       U  - 192 f gb
+
+491  ?    12   -  3/4 o  n   4 p q    19     A3P  -   - e gb
+	# SN34347081 seen as "3/4 o n 4 p q 19 A3P-Temp - - e gb" on ebay 216379731
+	# SN34347882 seen as "3/4 o n 4 p q 19 A3P-Temp - - e gb" on ebay 
+
+492  ?  20/0   -  3/4 -  n   1 p q    15       ?  -   - f gb
+	# "3/4 ? ? 1 p q 15j ? - - f gb" determined by Swigarts
+	# STYLE_NS and 15j determined by 1950 MC
+	# EWC says that this is 17j
+	# SN34629725 seen as "15j FINISH_NICKEL", no mention of "Adjusted" (blury pic) on ebay 235940833
+
+493  ?    22   -  3/4 o  f   1 p q     7       U  - 192 f gb
+	# SN34343108 seen as "3/4 o f 1 p q 7j u 192 f gb"  (actually, it doesn't look like a "flat nickel", but a "black"...)  on ebay 196784108
+
+494  ?    16   -  3/4 o  n  15 l q    23     A6P WI   - b jb  BWR
+	# SN33595717 seen marked as "BWR WI A6P Motor barrel" but *not* "temperature" on ebay 162108144
+	# SN34766836 seen marked as "BWR WI Motor Barrel", said to be "A6P Temperature" on ebay 198768379
+	# SN34948994 seen marked as "BWR WI Motor Barrel", said to be "A6P Temperature" on ebay 198775403
+	# SN34766720 seen marked as "BWR WI Motor Barrel Temperature A6P" on ebay 211753174
+
+495  ?    14   12 3/4 o  n   4 p q    17    A-AT  -   - e gb
+	# SN37106713 seen marked as "Adjusted Temperature" on ebay 205793754
+	# SN37104477 seen marked as "Adjusted" (no "temp") on ebay 223025609
+	# SN38304065 seen marked as "adjusted Temperature" on ebay 231262829
+
+496  ?    14   12 3/4 o  n   4 p q     7       U  -   - f gb 
+	# SN35273420 seen as "3/4 o n 4 p q 7 U - - f gb" on ebay 215776165
+
+# 497 no info in 1950 MC
+
+498  ?    12   -    ? ?  ?  ?  ? q    21       ?  -   - e gb	# dial labelled "deluxe"
+
+499  ?   6/0   -    ? ?  ?  ?  ? q    19       ?  -   - f gb
+
+# 500 no info in 1950 MC
+# 501 no info in 1950 MC
+
+502  ?   4/0   -  3/4 s  n   2 p q     7       U  -   - f gb
+	# I'm going to call this "model 2" until I find out otherwise  It is clearly different than the s-4/0 m=1
+	# SN34650951 seen as "3/4 s n ? p q 7 U - - f gb" on ebay 200982368
+
+# 503 no info in 1950 MC
+
+504  ?  20/0   -  3/4 -  n  ?  p q    17       U  -   - f gb
+	# SN35697791 seen *not* marked "Adjusted" on ebay 193087140
+
+505  ?    37   -  3/4 o  f   1 p q     7       U  - 192 f gb
+	# SN30582770 seen as "flat nickel" on ebay 304771113
+
+506  ?    16   -  3/4 o  n  15 l q    21     A6P WI   - b gb  BWR
+	# grade 506 seems to be related to g=478.  The first 6 runs are all the last 100 of a g=478 run.
+	# shugarts says this is OF and BWR
+	# SN34574489 seen as WI and "16s 3/4 o n 15 ? q 21j A6P WI - b gb" said to be lever set on ebay 289145694
+	# SN34205383 seen as not WI and "16s 3/4 o n 15 ? q 21j A6P - - b gb" also marked "temp", said to be lever set on ebay 313449409
+
+# 507 no info in 1950 MC
+
+508  ?    22   -  3/4 s  n   1 p q     7       U  - 192 f gb
+
+# 509 no info in 1950 MC
+# 510 no info in 1950 MC
+
+511  ?     ?   -    ? ?  ?  ?  ? q     ?       ?  -   - ?  ?
+	# no info in 1950 MC
+
+512  ?  26/0   -  3/4 -  ?   1 p q    17       ?  -   - f gb
+	# "3/4 ? ? 1 p q ? ? - - f gb" determined by Swigart's
+	# STYLE_NS and j=17 determined by 1950 MC  (Swigart's says 15j)
+
+513  ?  26/0   -  3/4 -  ?   1 p q     7       U  -   - f gb
+	# "3/4 ? ? 1 p q ? ? - - f gb" determined by Swigart's
+	# STYLE_NS and j=7 determined by 1950 MC  (Swigart's says 15j)
+
+514  ?  18/0   -    ? s  ?  ?  ? q     7       U  -   - f gb
+
+515  ?     ?   -    ? ?  ?  ?  ? q     ?       ?  -   - ?  ?
+	# no info in 1950 MC
+
+#516  ?   4/0   -    ? -  ?  ?  ? q    15       ?  -   - ? gb	# in 1950 MC, but not used,
+#517  ?   4/0   -    ? -  ?  ?  ? q    15       ?  -   - ? gb	# in 1950 MC, but not used,
+#518  ?   4/0   -    ? -  ?  ?  ? q    15       ?  -   - ? gb	# in 1950 MC, but not used,
+
+519  ?   8/0   -  3/4 h  f  1  p q    15       U  -   - f gb
+	# SN38280129 see as "3/4 h f ? p q 15j U - - f gb" on ebay 252773118
+	# I'm guessing that m=1 because this is the first s=8/0
+
+# 520 no info in 1950 MC
+
+521  ?  21/0   -  3/4 -  f  1  p q    15       ?  -   - f gb
+	# SN37366887 seen as "21/0 3/4 ? f ? p q 15j ? - - f gb" on ebay 303489321
+	# I'm guessing that m=1
+
+522  ?  18/0   -  3/4 s  f  1  p q    15       U  -   - f gb
+	# EWC says "13j", but 1950 MC lists "15j"
+	# SN36705788 seen as "18/0s 3/4 s f 1 p q 15j U - - f gb" on ebay 305106996
+	
+
+523  ?  21/0   -    ? -  ?  ?  ? q    15       ?  -   - f gb
+
+524  ?   8/0   -    ? ?  ?  ?  ? q    15       ?  -   - f gb
+
+# 525 no info in 1950 MC
+
+526  ?   8/0   -  3/4 h  ?  ?  p q     7       U  -   - f gb
+	# SN36282688 seen as "3/4 h ? ? p q 7j ? - - f gb" (blury pics) on ebay 280930694
+
+527  ?    16   -  3/4 o  n 13  l q    19     A3P  -   - e gb
+	# SN41730654 seen as "16s - 3/4 o n ? ? q 19j ? - - e gb", model looks like either 7 or 13.  pic of mvt too blury to tell much else.  said to be "3 adjusts" ebay 262019933
+	# SN42863424 seen as "16s - 3/4 o n 13 L q 19j A3P - - e gb" on ebay 317965445n
+
+# 528 no info in 1950 MC
+
+529  ?  21/0   -  3/4 -  f  1  p q    15       ?  -   - f gb
+	# SN36466875 seen as "21/0 3/4 ? f ? p q 15j ? - - f gb" on ebay 303489321
+	# I'm guessing that m=1
+
+# 530 no info in 1950 MC
+
+531  ?   8/0   -  3/4 h  n  7  p q    21       U  -   - f gb
+	# m=7 guess based on Swigart's and ebay 243218692
+	# SN37129894 seen as "3/4 h n ? p 21j U - - f gb" on ebay 199934834
+
+532  ?   8/0   -  3/4 s  n   2 p q    16       U  -   - f gb
+	# "3/4 s 2 p q 16j ? - - f gb" according to the 1950 MC insert
+	# according to swigarts, it is m=8 and j=15  (I'm using m=2 from 1950 MC insert...)
+	# g=532 is sometimes put in small silver cased "nurses watches"
+	# SN38993790 seen as *not* marked "adjusted" (nor 16j) on ebay 233970732
+
+533  ?  21/0   -  3/4 -  f   2 p q    17   U-A1P  -   - f gb  DLX
+	# "3/4 ? ? 2 p q 17j ? - - f gb" according to the 1950 MC insert
+	# STYLE_NS determined by 1950 MC
+	# ebay 192300893 says "model 533 17j deluxe"
+	# SNJ933915 seen marked as "17j A1P 3/4 plate flat-nickel finish Deluxe" on ebay 190760296
+	# SNL560039 seen marked as "17j", but *not* marked Adjusted on ebay 212728811
+	# SNL575962 seen marked as "17j", but *not* marked Adjusted on ebay 214413227
+
+534  ?     ?   -    ? ?  ?  ?  ? q     ?       ?  -   - ?  ?
+	# no info in 1950 MC
+
+535  ?  21/0   -  3/4 -  f   2 p q    19       U  -   - f gb
+	# "3/4 ? ? 2 p q 19j ? - - f gb" according to the 1950 MC insert
+	# STYLE_NS determined by 1950 MC
+	# SN37325519 seen as "21/0s 3/4 - f 2 p q 19j U - - f gb" on ebay 296112213
+
+536  ?  15/0   -  3/4 h  f   1 p q    15       U  -   - f gb
+	# SNX154554 seen as "3/4 h f ? p q 15j U - - f gb" on ebay 273240948
+	# m=1 is my guess  (I have no record of a 15/0s m=1, later models have a higher grade #)
+	
+
+537  ?  15/0   -  3/4 h  f   1 p q    17       U  -   - f gb
+	# SNX91203 seen as "3/4 h f ? p q 17j U - - f gb" on ebay 220908079
+	# m=1 is my guess  (I have no record of a 15/0s m=1, later models have a higher grade #)
+
+538  ?  15/0   -    ? ?  ?  ?  ? q    23       ?  -   - f gb
+	# 1950 MC shows 23j
+	# SNX215189 said to be "21j" on ebay 217656274
+
+539  ?   8/0   -  3/4 s  f   2 h q 15-16       U  -   - f gb	# sometimes used by the military
+	# "3/4 s ? 2 p q 16j ? - - f gb" according to the 1950 MC insert  related to the 532, only with extra parts
+	# ebay 206027884 (wingold) says that these were sometimes used for "WWI Frogman" watches  (and of course you should believe everything in an ebay description...:-)
+	# military watch marked "A.F.U.S. ARMY - TYPE A-11 - SPEC. NO. 94-27834-B - SER. NO. AF45-13546 - MFR'S PART NO. 2114 - ORD. NO. W33-038ac 6600 - ELGIN."  said to be "15j 539" on ebay 221055991
+	# SNT425582 seen as *not* marked "Adjusted" and said to be 16j on ebay 220025513   (It has very similar case markings as the above 221055991)
+	# SNY780626 seen marked "15j" on ebay 226116612
+	# SNT221550 seen marked "16j" on ebay 226116612
+
+540  ?    16   -  3/4 o  n  15 l q    23     A5P  -   - b jb  BWR	# some of these are in military cases
+	# SN3042542 seen marked as "BWR A5P motor barrel 23j" on ebay 204407449	# later (01/11/00)  I have no idea what that SN is supposed to be...
+	# SN39386433 seen marked as "BWR A5P motor barrel 23j Temperature" on ebay 232093555
+	# SN38780781 said to be marked "BWR A5P motor barrel 23j Temperature" on ebay 185681601  (auction ended long ago, no pics now)
+
+541  ?  21/0   -  3/4 -  ?   2 p q    15       ?  -   - f gb
+	# "3/4 ? ? 2 p q 15j ? - - f gb" according to the 1950 MC insert
+	# STYLE_NS determined by 1950 MC
+
+542  ?    14   10 3/4 o  f   5 p q    17   U-A3P  -   - f gb  DLX
+	# elgin doc list says this is model 5 or 6
+	# SNJ83309 seen as "deluxe A2P 17j" on ebay 207853574
+	# SNE208890 seen as "deluxe 17j" but *not* marked adjusted on ebay 212510953
+	# SNL489646 seen as "deluxe 17j" but *not* marked adjusted on ebay 215529079
+	# SNP944932 said to be "DLX 17j A3P" on ebay 176947203
+	# SNP942008 seen as "DLX 17j A3P" on ebay 219261096
+	# SNE449735 seen as "DLX 17j", but *not* marked adjusted on ebay 220512366
+
+543  ?    14   10 3/4 o  f   5 p q    21 A4P-A5P  -   - b gb  LE
+	# elgin doc list says this is model 5 or 6
+	# SNL472489 clearly marked "543 21j Adj. 5 Pos" on ebay 245566170
+
+544  ?    16   -  3/4 s  n  15 h q 21-22     A5P WI   - b gb  BWR
+	# no info in 1950 MC
+	# APWB-E says "16s - ? s n 19 p q 21j A5P BWR" (m=19 means WI, so I changed it to m=15)
+	# SN39516482 seen as "16s - 3/4 s n 15 p q A5P 21j A5P - - b gb BWR" said to be hack set. Marked "21j", but has an extra jewel for the sweep sec  ebay 311395863
+
+545  ?     ?   -    ? ?  ?  ?  ? q     ?       ?  -   - ?  ?
+	# not in John Miller's list  no info in 1950 MC
+
+546  ?    14   10 3/4 o  n   5 p q    15   U-A1P  -   - f gb
+	# elgin doc list says this is model 5 or 6
+	
+
+547  ?  21/0   -  3/4 s  ?   3 p q    16       ?  -   - f gb
+	# "3/4 s ? 2 p q 15j ? - - f gb" according to the 1950 MC insert
+	# 15j is claimed by Swigart's
+
+# 548 no info in 1950 MC
+# 549 no info in 1950 MC
+# 550 no info in 1950 MC
+# 551 no info in 1950 MC
+# 552 no info in 1950 MC
+
+553  ?    22   -  3/4 s  n   1 p q    16       ?  - 192 f gb
+
+554  ?   8/0   -  3/4 h  f   7 p q    15   U-A1P  -   - f gb
+	# m=7 determined by 1950 MC insert
+	# on ebay 197986841, claim of "SNN711237 554 17j A1P" dial not marked LE
+	# SNN660573 seen as "3/4 h f ? p q 15j A1P - - f gb" on ebay 211995520
+	# SNL186323 seen as "554 15j" and *not* marked "Adjusted" on ebay 299557407
+
+555  ?   8/0   -  3/4 h  f   7 p q    17   U-A1P  -   - f gb  LE DLX -
+	# m=7 determined by 1950 MC insert
+	# SNH266307 said to be "17j A1P LE" on ebay 193384734
+	# SNE336722 said to be "17j DLX" on ebay 219033672
+	# SNI815636 seen as "555 17j DLX" pic is blury, but I don't see it marked "Adj'd" on ebay 258308337
+	# SNL693333 seen as "nameless" and "not* marked "Adjusted" on ebay 280234382
+
+556  ?   8/0   -  3/4 h  f   7 p q    21     A1P  -   - f gb  LE
+	# m=7 determined by 1950 MC insert
+	# on ebay 196712601, the seller says "LE 21j A4P 556"  (NAWCC member), but no SN is given, no pic of mvt
+	# SNV651065 said to be marked "556 4 Adj's 21j" on ebay 217415843
+	# SNC379875 seen as marked "556 21j", but FINISH_NICKEL not FINISH_FLAT, cant see all of mvt, but didn't see it marked "Adjusted" on ebay 263608735
+	# SNV790708 said to be "556 21j A1P" on ebay 264031789
+
+557  ?  15/0   -  3/4 h  ?   3 p q    15       ?  -   - f gb
+	# "3/4 h ? 3 p q 15j ? - - f gb" according to 1950 MC insert
+
+558  ?  15/0   -  3/4 h  f   3 p q    17   U-A1P  -   - f gb  DLX
+	# "3/4 h ? 3 p q 17j ? - - f gb" according to 1950 MC insert
+	# SNU693554 seen as "3/4 h f ? p q 17 U - - f gb" on ebay 199959570
+	# SNC783753 seen marked DLX on dial on ebay 254426548
+	# SNU338946 seen as "DLX 558 17j A1P" on ebay 259440510
+	# SNT124650 seen as "DLX 558 17j" and *not* marked "Adjusted" on ebay 260118303
+
+559  ?  15/0   -  3/4 h  f   3 p q    21   U-A1P  -   - f gb  LE
+	# "3/4 h ? 3 p q 21j ? - - f gb" according to 1950 MC insert
+	# ebay 188259000 gives desc of "SNL370180 559 21j"
+	# SNU576346(?) seen as 21j A1P LE
+	# SNL900684 seen as 21j LE, but *not marked "Adjusted" on ebay 212728811
+	# SNT502542 seen as "559 21j LE", but *not* marked "Adjusted" on ebay 214654793
+	# SNU919739 said to be "559 21j A1P" on ebay 218219951
+	# SNU815512 seen as "559 21j LE A1P" on ebay 222142262
+
+# 560 no info in 1950 MC
+# 561 no info in 1950 MC
+
+562  ?    22   -  3/4 s  f   1 p q     8       U  - 192 f gb	# for airplanes  also seen as chronometer
+	# SN41309337 seen as "gold flashed" on ebay 212183507
+
+# 563 no info in 1950 MC
+# 564 no info in 1950 MC
+
+565  ?     ?   -    ? ?  ?  ?  ? q     ?       ?  -   - ?  ?
+	# no info in 1950 MC
+
+566  ?     ?   -    ? ?  ?  ?  ? q     ?       ?  -   - ?  ?
+	# no info in 1950 MC
+
+# 567 no info in 1950 MC
+
+568  ?     ?   -    ? ?  ?  ?  ? q     ?       ?  -   - ?  ?
+	# no info in 1950 MC
+
+# 569 no info in 1950 MC
+# 570 no info in 1950 MC
+
+571  ?    16   -  3/4 o  n  20 l q    21 A5P-A6P  -   - b gb  BWR -
+	# SNH632161 seen as "BWR 571 A5P" in my collection
+	# SNK693165 seen as "BWR", A6P G=571? on ebay 189367045
+	# SNS961384 seen as "BWR 571 A5P" on ebay 195334767
+	# SNI280518 seen as A6P on ebay 198198811
+	# SNI380833 seen as A6P on ebay 198601961
+	# SNI272312 seen as A6P on ebay 206071335
+	# SNN806656 seen as "BWR A5P" on ebay 208468509
+	# SNV530690 seen as marked "A6P" on ebay 209240876
+
+572  ?    16   -  3/4 o  n  20 l q    19     A3P  -   - b gb
+
+573  ?    16   -  3/4 o  n  20 l q    17     A2P  -   - b gb
+
+574  ?    16   -  3/4 o  n  20 p q    17     A2P  -   - b gb
+
+575  ?    16   -  3/4 o  f  20 p q    15     A1P  -   - f gb
+
+# 576 no info in 1950 MC
+# 577 no info in 1950 MC
+# 578 no info in 1950 MC
+# 579 no info in 1950 MC
+
+580  ?   8/0   -  3/4 h  f   7 p q     7       U  -   - f gb
+	# m=7 guess based on Swigart's and ebay 220533479
+	# SNY401660 seen as "3/4 h f ? p q 7j U - - f gb" on ebay 220533479
+
+581  ?    16   -  3/4 s  n  15 p q 21-22     A5P  -   - b gb  BWR	# usually as ARMY GCT
+	# no info in 1950 MC
+	# shugart says that some of these have a hacking feature.  also they are OF BWR
+	# SN41759420 seen as "BWR 22j A5P Pend-set" in my collection  *not* ARMY GCT
+
+582  ?    16   -  3/4 s  f  21 p j    15       U  -   - f gb	# 10-sec or 60-sec timer
+	# no info in 1950 MC
+	# m=21 is of my own creation.  It appears to be different than the m=20
+	# SN42369849 seen as a 60-sec timer on ebay 184479110
+	# SN42470906 seen as a 10-sec timer and *not* marked "adjusted" on ebay 202190255
+
+# 583 no info in 1950 MC
+
+584  ?     ?   -    ? ?  ?  ?  ? q     ?       ?  -   - ?  ?
+	# no info in 1950 MC
+
+# 585 no info in 1950 MC
+
+586  ?     ?   -    ? ?  ?  ?  ? q     ?       ?  -   - ?  ?
+	# no info in 1950 MC
+
+# 587 no info in 1950 MC
+# 588 no info in 1950 MC
+# 589 no info in 1950 MC
+
+590  ?    16   -  3/4 o  n  15 l q    21     A5P  -   - b gb  BWR
+	# ebay seller "xxc" claims on ebay 195872558 that it is rare for these to be marked as both "590" and "BWR", but I think they all are marked that way.
+	# SN42988804 seen marked as "590" and "BWR"  (also 21j, A5P) on ebay 195872558
+	# SN43396163 seen marked as "590" and "BWR"  (also 21j, A5P) on ebay 209561513
+	# SN43394684 seen marked as "590" and "BWR"  (also 21j, A5P) on ebay 212638984
+
+# 591 no info in 1950 MC
+# 592 no info in 1950 MC
+# 593 no info in 1950 MC
+
+594  ?    16   -  3/4 o  f   7 p q     9       U  -   - f gb
+
+# 595 no info in 1950 MC
+   
+596  ?     ?   -    ? ?  ?  ?  ? q     ?       ?  -   - ?  ?
+	# no info in 1950 MC
+
+# 596 no info in 1950 MC
+# 597 no info in 1950 MC
+# 598 no info in 1950 MC
+# 599 no info in 1950 MC
+
+600  ?    85   -    ? ?  n   ? ? ?    14       A WI   - ?  ?
+	# 600 said to be "85s 14j free sprung, helical hair spring, detent escapement, WI, gimbals & Box in Shugart's pg 176
+	# 600 said to be "85s 14j free sprung, helical hair spring, detent escapement, Fusee, KW/KS, 48hr WI" in APWB-E
+	# ebay 267285997 said to be "G=600 14j US Navy Chronometer 1943", can be seen as FINISH_NICKEL and WI
+
+
+601  ?     ?   -  3/4 ?  f   ? ? q    16     A2P  - 192 f  ?
+	# no info in 1950 MC
+	# SNT316697 seen as "? - 3/4 ? f 16 ? 16j A2P - 192 f ?", shipping box marked "8-day civil data" "elapsed time clock"
+
+# 600 no info in 1950 MC
+# 601 no info in 1950 MC
+# 602 no info in 1950 MC
+
+603  ?    16   -  3/4 s  f  21 p q     7       U  -   - f gb	# 60-sec timer(?)
+	# no info in 1950 MC
+	# SN42868153 seen as "16s 3/4 s f 21 p q 7j U - - f gb" on ebay 315470813  The movement looks like a G=582 10-sec timer, however it only two hands (both in the center).  One hand appears to be a second hand, the other appears to be a minute hand, no hour hand.  The seller (Roy Ehrhardt) says that it is a "60-min timer", but that apears to be for the min hand and my notation is to use the time of the quicker hand.  The balance wheel is larger than a jitter bug, so I'm assuming that it is quick train.  This would alsmo match the 5 tics per sec on the dial.
+	# m=21 is of my own creation.  It appears to be different than the m=20
+
+# 604 no info in 1950 MC
+
+605  ?     ?   -    ? ?  ?  ?  ? q     ?       ?  -   - ?  ?
+	# no info in 1950 MC
+
+# 606 no info in 1950 MC
+
+607  ?     ?   -  3/4 ?  ?   1 a q    18       ?  -   - f gb
+	# "3/4 ? ? ? a q 18j ? - - f gb" according to 1950 MC insert
+	# m=1 is of my own creation
+
+# 608 no info in 1950 MC
+# 609 no info in 1950 MC
+# 610 no info in 1950 MC
+# 611 no info in 1950 MC
+# 612 no info in 1950 MC
+# 613 no info in 1950 MC
+# 614 no info in 1950 MC
+# 615 no info in 1950 MC
+
+616  ?    16   -  3/4 o  n  20 l q    17 A2P-A3P  -   - f gb
+	# is this a free regulator? SN?? seen as free regulator on ebay 191737587
+	# SNN788426 seen as "616 17j A2P REG_FREE" on ebay 308313296
+	# SNI38201 seen as "616 17j A3P REG_FREE" on ebay 294580686
+
+617  ?  21/0   -  3/4 -  ?   4 p q    17       ?  -   - f gb	# 1950 MC also lists a "617L"
+	# "3/4 ? ? 4 p q 17j ? - - f gb" according to 1950 MC insert
+	# SYTLE_NS determined by 1950 MC
+
+618  ?     ?   -  3/4 h  ?   1 a q    18       ?  -   - f gb
+	# 618 no info in 1950 MC
+	# "3/4 h ? ? a q 18j ? - - f gb" determined by Swigart's
+	# m=1 is a guess based off of the picture in Swigart's
+
+619  ?  21/0   -  3/4 -  ?   4 p q    19     A1P  -   - f gb	# 1950 MC also lists a "619L"
+	# "3/4 ? ? 4 p q 19j ? - - f gb" according to 1950 MC insert
+	# SYTLE_NS determined by 1950 MC
+	# SNC928827 said to be 19j on ebay 205718675
+	# ebay 287292432 says "619L 19j A1P" with a pic of the mvt, but it is too blury to read the SN.  The SN looks like U7[938]?...  second digit looks most likely to be a 9, but even the number of digits is unknown
+
+620  ?  21/0   -    ? s  ?  ?  ? q     ?       ?  -   - ?  ?
+
+# 621 no info in 1950 MC
+# 622 no info in 1950 MC
+
+623  ?  15/0   -  3/4 h  ?   2 p q    15       ?  -   - f gb
+	# "3/4 h ? 2 p q 15j ? - - f gb" according to 1950 MC insert
+
+624  ?  15/0   -  3/4 h  ?   2 p q    17     A1P  -   - f gb  DLX
+	# "3/4 h ? 2 p q 17j ? - - f gb" according to 1950 MC insert
+	# SNV231298 said to be "DLX 624 17j A1P" on ebay 193366222
+
+# 625 no info in 1950 MC
+	# said to be "LE 21j" WW in Shugart's
+
+626  ?  15/0   -  3/4 h  f   2 p q    21     A1P  -   - f gb  LE
+	# "3/4 h ? 2 p q 17j ? - - f gb" according to 1950 MC insert
+	# SNJ861518 said to be "LE 626 21j A1P" on ebay 191821918
+	# SN?? said to be "LE 626 21j A1P" on ebay 192814955
+	# SNV923670 said to be "LE 626" seen as (barely) "3/4 h f ? p" on ebay 196268740
+
+# 627 no info in 1950 MC  swiss  said to be 11.5 Linge (~5/0s) in the 1958 Service Manual  also it says that it needs an "auto mainspring"  interchangable with A. Schild 1396 or 1447
+# seen as "3/4 s f ? q 17j U - - f gb Swiss" on ebay 303890868
+
+# 628 no info in 1950 MC  swiss  said to be 6.75x8 Linge (~15/0s) in the 1958 Service Manual  interchangable with Unitas 540 or 543
+
+
+629  ?   8/0   -  3/4 s  f  ?  p q    17       U  -   - f gb
+	# 629 no info in 1950 MC  swiss  said to be 10.5 Linge (~8/0s) in the 1958 Service Manual  interchangable with Font 28
+	# seen as "3/4 s f ? p q 17j U - - f gb swiss" on ebay 309463196
+
+630  ?     ?   -  3/4 s  ?  ?  ? q     ?       ?  -   - f gb	# Swiss?
+	# grade 630 seen as "3/4 SS" in Shugarts WW section
+
+# 630 no info in 1950 MC
+# 631 no info in 1950 MC
+# 632 no info in 1950 MC  swiss  said to be 6.75x8 Linge (~15/0s) in the 1958 Service Manual  interchangable with Font 62
+# 633 no info in 1950 MC
+# 634 no info in 1950 MC  swiss  said to be 7 Linge (~17/0s) in the 1958 Service Manual  APWB-E says:  auto  swiss  interchangable with A Schild 1477 or 1563
+# 635 no info in 1950 MC
+# 636 no info in 1950 MC
+# 637 no info in 1950 MC
+# 638 no info in 1950 MC
+# 639 no info in 1950 MC
+# 640 no info in 1950 MC
+
+641  ?   8/0   -  3/4 h  ?  16 p q    17       ?  -   - f gb
+	# "3/4 h ? 16 p q 17j ? - - f gb" according to 1950 MC insert
+
+642  ?   8/0   -  3/4 h  ?  16 p q    17       ?  -   - f gb
+	# "3/4 h ? 16 p q 17j ? - - f gb" according to 1950 MC insert
+
+643  ?   5/0   -  3/4 s  f   3 a q    17       U  -   - f gb	# swiss
+	# "3/4 s ? ? a q 17j ? - - f gb" according to 1950 MC insert
+	# m=3 is of my own creation
+	# said to be 11.5 Linge (~5/0s) in the 1958 Service Manual  interchangable with A. Schild 1361 or 1423
+	# seen as FINISH_FLAT, 17j, swiss and marked unadjusted and w/o a SN on ebay 230035093
+
+644  ?  11/0   -  3/4 ?  ?   2 a q    17       ?  -   - f gb	# swiss
+	# said to be 9.25 Linge (~11/0s) in the 1958 Service Manual  interchangable with A Schild 1323 or 1421
+	# "3/4 ? ? ? a q 17j ? - - f gb" according to 1950 MC insert
+	# m=2 is of my own creation
+
+645  ?  11/0   -  3/4 s  f   2 a q    17       U  -   - f gb	# swiss
+	# said to be 9.25 Linge (~11/0s) in the 1958 Service Manual  interchangable with A. Schild 1320 or 1422
+	# "3/4 s ? ? a q 17j ? - - f gb" according to 1950 MC insert
+	# m=2 is of my own creation
+	# seen as "3/4 s f ? q 17j U - - f gb Swiss" on ebay 303895523
+
+# 646 no info in 1950 MC
+
+647  ?   8/0   -  3/4 s  f  17 p q    17   A-A1P  -   - f gb DLX
+	# "3/4 s ? 17 p q 17j ? - - f gb" according to 1950 MC insert
+	# SNR6998 said to be "647 Adj'd 17j" seen as DLX on ebay 237084557
+	# SNF16502 seen as "647 17j A1P FINISH_FLAT" with 24hr dial and military case w/markings on ebay 288556032
+
+# 648 no info in 1950 MC
+# 649 no info in 1950 MC
+
+650  ?  21/0   -  3/4 -  ?   9 p q    19       A  -   - f gb LDY
+	# "21/0 3/4 ? ? 9 p q 19j ? - - f gb" according to 1950 MC insert
+	# STYLE_NS determined by 1950 MC
+	# SNV711158 said to be "19j" seen as LDY on ebay 233327874
+	# SNF89802 seen as "650 19j Adjusted" on ebay 307324103
+
+651  ?  21/0   -  3/4 -  ?   9 p q    17       ?  -   - f gb
+	# "21/0 3/4 ? ? 9 p q 17j ? - - f gb" according to 1950 MC insert
+	# STYLE_NS determined by 1950 MC
+
+# 652 no info in 1950 MC
+# 653 no info in 1950 MC  swiss  said to be 9.25 Linge (~11/0s) in the 1958 Service Manual  APWB-E pg 54 says:  auto SS unadj 23j  interchangable with A. Schild 1320 or 1422
+# 654 no info in 1950 MC  swiss  said to be 11.5 Linge (~5/0s) in the 1958 Service Manual  APWB-E pg 54 says:  auto SS unadj 23j  interchangable with A. Schild 1361 or 1423
+
+655  ?  21/0   -  3/4 ?  ?   9 p q    21       ?  -   - f gb  LDY
+	# "21/0 3/4 ? ? 9 p q 21j ? - - f gb" according to 1950 MC insert
+	# SNK999516 seen as "LDY 655 21j", it doesn't look to be marked "Adjusted" on ebay 324099055
+
+656  ?  21/0   -  3/4 ?  ?   9 p q    19       ?  -   - f gb
+	# "21/0 3/4 ? ? 9 p q 19j ? - - f gb" according to 1950 MC insert
+
+657  ?    16   -  3/4 o  f   ? p q    17       ?  -   - f gb	# "shockmaster"
+	# ebay 231435959 says "french 16s 17j 657"  seen marked "shockmaster" on dial seen "3/4 o f ? p q ? ? - - f gb"
+	# 657 no info in 1950 MC  swiss  said to be 17.5 Linge (~12s) in the 1958 Service Manual  interchangable with LIP R-40
+	# There is a pic of this in APWB-E pg 54
+
+# 658 no info in 1950 MC
+# 659 no info in 1950 MC  swiss  said to be 11.5 Linge (~5/0s) in the 1958 Service Manual  interchangable with  Font 73
+
+660  ?  19/0   -  3/4 ?  ?  1  p q    19       ?  -   - f gb
+	# "3/4 ? ? 1 p q 19j ? - - f gb" according to 1950 MC insert
+	# s=19/0 determined by the 1958 Service Manual
+	# m=1 determined by swigart's
+
+661  ?  19/0   -  3/4 ?  ?  1  p q    17       ?  -   - f gb
+	# "3/4 ? ? 1 p q 17j ? - - f gb" according to 1950 MC insert
+	# s=19/0 determined by the 1958 Service Manual
+	# m=1 determined by swigart's
+
+662  ?  19/0   -  3/4 -  f  1  p q    17     A1P  -   - f gb
+	# "3/4 ? ? 1 p q 17j ? - - f gb" according to 1950 MC insert
+	# s=19/0 determined by the 1958 Service Manual
+	# m=1 determined by swigart's and ebay 239029357
+	# SNP933724 seen as "3/4 h f ? p q ? U - - f gb" on ebay 212728811
+	# SNF763405 said to be marked "A1P" on ebay 239029357
+
+# 663 no info in 1950 MC  swiss  said to be 11.5 Linge (~5/0s) in the 1958 Service Manual  interchangable with A. Schild 1580
+# 664 no info in 1950 MC  swiss  said to be 11.5 Linge (~5/0s) in the 1958 Service Manual  interchangable with A. Schild 1580
+# 665 no info in 1950 MC
+
+666  ?  19/0   -  3/4 s  ?  1  p q    18       ?  -   - f gb
+	# "3/4 s ? 1 p q 18j ? - - f gb" according to 1950 MC insert
+	# s=19/0 determined by the 1958 Service Manual
+	# m=1 determined by swigart's
+
+667  ?  19/0   -  3/4 s  ?  ?  p q    18       ?  -   - f gb	# "shockmaster"
+	# "3/4 s ? 1 p q 18j ? - - f gb" according to 1950 MC insert
+	# s=19/0 determined by the 1958 Service Manual
+
+668  ?  19/0   -  3/4 s  ?  ?  p q    17       ?  -   - f gb	# "shockmaster"
+	# "3/4 s ? 1 p q 17j ? - - f gb" according to 1950 MC insert
+	# s=19/0 determined by the 1958 Service Manual
+
+# 669 no info in 1950 MC
+
+670  ?  15/0   -  3/4 h  f   4 p q    21   A-A4P  -   - f gb  LE
+	# "3/4 h ? ? p q 21j ? - - f gb" according to 1950 MC insert
+	# m=4 according to APWB-E
+	# Where did the 'A' come from?
+	# on ebay 197424799, a 670 was seen WITHOUT A SN!
+	# SN50000873 seen as "special A4P 21j" on ebay 214317366  (in an 18k SG case
+
+671  ?  15/0   -  3/4 h  ?   4 p q    19       ?  -   - f gb
+	# "3/4 h ? ? p q 19j ? - - f gb" according to 1950 MC insert
+	# m=4 according to APWB-E
+
+672  ?  15/0   -  3/4 h  ?   4 p q    17     A1P  -   - f gb
+	# "3/4 h ? ? p q 17j ? - - f gb" according to 1950 MC insert
+	# m=4 according to APWB-E
+
+673  ?  15/0   -  3/4 h  f   4 p q    17       A  -   - f gb
+	# "3/4 h ? ? p q 17j ? - - f gb" according to 1950 MC insert
+	# m=4 according to APWB-E
+	# SNS694353 seen as "3/4 h f ? p q 17 a - - f gb" on ebay 202732797
+# 1950 MC ends at grade 673
+
+674  ?  15/0   -  3/4 h  f   5 p q    17       A  -   - f gb  - LE	# "shockmaster"
+	# "3/4 h ? ? p q 17j ? - - f gb" according to 1950 MC insert
+	# m=4 according to APWB-E
+	# SNK439068 said to be "LE 674 17j Adj'd" on ebay 265028642
+
+# 675 said to be 15/0s in the 1958 Service Manual
+# 678 swiss  said to be 11.5 Linge (~5/0s) in the 1958 Service Manual  interchangable with A. Schild 1361
+# 679 swiss  said to be 11.5 Linge (~5/0s) in the 1958 Service Manual  interchangable with A. Schild 1430
+# 694 swiss  said to be 11.5 Linge (~5/0s) in the 1958 Service Manual  interchangable with A. Schild 1124
+
+# 699 was used by John Miller as a place holder like I use 0
+
+
+
+680  ?   8/0   -  3/4 h  n  20 p q    21       A  -   - f gb
+	# "8/0 - 3/4 h ? ? p q 21j ? - - f gb" according to 1950 MC inserts
+	# m=20 according to APWB-E
+	# SNP503498 seen as "3/4 h n ? p q 21j A - - f gb" on ebay 212552945
+	# ebay 221119575 says "LE 680 21j Adj'd"
+
+681  ?   8/0   -  3/4 h  f  20 p q    19       A  -   - f gb
+	# "8/0 - 3/4 h ? ? p q 19j ? - - f gb" according to 1950 MC inserts
+	# m=20 according to APWB-E
+	# SNK366768 seen as "3/4 h n ? p q 19j A - - f gb" on ebay 216135825
+
+682  ?   8/0   -  3/4 h  ?  20 p q    17       A  -   - f gb
+	# "8/0 - 3/4 h ? ? p q 17j ? - - f gb" according to 1950 MC inserts
+	# m=20 according to APWB-E
+	# SNS568188 said to be marked "683 17j Adj" (no pic) on ebay 17426422
+
+683  ?   8/0   -  3/4 h  f  20 p q    17       A  -   - f gb
+	# "8/0 - 3/4 h ? ? p q 17j ? - - f gb" according to 1950 MC inserts
+	# m=20 according to APWB-E
+	# SNP179942 said to be "683 17j Adj" on ebay 220981442
+
+685  ?   8/0   -  3/4 s  ?  21 p q    18       ?  -   - f gb	# "shockmaster"
+	# "8/0 - 3/4 s ? 21 p q 18j ? - - f gb" according to 1950 MC insert
+
+687  ?   8/0   -  3/4 h  ?  24 p q    17       ?  -   - f gb	# "shockmaster"
+	# "8/0 - 3/4 ? ? 21 p q 18j ? - - f gb" according to 1950 MC insert
+	# STYLE_HC accoding to a blury pic and desc on ebay 217742008
+
+688  ?   8/0   -  3/4 h  ?   ? p q    21       A  -   - f gb LE
+	# 688 said to be "LE 21j" in shugart's
+	# ebay 283025402 shows "8/0(?) 3/4 h ? ? p q 21j Adj - - f gb"
+
+692  ?    22   -  3/4 o  f   2 p q     ?       A  -   - f gb
+	# SNP810849 seen in APWB-E PG 50
+
+
+700  ?  20/0   -  3/4 -  f   ? p q     ?       ?  -   - f gb
+	# 700 said to be 20/0s in the 1958 service manual
+	# shugart shows this in the WW mvt pages  looks like G=701, same model?
+
+701  ?  20/0   -  3/4 -  f   ? p q    19       A  -   - f gb
+	# 701 said to be 20/0s in the 1958 service manual
+	# ebay 254207329 shows "701 3/4 - f ? p q 19j A - - f gb"  m!=1
+
+# 702,703,704,705,740,742-744 are said to be 20/0s in the 1958 service manual
+
+# 710,719  "719 = direct read" on shugart's
+# 711,715,716,721,730 are said to be 13/0s in the 1958 service manual
+
+712  ?  13/0   -  3/4 h  f   ? p q    17       A  -   - f gb
+	# 712 said to be 13/0s in the 1958 service manual
+	# said to be marked "17j 712 USA Adj'd" but no SN on ebay 225851558
+	# ebay 280234281 shows "712 17j Adj'd", but no SN on mvt
+
+# 713 said to be 13/0s in the 1958 service manual
+	# said to be "LE 21j" in shugart's 
+# 714 said to be 13/0s in the 1958 service manual
+	# seen marked as "elgin 19 Shockmaster" on dial, said to be marked "19j 714 Adj'd" on mvt  ebay 273329033
+
+715  ?  13/0   -  3/4 h  f   ? p q    17       A  -   - f gb
+	# ebay 332878807 shows "13/0 - 3/4 h f ? p q 17j A - - f gb"
+
+717  ?  13/0   -  3/4 s  f   ? p q     ?       ?  -   - f gb  # seen in a golf ball "direct read" case
+	# said to be 13/0s and direct read in the 1958 service manual
+	# said to be the "golf ball" watch also "3/4 s f ? p q ? ? - - f gb" on ebay 253744474
+
+718  ?  13/0   -  3/4 s  f   ? p q    23       A  -   - f gb  LE
+	# 718 said to be 13/0s in the 1958 service manual
+	#     said to be "23j shockmaster LE" on ebay 237506404
+
+719  ?  13/0   -  3/4 s  f   ? p q    21       A  -   - f gb  LE  # seen in a square "direct read" case
+	# 719 said to be 13/0s and direct read in the 1958 service manual
+	# "719 = direct read" on shugart's
+	#     seen as "21j adjusted" LE in a square "direct read" case, no serial number, *not* marked "swiss" on ebay 250088646
+
+# 724 according to the 1958 Service Manual, this is a direct read model
+# 725 15j "electric" model according to Shugart's and a NAWCC bulletin says
+#     was their *first* electric and it didn't work very well at all.
+
+730  ?  13/0   -  3/4 h  f   ? p q    23     A3P  -   - d  gb - BWR LE
+	# 730 said to be 13/0s in the 1958 service manual.
+	# 
+	# according to http://www.progression-inc.com/lastelgins/fm.htm,
+	# this is a 23j manual with a "DuraBalance" balance.  marked
+	# BWR on dial, with a "db" logo.  "First WW to be RR approved"
+	# related to the 780 according to pchambre@progression-inc.com
+	# there is also a 730A, which was the BWR.  See
+	# ~/watch_info/Elgin_gr730_info
+	#
+	# ebay 252240030 seen as "3/4 h f ? p q 23j A3P - - d gb LE"
+
+
+740  ?  20/0   -  3/4 h  ?   ? p q    23     A3P  -   - f  gb
+	# most of the above info is from the 1958 Service Manual
+	# said to be "23j USA A3P Layd Elgin" on ebay 221024083
+
+744  ?  20/0   -  3/4 h  f   ? p q    19       A  -   - f  gb
+	# ebay 283922106 seen as "3/4 h f ? p q 19j A - - f gb"
+	# 1958 MC says "20/0"
+
+749  ?  18/0   -  3/4 h  f   ? p q    17       U  -   - f  gb	# swiss
+	# ebay 283922106 seen as "3/4 h f ? p q 17j U - - f gb # swiss"
+	# 1961 MC says "18/0 17j shockproof"
+
+750  ?  13/0   -  3/4 h  f   ? p q    23     A3P  -   - d  gb LE
+	# 750 said to be 13/0s in the 1958 service manual.
+	# ebay 275832758 seen as "3/4 h f ? p q 23j A3P - - d gb LE"
+
+752  ?  13/0   -  3/4 s  f   ? p q    19       A  -   - d  gb
+	# seen as "13/0 3/4 s f ? p q 19j A - - d gb namelsss" on http://www.TimeZone.com/webbbs/cgibin321/vintage.cgi?read=14735
+	# the "13/0s" part was determined by comparing the mvt to the one in APWB=E
+
+
+755  ?    16   -  3/4 o  f   ? p q    17       U  -   - f  gb
+	# seen as "3/4 o f ? p q 17j U - - f gb", guessed to be 16s on ebay 300940855
+
+# 760 APWB-E pg 54 says:  6/0s auto
+#     Elgin 1965 MC says 6/0s auto
+#     according to http://www.progression-inc.com/lastelgins/fm.htm, this is 
+#     a 30j auto, american made, A3P  "DuraBalance" balance  "db" logo dial
+#
+# 761 APWB-E pg 54 says:  6/0s auto
+#     Elgin 1965 MC says 6/0s auto
+#     according to http://www.progression-inc.com/lastelgins/fm.htm, this is 
+#     a 27j auto, american made, "Adjusted"  "DuraBalance" balance
+#     "db" logo dial
+#     "761 27j USA Adj'd" w/db logo dial seen on ebay 246813303
+#
+# 770 "770 A3P" w/LE & db logo dial seen on ebay 280688628
+#
+# 780 is a WW said to be "BWR 23j 6 adj manual wind" on ebay 200476837 
+#     seller is Tom Engle one of Shugart's co-authors.
+#     according to http://www.progression-inc.com/lastelgins/fm.htm, this is 
+#     a 23j manual with a "DuraBalance" balance.  marked BWR on dial, with a
+#     "db" logo.  related to the 730
+# 799 said to be "17j 799 Swiss" on ebay 244259338  has pic, but too blury to verify anything other than 3/4
+# W800 said to be 19/0s in the 1958 Service Manual
+# W803 said to be 19/0s in the 1958 Service Manual
+# 823 is marked "SS 17j unadj swiss" in my collection
+# 832 seen as "ladies sized WW  3/4 - f ? p q 19j ? - - d gb" on ebay 258704329
+# 845 is said to be "16s 23j Adj" swiss (Buren W. Co.) in shugart's  Maybe the mean G=847...?
+
+846  ?    16   -  3/4 o  f 22  l q    21     A2P  -   - b gb	# swiss (Buren)
+	# seen as "Elgin 846 21j A2P" in NAWCC v39/5 num 310
+	# m=22 is my invention
+
+847  ?    16   -  3/4 o  f 22  l q    23     A2P  -   - b gb	# swiss (Buren)
+	# seen as "Elgin 847 23j Cal 02/sk9 A2P 11829" no mention of swiss on ebay 210577462
+	# seen as "Elgin 847 23j Cal 02/SX7 A2P 5981" in NAWCC v38/2 num 301 and also NAWCC v39/5 num 310
+	# m=22 is my invention
+
+867  ?    16   -  3/4 o  f  ?  ? q    17       ?  -   - f gb	# swiss
+	# said to be "867 17j Swiss" seen as "3/4 o f ? ? q ? ? - - f gb" on ebay 312736675
+
+# 854 said to be "17j swiss" auto-wind SS on ebay 230703724
+# 873 said to be "BWR 21j A5P" seen as SS on ebay 221047121
+# 876 said to be "18s 876 21j Swiss YXY" seen as LE (and probably 16s) on ebay 306260571
+
+889  ?     ?   -  3/4 s  f  ?  p q    17       ?  -   - f  gb
+	# according to a blury pic and desc on ebay 217736718
+	# ebay 263006758 says "889 17j", movement seen as "3/4 s f ? p q ? ? - - f gb", it looks like it might be marked as swiss and adjusted, but pic is too blury
+
+905  ?  19/0   -  3/4 -  f  ?  p q    23     A3P  -   - f  gb
+	# seen as "3/4 - f ? p q 23j A3P - - f gb" on ebay 301685228
+	# size of 19/0 determined by pic on ebay 301685228 and APWB-E which shows a G=803 movement that looks the same.
+
+# 973 said to be 17j on ebay 254550982
+
+976  ?    16   -  3/4 o  f  ?  ? q    17       U  -   - f gb	# swiss
+	# seen on ebay 225330334
+	# seen as "16s - 3/4 o f ? ? q 17j U - - f gb # swiss" on ebay 260648264
+
+
+#
+# The following grades are of my own creation
+
+997 114   12   -  3/4 o  t   3 p q    17     A4P  -   - e gb TRN	# really a G=345
+998 114   12   -  3/4 o  n   3 p q    17     A4P  -   - e gb STR	# really a G=345
+999  ?    12   -  3/4 ob n  6  p q    21       ? WI 192 e gb	# seen in Shugart's 184 as a protoype
+
+
+
+#
+# NOTES:
+#
+# Some of this info was "guessed" and wasn't just marked as unknown.  In
+# particular, I know I made the following assumptions:
+#
+# * all movement sizes are assumed to be the same as the dial size until
+#   I've seen evidence otherwise.
+#
+# * The dial size can often be determined by the "dial" and
+#   "hands/hour and minute" columns of the 1950 MC.
+#
+# * all grades after G=416 were assumed to be quick train unless shown
+#   otherwise.  (The only exception has been the "jitterbug" 40bps)
+#
+# * The barrel type was initially filled out as follows:
+#
+#	if( plate == PLATE_FULL )
+#	    barrel = BARREL_GOING;
+#	else if( max_jewels >= 23 )
+#	    barrel = BARREL_JMOTOR;
+#	else if( mvt_size == 18 && max_model >=8 )
+#	    barrel = BARREL_MOTOR;
+#	else if( max_jewels < 15 )
+#	    barrel = BARREL_GOING;
+#	else
+#	    barrel = BARREL_UNKNOWN;
+#
+#   However, I believe the barrel stuff was all checked with the 1950 MC,
+#   So this really isn't an assumption anymore.
+#
+# * all watches with less than 15 jewels are were assumed to be unadjusted
+#
+# * Regulator info
+#
+#   * The "elgin patent" (notched spool on a threaded rod) info is
+#     based off of the 1950 MC in the NUTS/"regulator nut and screw"
+#     column
+#
+#   * The "Railroad patent" (enhanced elgin with a spring to keep the
+#     regulator from moving in the notch) info is based off the 1950 MC
+#     in the SPRINGS/"regulator" column.  That is, unless it is a "Ball"
+#     style regulator
+#
+#   * the "Old Style Railroad Patent" is based off the 1950 MC in the
+#     SPRINGS/"regulator" column (X826).
+#
+#   * The "Ball regulator" info is based off the 1950 MC in the
+#     SCREWS/"regulator adjusting" column.
+#
+#
+# * When a grade says that the "1915 MC 'Grade of Mvt' list implies
+#   possible marking", it means that I looked at the "name" section of
+#   that table and did a search on the info on the rest the line.  For
+#   example, for the Avery, I did a search of "grade c=15 s=17 hc g
+#   m=1 j=7", which returned grades 14, 51 and 59.  I then marked all
+#   three of those grades with that note.
+#
+#   If there was only one possible grade, I marked the grade as having that
+#   name.  If there were more than one possible grade, I just left a comment.
+#
+# * If a watch has a "setting spring cam", then it is pendant set, but
+#   not all pendant set watches have a "setting spring cam".  (This is the
+#   lever that lets you put the watch in "setting mode" when it is out of
+#   the case so that you can work on it.  Lever set watches obviously don't
+#   need this, but it isn't required for the functioning of a pendant set
+#   watch either.)
+#
+# * the style can sometimes be determined by the "hands/second" column of
+#   the 1958 MC.  In particular, if nothing is listed, then it is a
+#   STYLE_NONE, while STYLE_SS will be marked with "S.S."
+#
+#
+
+
+#
+# the 1915 MC shows the 6s m=2 cut without fourth screw on the barrel
+# bridge, but the 0s m=1 with a fourth screw.  However, it appears that
+# either of these models can either have this screw or not, so this isn't
+# a "distinguishing feature."  (That is, you can't use it to tell these
+# to models apart in anotherwise blury picture.)
+#
+# I'm not sure what exactly this fourth screw is for.  One screw is a
+# case screw, the other two screws are for securing the bridge.
+#
+# on 01/09/00 I did a study to see which grades had screws, and this
+# is what I came up with.  *IF* there is a screw, then the location of
+# the screw is a "distinguishing feature."  Also, it appears that these
+# extra screws show up somewhere around G=200 or so.
+#
+#
+# has screw away from edge of barrel bridge:
+# 213526774  8562589 	# 6s 216 m=2
+# 217083211  8962677 	# 6s 216 m=2
+# 224887917  9122751 	# 6s 216 m=2
+# 218262333  9413902 	# 6s 206 m=2
+# 220000585  1052?795 s=6	# 6s 206 m=2
+# 228871251  8296175 	# 6s 206 m=2
+# 219396798  13638193 	# 6s 286 m=2
+# 222809079  16978676 	# 6s 289 m=2
+# 228210360  13304436 	# 6s 295 m=2
+# 213144707  16879561 	# 6s 295 m=2
+# 213821964  11645457 	# 6s 295 m=2
+# 226427707  15771893 	# 6s 295 m=2
+# 230465156  15276819 	# 6s 295 m=2
+# 
+# 
+# has screw near edge of barrel bridge
+# 215229140  8439000 	# 0s 222 m=1
+# 228812122  8868629 	# 0s 222 m=1
+# 212523503  9076924 	# 0s 223 m=1
+# 
+# 
+# does not have screw on barrel bridge
+# 214974934  5838523 	# 0s 109 m=1
+# 214496863  5128181 	# 0s 109 m=1
+# 213934411  5554602 	# 0s 109 m=1
+# 220253447  3072847 	# 0s 111 m=1
+# 213513805  4045316 	# 0s 113 m=1
+# 216682650  7670668 	# 0s 129 m=1
+# 216354355  6125162 	# 0s 130 m=1
+# 222558646  7226479 	# 0s 130 m=1
+# 224006264  7716669 	# 0s 130 m=1
+# 220365917  7695148 	# 0s 173 m=1
+# 229025191  6941089 	# 0s 173 m=1
+# 
+# 217989506  4449285 	# 6s 117 m=2
+# 219134850  6123652 	# 6s 117 m=2
+# 220916229  6287471 	# 6s 117 m=2
+# 215972737  4546512 	# 6s 118 m=2
+# 219396798  5245808 	# 6s 118 m=2
+# 220515798  4645202 	# 6s 119 m=2
+# 224951108  7014842 	# 6s 175 m=2
+# 
+# 
+# 

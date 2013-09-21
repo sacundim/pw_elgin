@@ -1,0 +1,42 @@
+
+How to install pw_elgin
+-----------------------
+
+LINUX VERSION
+
+   Source distribution:
+   --------------------  
+
+   Untar / gunzip the distribution file.  Change to the pw_elgin
+   directory and type make.  The source is pretty generic C code, but
+   it does use the GNU readline library.  If you don't have this
+   library, you will need to edit the make file and remove the
+   -DHAVE_READLINE flag from the compiler flags.
+
+   You might also want to set up the directory that pw_elgin looks for
+   the database source files.  By default, it uses the paths that I
+   use for development purposes.
+
+   I realise I haven't done much to make this painless, maybe someday
+   I'll learn all about autoconf and do it right.  Until then, if you
+   have any problems compiling it feel free to send an email and we
+   can try it out together.
+
+   If you build it on something other than Intel Linux, let me know
+   what changes were needed.
+
+   Binary distribution
+   -------------------
+   The binaries were built statically linked all around so should work
+   on just about any Intel Linux box unless for some reason you haven't
+   made the switch to elf yet :-o .
+
+   To install, pick a nice place for your executable (pw_elgin) and 
+   put it there ( /usr/local/bin might be a good choice ).
+
+   By default, pw_elgin will look for the databases in the current
+   directory.  You need to make sure you that you are in the right
+   directory when you start pw_elgin.
+
+
+(c) 2000 Wayne Schlitt

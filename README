@@ -1,0 +1,117 @@
+See INSTALL for directions on how to install pw_elgin.
+See LICENSE for what you can and can't do with this.
+See CHANGES for a full list of changes since v1.0
+
+Unfortunately, I haven't had time to write up nice documentation about
+pw_elgin yet.  You are going to have to wing it for now.  The
+following is the output from a "pw_elgin -h"
+
+
+pw_elgin v1.0
+
+Copyright (C) 1999, 2000 Wayne Schlitt (wayne@midwestcs.com)
+This program is licensed under the GPL.  A copy of the
+GPL should have been supplied with the program, but if it
+wasn't, you can view it at www.fsf.org
+
+The most current version of pw_elgin can be obtained from:
+    http://www.midwestcs.com/elgin/pw_elgin/
+
+
+Usage:  pw_elgin [search options]
+
+    -s          Enter "search" mode.
+    -S          Enter grade "search" mode.
+    -v          increase verboseness
+    -n          Print serial number data
+    -g          Print grade data
+    -V          Verify serial number and grade databases
+    -N <file>   Use <file> for serial number database
+    -G <file>   Use <file> for grade database
+    -p <prompt> Prompt string to use in search mode
+    -l <file>   Log searches in <file>
+
+If no search options are given, pw_elgin will enter the search mode
+
+
+Search Options:
+
+serial number	The serial number, if given, must be the first option
+		on the line.  Both '*' and '?' can be used as wild cards
+
+n=<name>	limit search to watches with a given name.  All "names"
+		are two or three letter abbreviations, or the special names
+		of '-' or '?'.
+r=<reg type>	limit search to watches with a given regulator type.
+
+grade		Search the grade database instead of the serial number
+		database.
+sn			Search the serial number database instead of the grade
+		database.
+
+b		limit search to watches that are bridge movements.
+nb		limit search to watches that are not bridge movements.
+
+hc		limit search to watches with hunter case movements.
+of		limit search to watches with open face movements.
+cvt		limit search to watches with convertable movements.
+ss		limit search to watches with a sweep second hand.
+ns		limit search to watches with no second hand.
+
+g		limit search to watches with gilded finishes.
+n		limit search to watches with nickel damaskeening.
+t		limit search to watches with two-tone damaskeening.
+f		limit search to watches with flat (matte) nickel finishes.
+
+kw		limit search to watches key wind/key set movements.
+l		limit search to watches lever set movements.
+p		limit search to watches pendant set movements.
+aw		limit search to watches with auto-wind movements.
+hs		limit search to watches with hack setting movements.
+
+gb		limit search to watches with going barrels.
+mb		limit search to watches with motor barrels.
+jb		limit search to watches with jewelled motor barrels.
+
+In the following options, the '=' can be replaced with '<', '<='
+'>', or '>='.
+
+g=<grade>	limit search to watches of a given grade number.
+c=<class>	limit search to watches in a given class.
+s=<size>	limit search to watches of a given size.
+j=<jewels>	limit search to watches with a given number of jewels.
+m=<model>	limit search to a given model within a size.
+t=<count>	limit search to watches with a total production count.
+y=<year>	limit search to watches in a given year.
+l=<lines>	limit output to a given number of lines.
+v=<verbose>	control how verbose the output should be.
+
+
+Examples:
+
+pw_elgin 12345
+This will tell you about serial number 12345.
+
+
+pw_elgin H71????
+
+This will tell you about all watches in the ranges that begin
+with the serial number "H71".
+
+
+pw_elgin "12???321 s<=12 j>21"
+
+This will tell you about all watches that have serial numbers
+starting with '12', followed by any three numbers and ending
+in '321'.  The watches must also be 12s or smaller and have more
+than 21 jewels.  This happens to show two different watches, one
+a grade 194 and one a grade 190
+
+It is important to put quotes around the search options in this
+case or the shell will interpret the "j>21" as redirecting
+output to the file "21"
+
+
+pw_elgin "131????? n=bwr j=19 s=18"
+
+This will end up finding a single run of grade 240 BWRaymonds.
