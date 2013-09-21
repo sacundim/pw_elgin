@@ -1,3 +1,23 @@
+Sep. 21, 2013
+
+I have fixed up this program so that it now compiles and runs
+successfully in my Mac.  I have otherwise left it untouched.
+Environment info:
+
+% uname -a
+Darwin casillas-mac.local 12.4.0 Darwin Kernel Version 12.4.0: Wed May  1 17:57:12 PDT 2013; root:xnu-2050.24.15~1/RELEASE_X86_64 x86_64
+
+% gcc --version
+i686-apple-darwin11-llvm-gcc-4.2 (GCC) 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.11.00)
+Copyright (C) 2007 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Below the "=====" line I reproduce the original README.
+
+Luis Casillas
+
+=============================================================================
 See INSTALL for directions on how to install pw_elgin.
 See LICENSE for what you can and can't do with this.
 See CHANGES for a full list of changes since v1.0
