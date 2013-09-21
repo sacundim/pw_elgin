@@ -1,5 +1,3 @@
-Sep. 21, 2013
-
 I have fixed up this program so that it now compiles and runs
 successfully in my Mac.  I have otherwise left it untouched.
 Environment info:
@@ -18,17 +16,28 @@ A copy of the website that this is from is located here:
     http://elginwatches.org/
 
 This appears to be a mirror, and the last update seems to be from
-2005.  The page detailing the program is here:
+2005.  This contains a lot of very useful information about Elgin
+watches.  These two pages are essential reading to understand Elgin's
+classification system, which the program uses in its output:
+
+    http://elginwatches.org/help/elgin_grade_class.html
+    http://elginwatches.org/help/serial_number_info.html
+
+These further pages provide more generic information about watches
+ that will help the non-collector (though many collectors will learn
+ something from them):
+
+    http://elginwatches.org/help/watch_jewels.html
+    http://elginwatches.org/help/watch_sizes.html
+
+The page detailing the program is here:
 
     http://elginwatches.org/databases/pw_elgin.html
-
-Search options supported by the program are documented here:
-
-   http://elginwatches.org/databases/search_options.html
 
 Below the "=====" line I reproduce the original README.
 
 Luis Casillas
+Sep. 21, 2013
 
 =============================================================================
 See INSTALL for directions on how to install pw_elgin.
